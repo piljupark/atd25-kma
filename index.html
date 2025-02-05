@@ -23,20 +23,29 @@
         </div>
 
         <!-- main banner -->
-        <div class="main">
+        <div id="main" class="main">
+            <div class="background"></div>
             <section class="main-sec1">
                 <img src="/assets/imgs/atdLogo.webp" alt="ADT2025 logo" class="main-logo">
                 <div class="main-txt-wrap">Wasington, DC <br>2025.05.18-21 </div>
             </section>
             <section class="main-sec2">
                 <div class="title" data-aos="fade-up" data-aos-duration="700">ATD25: Collective Insights. <br>Lifelong Learning.</div>
-                <div class="main-txt-wrap" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">다양한 전문가들의 통찰력과 평생학습을 <br>ATD25에서 만나보세요. </div>
+                <div class="main-txt-wrap" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">다양한 전문가들의 통찰력과 교육의 미래를 <br>ATD25에서 만나보세요. </div>
             </section>
         </div>
     </div>
 
     <script>
         AOS.init();
+    </script>
+
+    <script>
+        let section = document.getElementById("main");
+        window.addEventListener('scroll', function () {
+            var yOffset = window.pageYOffset - section.offsetTop; // main의 scroll 값을 빼줌
+            document.querySelector('.background').style.backgroundPosition = 'center ' + (yOffset * 0.5) + 'px';
+        });
     </script>
 </body>
 </html>
