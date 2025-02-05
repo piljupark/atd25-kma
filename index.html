@@ -41,11 +41,14 @@
     </script>
 
     <script>
-        let section = document.getElementById("main");
-        window.addEventListener('scroll', function () {
-            var yOffset = window.pageYOffset - section.offsetTop; // main의 scroll 값을 빼줌
-            document.querySelector('.background').style.backgroundPosition = 'center ' + (yOffset * 0.5) + 'px';
+        const background = document.querySelector('.background');
+        const scrollPosition = window.scrollY;
+
+        window.addEventListener('scroll', () => {
+            const currentScrollPosition = window.scrollY;
+            background.style.backgroundPositionY = `${currentScrollPosition}px`;
         });
     </script>
+
 </body>
 </html>
