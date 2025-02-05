@@ -24,7 +24,6 @@
 
         <!-- main banner -->
         <div id="main" class="main">
-            <div class="background"></div>
             <section class="main-sec1">
                 <img src="/assets/imgs/atdLogo.webp" alt="ADT2025 logo" class="main-logo">
                 <div class="main-txt-wrap">Wasington, DC <br>2025.05.18-21 </div>
@@ -38,16 +37,6 @@
 
     <script>
         AOS.init();
-    </script>
-
-    <script>
-        const background = document.querySelector('.background');
-        const scrollPosition = window.scrollY;
-
-        window.addEventListener('scroll', () => {
-            const currentScrollPosition = window.scrollY;
-            background.style.backgroundPositionY = `${currentScrollPosition}px`;
-        });
     </script>
 
 </body>
