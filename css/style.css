@@ -4,12 +4,27 @@
 
 .main { position: relative; width: 100%; height: 200vh; background-image: url('../assets/imgs/atdBanner_main.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; }
 .main .main-sec1 { position: relative; width: 100%; height: 100vh; padding: 0 20px; box-sizing: border-box; display: grid; align-content: center; justify-items: center;}
-.main .main-sec1 img.main-logo { position: relative; width: 300px; filter: invert(1);}
-.main .main-sec1 .main-txt-wrap { position: relative; text-align: center; font-family: "Hubot Sans", serif; color: #fff; font-size: 24px; font-weight: 600; line-height: 1.5;}
+.main .main-sec1 img.main-logo { position: relative; width: 400px; filter: invert(1);}
+.main .main-sec1 .main-txt-wrap { position: relative; text-align: center; font-family: "Hubot Sans", serif; color: #fff; font-size: 40px; font-weight: 600; line-height: 1.5;}
 .main .main-sec2 {position: relative; width: 100%; height: 100vh; padding: 0 20px; box-sizing: border-box; display: grid; align-content: center; justify-items: center; gap: 200px;}
 .main .main-sec2 .title {font-family: "Hubot Sans", serif; text-align: center; font-size: clamp(2em, 6vw, 60px); font-weight: 600; line-height: 1.5; color: #fff;}
 .main .main-sec2 .main-txt-wrap {font-family: 'Pretendard Variable'; font-size: 20px; font-weight: 600; text-align: center; line-height: 1.5; text-align: center; color: #fff;}
 /* //main */
+
+
+.tr {position: relative; width: 100%; max-width: 1280px; height: 100vh; margin: 0 auto; padding: 60px 20px; box-sizing: border-box;}
+.tr .tit {position: relative; width: 100%; font-family: "Hubot Sans", serif; font-size: clamp(2em, 6vw, 40px); font-weight: 500; text-align: left;}
+.tr .txt {position: relative; width: 100%; margin-top: 10px; font-family: 'Pretendard Variable'; font-size: 20px; font-weight: 600; }
+
+.tr .tr-box-wrap { width: 100%; margin-top: 40px; overflow-x: scroll; }
+.tr .tr-box-wrap .overwrap { width: 100%; min-width: 1400px; display: flex; gap: 20px;}
+.tr .tr-box-wrap .tr-box { position: relative; width: 400px; height: 240px; padding: 20px; box-sizing: border-box; background: #eee; border-radius: 10px; display: grid; align-content: flex-start; gap: 15px; }
+.tr .tr-box-wrap .tr-box .tr-tit {font-family: "Hubot Sans", serif; font-size: 24px; font-weight: 500;}
+.tr .tr-box-wrap .tr-box .info {font-family: 'Pretendard Variable'; font-size: 18px; font-weight: 600; text-align: left; line-height: 1.5;}
+.tr .tr-box-wrap .tr-box .tr-tit-icon {position: absolute; width: 100px; opacity: .2; bottom: 0; right: 0;}
+
+/* //tr */
+
 
 .mainstage {position: relative; width: 100%; max-width: 1280px; height: 100vh; margin: 0 auto; padding: 60px 20px; box-sizing: border-box;}
 .mainstage .tit {position: relative; width: 100%; font-family: "Hubot Sans", serif; font-size: clamp(2em, 6vw, 40px); font-weight: 500; text-align: left;}
