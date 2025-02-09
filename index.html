@@ -20,6 +20,38 @@
         <div id="header">
             <a href="index.html"><img src="/assets/imgs/atdLogo.webp" alt="ATD2025 logo" class="header-logo"></a>
             <button class="menu-btn"></button>
+
+            <!-- menu-wrap -->
+            <div class="cate-wrap">
+                <div class="top">
+                    <button class="close-btn"></button>
+                </div>
+                <ul class="cate">
+                    <li><a href="">HOME</a></li>
+                    <li>
+                        ATD 25
+                        <ul>
+                            <li><a href="">About ATD 2025</a></li>
+                            <li><a href="">Keynote Speaker</a></li>
+                            <li><a href="">Learning Tracks</a></li>
+                            <li><a href="">Schedule</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        KMA ATD 25
+                        <ul>
+                            <li><a href="">팀별 일정표</a></li>
+                            <li><a href="">스페셜 프로그램</a></li>
+                            <li><a href="">코디네이터 그룹</a></li>
+                            <li><a href="">K-TD 프로그램</a></li>
+                            <li><a href="">참가비용</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">SESSIONS</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">HISTORY</a></li>
+                </ul>
+            </div>
         </div>
 
         <!-- main banner -->
@@ -52,7 +84,7 @@
                 <div class="speaker-info">
                     <p class="nm">Seth Godin</p>
                     <!-- <p class="pro">교사/작가/기업가 </p> -->
-                     <p class="pro">Teacher, Author, Entrepreneur</p>
+                    <p class="pro">Teacher, Author, Entrepreneur</p>
                     <div class="speaker">
                         <img src="/assets/imgs/img_keynote2.webp" alt="">
                     </div>
@@ -76,6 +108,25 @@
 
     <script>
         AOS.init();
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuBtn = document.querySelector('.menu-btn');
+            const closeBtn = document.querySelector('.close-btn');
+            const cateWrap = document.querySelector('.cate-wrap');
+            const body = document.body;
+
+            menuBtn.addEventListener('click', function() {
+                cateWrap.classList.add('show');
+                body.style.overflowY = 'hidden'; // 메뉴가 나타날 때 body overflow-y를 hidden으로 설정
+            });
+
+            closeBtn.addEventListener('click', function() {
+                cateWrap.classList.remove('show');
+                body.style.overflowY = 'auto'; // 메뉴가 사라질 때 body overflow-y를 auto로 설정
+            });
+        });
     </script>
 
 </body>

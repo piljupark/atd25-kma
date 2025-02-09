@@ -20,6 +20,12 @@
 .mainstage .speaker-wrap .speaker-info .pro { margin-top: 10px; font-family: "Hubot Sans", serif; font-size: 18px; font-weight: 600;}
 .mainstage .speaker-wrap .speaker-info .speaker img{width: 100%; margin-top: 20px; }
 .mainstage .speaker-wrap .speaker-info .date { margin-top: 20px; font-family: "Hubot Sans", serif; font-size: 14px; font-weight: 500; opacity: .8;}
+/* //mainstage */
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
     .mainstage { height: auto;}

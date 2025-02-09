@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 html, body {margin: 0; padding: 0; }
-p, a, h1, h2, h3, h4, button { padding: 0; margin: 0; text-decoration: none; }
+p, a, h1, h2, h3, h4, button, ul, li { padding: 0; margin: 0; text-decoration: none; list-style: none;}
 
 /* header */
 #header { position: fixed; top: 0; left: 0; width: 100%; height: 80px; padding: 0 20px; z-index: 10; display: flex; align-items: center; justify-content: space-between; box-sizing: border-box;}
@@ -9,6 +9,23 @@ p, a, h1, h2, h3, h4, button { padding: 0; margin: 0; text-decoration: none; }
 #header .menu-btn { position: relative; width: 20px; height: 20px; background: none; border: none; border-top: 3px solid #292929; border-bottom: 3px solid #292929; cursor: pointer;}
 #header .menu-btn::after { position: absolute; content: ''; left: 0; top: 50%; width: 20px; height: 3px; background: #292929; transform: translate(0, -50%);}
 
+.cate-wrap {position: fixed; width: 100%; max-width: 500px; height: 100vh; top:0; right: 0; padding: 0 20px; background: #292929; box-sizing: border-box; transform: translateX(100%); transition: transform 0.5s;}
+.cate-wrap.show {transform: translateX(0);}
+.cate-wrap .top {position: relative; width: 100%; height: 80px; display: flex; justify-content: flex-end; align-items: center;}
+.cate-wrap .top .close-btn { position: relative; width: 20px; height: 20px; background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+.cate-wrap .top .close-btn::after {position: absolute; content: ''; width: 20px; height: 3px; background: #fff; transform: rotate(-45deg); }
+.cate-wrap .top .close-btn::before {position: absolute; content: ''; width: 20px; height: 3px; background: #fff; transform: rotate(45deg); }
+
+.cate-wrap ul.cate { display: flex; flex-direction: column; gap: 20px; }
+.cate-wrap ul.cate > li { font-family: "Hubot Sans", serif; font-size: 24px; color: #fff; display: flex; justify-content: space-between; }
+.cate-wrap ul.cate > li a { font-family: "Hubot Sans", serif; font-size: 24px; color: #fff;}
+.cate-wrap ul.cate > li > ul { min-width: 150px; display: grid; gap: 10px;}
+.cate-wrap ul.cate > li > ul > li a { font-family: 'Pretendard Variable'; font-size: 18px; color: #fff; }
+
+
+@media screen and (max-width: 768px) {
+    .cate-wrap ul.cate > li > ul > li a {}
+}
 
 
 
