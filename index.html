@@ -52,6 +52,8 @@
                     <li><a href="">HISTORY</a></li>
                 </ul>
             </div>
+
+            <div class="bg-over"></div>
         </div>
 
         <!-- main banner -->
@@ -116,15 +118,18 @@
             const closeBtn = document.querySelector('.close-btn');
             const cateWrap = document.querySelector('.cate-wrap');
             const body = document.body;
+            const bgOver = document.querySelector('.bg-over');
 
             menuBtn.addEventListener('click', function() {
                 cateWrap.classList.add('show');
-                body.style.overflowY = 'hidden'; // 메뉴가 나타날 때 body overflow-y를 hidden으로 설정
+                body.style.overflowY = 'hidden'; 
+                bgOver.style.display = 'block';
             });
 
             closeBtn.addEventListener('click', function() {
                 cateWrap.classList.remove('show');
-                body.style.overflowY = 'auto'; // 메뉴가 사라질 때 body overflow-y를 auto로 설정
+                body.style.overflowY = 'auto'; 
+                bgOver.style.display = 'none';
             });
         });
     </script>

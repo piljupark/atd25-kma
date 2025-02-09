@@ -9,7 +9,7 @@ p, a, h1, h2, h3, h4, button, ul, li { padding: 0; margin: 0; text-decoration: n
 #header .menu-btn { position: relative; width: 20px; height: 20px; background: none; border: none; border-top: 3px solid #292929; border-bottom: 3px solid #292929; cursor: pointer;}
 #header .menu-btn::after { position: absolute; content: ''; left: 0; top: 50%; width: 20px; height: 3px; background: #292929; transform: translate(0, -50%);}
 
-.cate-wrap {position: fixed; width: 100%; max-width: 500px; height: 100vh; top:0; right: 0; padding: 0 20px; background: #292929; box-sizing: border-box; transform: translateX(100%); transition: transform 0.5s;}
+.cate-wrap {position: fixed; width: 100%; max-width: 500px; height: 100vh; top:0; right: 0; padding: 0 20px; background: #292929; box-sizing: border-box; transform: translateX(100%); transition: transform 0.5s; z-index: 99;}
 .cate-wrap.show {transform: translateX(0);}
 .cate-wrap .top {position: relative; width: 100%; height: 80px; display: flex; justify-content: flex-end; align-items: center;}
 .cate-wrap .top .close-btn { position: relative; width: 20px; height: 20px; background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; }
@@ -21,6 +21,7 @@ p, a, h1, h2, h3, h4, button, ul, li { padding: 0; margin: 0; text-decoration: n
 .cate-wrap ul.cate > li a { font-family: "Hubot Sans", serif; font-size: 24px; color: #fff;}
 .cate-wrap ul.cate > li > ul { min-width: 150px; display: grid; gap: 10px;}
 .cate-wrap ul.cate > li > ul > li a { font-family: 'Pretendard Variable'; font-size: 18px; color: #fff; }
+.bg-over {position: fixed; top: 0; left: 0; width: 100%; height: 100vh; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); display: none; z-index: 11;}
 
 
 @media screen and (max-width: 768px) {
