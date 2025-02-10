@@ -19,10 +19,13 @@
 /* intro */
 
 .tr {position: relative; width: 100%; max-width: 1280px; height: auto; margin: 0 auto; padding: 60px 20px; box-sizing: border-box;}
-.tr .tit {position: relative; width: 100%; font-family: "Hubot Sans", serif; font-size: clamp(2em, 6vw, 40px); font-weight: 500; text-align: left;}
+.tr .tit {position: relative; width: 100%; font-family: "Hubot Sans", serif; font-size: clamp(2em, 6vw, 40px); font-weight: 600; text-align: left;}
 .tr .txt {position: relative; width: 100%; margin-top: 10px; font-family: 'Pretendard Variable'; font-size: 20px; font-weight: 600; }
 
-.tr .tr-box-wrap { width: 100%; margin-top: 40px; overflow-x: scroll; }
+.tr .tr-box-wrap { width: 100%; padding-bottom: 20px; margin-top: 40px; overflow-x: scroll; }
+.tr .tr-box-wrap::-webkit-scrollbar {  height: 10px; }
+.tr .tr-box-wrap::-webkit-scrollbar-thumb { background: #ccc; border-radius: 10px; cursor: grab;}
+.tr .tr-box-wrap::-webkit-scrollbar-track { background: none;}
 .tr .tr-box-wrap .overwrap { width: 100%; min-width: 1400px; display: flex; gap: 20px;}
 .tr .tr-box-wrap .tr-box { position: relative; width: 400px; height: 400px; padding: 20px; box-sizing: border-box; background: #eee; border-radius: 10px; display: grid; align-content: flex-start; gap: 15px; }
 .tr .tr-box-wrap .tr-box .tr-tit {font-family: "Hubot Sans", serif; font-size: 24px; font-weight: 500;}
@@ -34,7 +37,7 @@
 
 
 .mainstage {position: relative; width: 100%; max-width: 1280px; height: 100vh; margin: 0 auto; padding: 60px 20px; box-sizing: border-box;}
-.mainstage .tit {position: relative; width: 100%; font-family: "Hubot Sans", serif; font-size: clamp(2em, 6vw, 40px); font-weight: 500; text-align: left;}
+.mainstage .tit {position: relative; width: 100%; font-family: "Hubot Sans", serif; font-size: clamp(2em, 6vw, 40px); font-weight: 600; text-align: left;}
 .mainstage .txt {position: relative; width: 100%; margin-top: 10px; font-family: 'Pretendard Variable'; font-size: 20px; font-weight: 600; }
 .mainstage .speaker-wrap { position: relative; width: 100%; margin-top: 40px; display: flex; gap: 20px;}
 .mainstage .speaker-wrap .speaker-info{ display: grid; width: 33.33%; height: auto; padding: 20px;  background: #eee; border-radius: 10px; box-sizing: border-box;}
@@ -45,7 +48,7 @@
 
 .mainstage .spk-wrap {position: relative; width: 100%; height: 600px; margin-top: 40px;}
 .mainstage .spk-wrap .btn-box {width: 100%; height: 600px; display: grid; align-items: flex-end; justify-content: flex-start; gap: 20px; align-content: flex-end; justify-items: start;}
-.mainstage .spk-wrap .btn-box .spk-btn {height: 66px; font-family: "Hubot Sans", serif; font-size: 60px; font-weight: 500; background: none; border: none; cursor: pointer;}
+.mainstage .spk-wrap .btn-box .spk-btn {height: 66px; font-family: "Hubot Sans", serif; font-size: 60px; font-weight: 500; color: #000; background: none; border: none; cursor: pointer;}
 .mainstage .spk-wrap .btn-box .spk-btn:not(.active) {opacity: .5;}
 .mainstage .spk-wrap .spk-box {position: absolute; width: 400px; height: 600px; top: 0; left: 50%; transform: translate(-50%, 0); overflow: hidden; z-index: -1;} 
 .mainstage .spk-wrap .spk-box img.spk{position: absolute; top: 0; left: 0; width: 100%; object-fit: cover;}

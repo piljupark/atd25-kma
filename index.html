@@ -11,6 +11,7 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <script src="/js/header.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
 </head>
@@ -69,7 +70,14 @@
             <div class="txt" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">다양한 전문가들의 통찰력과 교육의 미래를 <br>ATD25에서 만나보세요. </div>
             <button class="view-dtl" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500">자세히 보기</button>
             <div class="int-video" data-aos="fade-up" data-aos-duration="700" data-aos-delay="700">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/BsDRXVOmRVI?si=X3I7BGnJQTlUbjdG&amp;controls=0&autoplay=1&mute=1&rel=0&loop=1&playlist=BsDRXVOmRVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/BsDRXVOmRVI?autoplay=1&mute=1&loop=1&playlist=BsDRXVOmRVI"
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+
             </div>
         </div>
 
@@ -158,27 +166,7 @@
         AOS.init();
     </script>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuBtn = document.querySelector('.menu-btn');
-            const closeBtn = document.querySelector('.close-btn');
-            const cateWrap = document.querySelector('.cate-wrap');
-            const body = document.body;
-            const bgOver = document.querySelector('.bg-over');
-
-            menuBtn.addEventListener('click', function() {
-                cateWrap.classList.add('show');
-                body.style.overflowY = 'hidden'; 
-                bgOver.style.display = 'block';
-            });
-
-            closeBtn.addEventListener('click', function() {
-                cateWrap.classList.remove('show');
-                body.style.overflowY = 'auto'; 
-                bgOver.style.display = 'none';
-            });
-        });
-    </script>
+    
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
