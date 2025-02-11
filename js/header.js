@@ -30,3 +30,32 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const mainCateListItems = document.querySelectorAll('.pc-cate ul.main-cate li');
+    const subCate1 = document.querySelector('.sub-cate-1');
+    const subCate2 = document.querySelector('.sub-cate-2');
+    const pcCate = document.querySelector('.pc-cate');
+
+    mainCateListItems.forEach(item => {
+        item.addEventListener('click', function() {
+            if (item === mainCateListItems[0]) {
+                subCate1.style.top = '0';
+                subCate2.style.top = '-140px';
+            } else if (item === mainCateListItems[1]) {
+                subCate1.style.top = '-140px';
+                subCate2.style.top = '0';
+            } else {
+                subCate1.style.top = '-140px';
+                subCate2.style.top = '-140px';
+            }
+        });
+    });
+
+    pcCate.addEventListener('mouseleave', function(event) {
+        if (event.target !== subCate1 && event.target !== subCate2) {
+            subCate1.style.top = '-140px';
+            subCate2.style.top = '-140px';
+        }
+    });
+});
