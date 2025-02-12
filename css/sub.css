@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/* scd */
+.scd-btn-wrap {position: relative; width: 100%; max-width: 1320px; height: auto; margin: 40px auto 0; padding: 0 20px; display: flex; gap: 10px; box-sizing: border-box;}
+.scd-btn-wrap .btn { padding: 15px 22px; font-family: "Host Grotesk", serif; font-weight: 600; font-size: 16px; background: #eee; border: none; border-radius: 10px; cursor: pointer; opacity: .3; transition: .2s;}
+.scd-btn-wrap .btn.btn-a {opacity: 1;} 
+
+.scd {position: relative; width: 100%; max-width: 1320px; margin: 0 auto; padding: 0 20px; box-sizing: border-box;}
+.scd .scd-box {position: relative; width: 100%;  margin-top: 40px; display: grid; gap: 10px; }
+.scd .scd-box .table {display: flex; width: 100%; gap: 10px;}
+.scd .scd-box .table .time {width: 100px; padding: 10px 20px; font-family: 'Pretendard Variable'; font-weight: 500; box-sizing: border-box; background: #eee; border-radius: 10px;}
+.scd .scd-box .table .info {width: calc(100% - 100px); padding: 10px 20px; font-family: 'Pretendard Variable'; font-weight: 500; line-height: 1.5; box-sizing: border-box; background: #eee; border-radius: 10px;}
+.scd .scd-box .table .info span {width: 100%; float: left; font-weight: 600; margin: 10px 0;}
+.scd .view-dtl { padding: 20px 30px; margin: 0 auto; margin-top: 40px; background: #292929; border: none; font-family: 'Pretendard Variable'; font-size: 16px; font-weight: 500; color:#fff; border-radius: 10px; cursor: pointer; transition: all .2s; display: flex; }
