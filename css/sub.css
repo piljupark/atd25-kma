@@ -4,7 +4,7 @@
 
 /* scd */
 .scd-btn-wrap {position: relative; width: 100%; max-width: 1320px; height: auto; margin: 40px auto 0; padding: 0 20px; display: flex; gap: 10px; box-sizing: border-box; z-index: 2;}
-.scd-btn-wrap .btn { padding: 15px 22px; font-family: "Syncopate", serif;; font-weight: 600; font-size: 16px; background-color: #ccc; border: none; border-radius: 10px; cursor: pointer; transition: .2s; opacity: .3;}
+.scd-btn-wrap .btn { padding: 15px 22px; font-family: "Syncopate", serif; font-weight: 600; font-size: 16px; background-color: #ccc; border: none; border-radius: 10px; cursor: pointer; transition: .2s; opacity: .3;}
 .scd-btn-wrap .btn.btn-a {opacity: 1;} 
 
 .scd {position: relative; width: 100%; max-width: 1320px; margin: 0 auto; padding: 0 20px; box-sizing: border-box;}
@@ -18,3 +18,18 @@
 .scd .scd-box .table .info {width: calc(100% - 100px); padding: 10px 20px; font-family: 'Pretendard Variable'; font-weight: 500; line-height: 1.5; box-sizing: border-box; background: #eee; border-radius: 10px;}
 .scd .scd-box .table .info span {width: 100%; float: left; font-weight: 700; margin: 0 0 10px;}
 .scd .view-dtl { padding: 20px 30px; margin: 0 auto; margin-top: 40px; background: #292929; border: none; font-family: 'Pretendard Variable'; font-size: 16px; font-weight: 500; color:#fff; border-radius: 10px; cursor: pointer; transition: all .2s; display: flex; }
+
+
+
+
+/* ktd */
+.ktd {position: relative; width: 100%; height: auto; max-width: 1320px; margin: 60px auto 0; padding: 0 20px; box-sizing: border-box;}
+.ktd .ktd-top {position: relative; width: 100%;}
+.ktd .ktd-top .tit {font-family: "Syncopate", serif; font-weight: 600; font-size: 34px; text-transform: uppercase; }
+.ktd .ktd-top .txt {font-family: "Pretendard"; font-size: 20px; font-weight: 500; line-height: 1.5; }
+.ktd .ktd-info {position: relative; width: 100%; display: flex; justify-content: space-between; gap: 20px;}
+.ktd .ktd-info .tit-wrap { width: 400px; display: grid; align-content: baseline; gap: 5px;}
+.ktd .ktd-info .tit-wrap .sub-tit {font-family: "Syncopate", serif; font-weight: 600; font-size: 14px; text-transform: uppercase;}
+.ktd .ktd-info .tit-wrap .main-tit {font-family: "Pretendard"; font-size: 50px; font-weight: 700; }
+.ktd .ktd-info .txt-wrap { width: calc(100% - 580px); min-width: 600px; background: #eee; padding: 30px 40px; box-sizing: border-box; border-radius: 10px;}
+.ktd .ktd-info .txt-wrap .txt { font-family: "Pretendard"; font-size: 16px; font-weight: 600; line-height: 1.7; text-align: justify;}
