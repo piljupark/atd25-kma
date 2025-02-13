@@ -9,12 +9,12 @@ p, a, h1, h2, h3, h4, button, ul, li { padding: 0; margin: 0; text-decoration: n
 #header .header-logo { width: 80px;}
 #header .pc-cate {display: block; }
 #header .pc-cate ul { display: flex; gap: 20px; }
-#header .pc-cate ul.main-cate li {font-family: "Host Grotesk", serif; font-weight: 800; color: #000; font-size: 20px; cursor: pointer;}
+#header .pc-cate ul.main-cate li {font-family: "Syncopate", serif; font-weight: 800; color: #000; font-size: 20px; cursor: pointer;}
 #header .pc-cate ul.main-cate li a {color: #000;}
 #header .pc-cate ul:hover > li:not(:hover) {opacity: .5;}
 #header .pc-cate ul.sub-cate {position: absolute; width: 100%; height: 140px; left: 0; top: -140px; padding: 20px; background: #fff; transition: all .2s; display: flex; align-items: flex-end; justify-content: center; gap: 30px; box-sizing: border-box; z-index: -1; }
 
-#header .pc-cate > ul.sub-cate-1 > li > a {font-family: "Host Grotesk", serif; font-weight: 700; color: #000; font-size: 18px;}
+#header .pc-cate > ul.sub-cate-1 > li > a {font-family: "Pretendard Variable"; font-weight: 700; color: #000; font-size: 18px;}
 #header .pc-cate > ul.sub-cate-2 > li > a {font-family: "Pretendard Variable"; font-weight: 700; color: #000; font-size: 18px;}
 
 /* menu-btn */
@@ -31,8 +31,8 @@ p, a, h1, h2, h3, h4, button, ul, li { padding: 0; margin: 0; text-decoration: n
 .cate-wrap .top .close-btn::before {position: absolute; content: ''; width: 20px; height: 3px; background: #fff; transform: rotate(45deg); }
 
 .cate-wrap ul.cate { display: flex; flex-direction: column; gap: 20px; }
-.cate-wrap ul.cate > li { font-family: "Host Grotesk", serif; font-size: 40px; color: #fff; font-weight: 700; display: flex; justify-content: space-between; }
-.cate-wrap ul.cate > li a { font-family: "Host Grotesk", serif; color: #fff;}
+.cate-wrap ul.cate > li { font-family: "Syncopate", serif;; font-size: 40px; color: #fff; font-weight: 700; display: flex; justify-content: space-between; }
+.cate-wrap ul.cate > li a { font-family: "Syncopate", serif;; color: #fff;}
 .cate-wrap ul.cate > li > ul { min-width: 150px; display: grid; gap: 10px;}
 .cate-wrap ul.cate > li > ul > li a { font-family: 'Pretendard Variable'; font-size: 18px; color: #fff; }
 .bg-over {position: fixed; top: 0; left: 0; width: 100%; height: 100vh; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); display: none; z-index: 11;}
@@ -41,7 +41,7 @@ p, a, h1, h2, h3, h4, button, ul, li { padding: 0; margin: 0; text-decoration: n
 /* pg-top */
 .pg-top {position: relative; width: 100%; height: 340px; padding: 40px 20px;  display: flex; align-items: flex-end; justify-content: flex-end; box-sizing: border-box; background-position: center; background-repeat: no-repeat; background-size: cover;}
 .pg-top .pg-tit {font-size: 40px; font-weight: 800; color: #fff;}
-.pg-top .pg-tit.pg-tit-eng {font-family: "Host Grotesk", serif;}
+.pg-top .pg-tit.pg-tit-eng {font-family: "Syncopate", serif;;}
 .pg-top .pg-tit.pg-tit-kor {font-family: "Pretendard Variable";}
 .pg-top .pg-tit.pg-tit-wh {color: #fff;}
 .pg-top .pg-tit.pg-tit-bk {color: #000;}

@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // 모든 버튼의 opacity를 0.3으로 설정
             buttons.forEach(btn => {
-                btn.style.opacity = '0.3';
+                btn.style.opacity = '.3';
             });
 
             // 클릭한 버튼의 opacity를 1로 설정
