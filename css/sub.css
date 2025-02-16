@@ -7,7 +7,7 @@
 .main-abt { position: relative; width: 100%; height: auto; }
 .main-abt .bg-vid { position: fixed; width: 100%; height: 100vh; top: 0; left: 0; }
 .main-abt .bg-vid video {width: 100%; height: 100vh; object-fit: cover;}
-.main-abt .abt-tit {position: relative; width: 100%; max-width: 1340px; height: 100vh; margin: 0 auto; padding: 0 20px; display: grid; align-content: center; justify-items: center; box-sizing: border-box;}
+.main-abt .abt-tit {position: relative; width: 100%; max-width: 1320px; height: 100vh; margin: 0 auto; padding: 0 20px; display: grid; align-content: center; justify-items: center; box-sizing: border-box;}
 .main-abt .abt-tit span {width: auto; min-width: 827px; font-family: "Syncopate", serif; font-weight: 600; font-size: 100px; line-height: 1.2;}
 .main-abt .abt-tit span.tit3 {text-align: right; margin-left: 60px;}
 .main-abt .abt-tit span.tit5 {margin-left: 244px;}
@@ -15,7 +15,7 @@
 .sub-abt {position: relative; width: 100%; height: 100vh; background: #fff; font-family: 'Pretendard Variable'; font-size: 40px; font-weight: 700; line-height: 1.5; text-align: center; display: flex; align-items: center; justify-content: center;}
 
 .info-atd {position: relative; width: 100%; height: auto; background: #000;}
-.info-atd .info {position: relative; width: 100%; max-width: 1340px; height: auto; margin: 0 auto; padding: 160px 20px; box-sizing: border-box;}
+.info-atd .info {position: relative; width: 100%; max-width: 1320px; height: auto; margin: 0 auto; padding: 160px 20px; box-sizing: border-box;}
 .info-atd .info .info-tit {width: 100%; font-family: "Syncopate", serif; font-size: 60px; font-weight: 600; text-align: left; color: #fff;}
 .info-atd .info .info-sub-tit {width: 100%; font-family: "Syncopate", serif; font-size: 30px; font-weight: 600; text-align: left; color: #fff;}
 .info-atd .info .info-txt {width: 100%; font-family: 'Pretendard Variable'; font-weight: 600; font-size: 20px; color: #fff; text-align: justify; line-height: 1.5; margin-top: 40px;}
@@ -23,7 +23,7 @@
 .info-atd .info .info-img .info-bg-b {position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: rgba(0,0,0,0.3); }
 
 .atd-value {position: relative; width: 100%; height: auto; background: #fff;}
-.atd-value .value-wrap {position: relative; width: 100%; max-width: 1340px; margin: 0 auto; padding: 160px 20px; }
+.atd-value .value-wrap {position: relative; width: 100%; max-width: 1320px; margin: 0 auto; padding: 160px 20px; }
 .atd-value .value-wrap .value-tit {font-family: "Syncopate", serif; font-weight: 600; font-size: 60px; color: #000;}
 .atd-value .value-wrap .value-kind {position: relative; width: 100%; margin-top: 40px; display: flex; justify-content: space-between;}
 .atd-value .value-wrap .value-kind .kind { display: grid; gap: 40px; align-content: center;}
@@ -47,8 +47,11 @@
 .scd .scd-box .scd-bg .bg-black {position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: rgba(0,0,0,0.3); z-index: 1;}
 .scd .scd-box .scd-bg .scd-point {font-family: 'Pretendard Variable'; font-size: 40px; font-weight: 600; color: #fff; z-index: 2;}
 .scd .scd-box .table {display: flex; width: 100%; gap: 10px;}
-.scd .scd-box .table .time {width: 100px; padding: 10px 20px; font-family: 'Pretendard Variable'; font-weight: 500; box-sizing: border-box; background: #eee; border-radius: 10px;}
-.scd .scd-box .table .info {width: calc(100% - 100px); padding: 10px 20px; font-family: 'Pretendard Variable'; font-weight: 500; line-height: 1.5; box-sizing: border-box; background: #eee; border-radius: 10px;}
+.scd .scd-box .table .date {width: 100px; min-width: 100px; padding: 10px 20px; font-family: 'Pretendard Variable'; font-weight: 600; box-sizing: border-box; background: #eee; border-radius: 10px;}
+.scd .scd-box .table .time-wrap {width: 150px; display: grid; gap: 10px; align-content: baseline;}
+.scd .scd-box .table .time {width: 150px; height: 60px; padding: 10px 20px; font-family: 'Pretendard Variable'; font-weight: 500; box-sizing: border-box; background: #eee; border-radius: 10px;}
+.scd .scd-box .table .info-wrap {width: calc(100% - 190px); display: grid; gap: 10px;}
+.scd .scd-box .table .info {width: 100%; min-height: 60px; padding: 10px 20px; font-family: 'Pretendard Variable'; font-weight: 500; line-height: 1.5; box-sizing: border-box; background: #eee; border-radius: 10px;}
 .scd .scd-box .table .info span {width: 100%; float: left; font-weight: 700; margin: 0 0 10px;}
 .scd .view-dtl { padding: 20px 30px; margin: 0 auto; margin-top: 40px; background: #292929; border: none; font-family: 'Pretendard Variable'; font-size: 16px; font-weight: 500; color:#fff; border-radius: 10px; cursor: pointer; transition: all .2s; display: flex; }
 
@@ -57,7 +60,7 @@
 .spk-cont .seq {padding: 10px 20px; font-family: "Syncopate", serif;  font-weight: 600; font-size: 20px; color:#fff; background: #000; border-radius: 10px;}
 .spk-cont span {font-family: 'Pretendard Variable'; font-weight: 600; font-size: 40px; color: #000; line-height: 1.5; text-align: center;}
 
-.spk-wrap { position: sticky; top: 0; width: 100%; max-width: 1340px; height: 100vh; padding: 0 20px; margin: 0 auto; box-sizing: border-box; display: flex; justify-content: center; align-items: center; }
+.spk-wrap { position: sticky; top: 0; width: 100%; max-width: 1320px; height: 100vh; padding: 0 20px; margin: 0 auto; box-sizing: border-box; display: flex; justify-content: center; align-items: center; }
 .spk-wrap .spk {position: relative; width: 100%; height: 800px; top:0; display: grid; gap: 40px;}
 .spk-wrap .spk .info-wrap {padding: 20px; box-sizing: border-box; z-index: 1;}
 .spk-wrap .spk .info-wrap .nm {display: grid; gap: 20px; color: #fff;}
@@ -72,13 +75,29 @@
 
 /* lngTr */
 body#lngTrOver {overflow: hidden;}
-.tr-wrap {position: relative; width: 100%; max-width: 1340px; margin: 0 auto; padding: 160px 20px; box-sizing: border-box;}
+.tr-wrap {position: relative; width: 100%; max-width: 1320px; margin: 0 auto; padding: 160px 20px; box-sizing: border-box;}
 .tr-wrap .tr-tit {font-family: "Syncopate", serif; font-weight: 600; font-size: 60px;}
 .tr-wrap .swiper {margin-top: 40px; overflow: visible; cursor: grab;}
 .tr-wrap .swiper .swiper-wrapper .swiper-slide {width: 400px !important; height: 500px; padding: 40px; box-sizing: border-box; background: #DBF3FF; border-radius: 20px; display: grid; align-content: space-between; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden;}
 .tr-wrap .swiper .swiper-wrapper .swiper-slide .tr-kind-tit {font-family: "Syncopate", serif; font-weight: 600; font-size: 30px; color: #fff; line-height: 1.5; z-index: 1;}
 .tr-wrap .swiper .swiper-wrapper .swiper-slide .tr-kind-txt {font-family: "Pretendard"; font-size: 16px; font-weight: 600; color: #fff; text-align: justify; line-height: 1.5;  z-index: 1;}
 .tr-wrap .swiper .swiper-wrapper .swiper-slide .swiper-bg {position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: rgba(0,0,0,0.4); z-index: 0;}
+
+/* scd */
+.scd-wrap {position: relative; width: 100%; max-width: 1320px; margin: 0 auto; padding: 160px 20px; box-sizing: border-box;}
+.scd-wrap .scd-tit {font-family: "Syncopate", serif; font-weight: 600; font-size: 60px;}
+.scd-wrap .scd {margin-top: 40px; padding: 0; }
+.scd-wrap .scd .scd-box .table .time.time-pp { background: #cdb4db;}
+.scd-wrap .scd .scd-box .table .time.time-bl { background: #bee9e8;}
+.scd-wrap .scd .scd-box .table .time.time-pk { background: #e3d5ca;}
+.scd-wrap .scd .scd-box .table .time.time-gr { background: #c9e4ca;}
+.scd-wrap .scd .scd-box .table .time.time-yw { background: #ecf39e;}
+.scd-wrap .scd .scd-box .table .info.info-pp { background: #cdb4db;}
+.scd-wrap .scd .scd-box .table .info.info-bl { background: #bee9e8;}
+.scd-wrap .scd .scd-box .table .info.info-pk { background: #e3d5ca;}
+.scd-wrap .scd .scd-box .table .info.info-gr { background: #c9e4ca;}
+.scd-wrap .scd .scd-box .table .info.info-yw { background: #ecf39e;}
+
 
 /* ktd */
 .ktd {position: relative; width: 100%; height: auto; max-width: 1320px; margin: 60px auto 0; padding: 0 20px; box-sizing: border-box;}
