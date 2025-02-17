@@ -56,6 +56,8 @@
 .scd .view-dtl { padding: 20px 30px; margin: 0 auto; margin-top: 40px; background: #292929; border: none; font-family: 'Pretendard Variable'; font-size: 16px; font-weight: 500; color:#fff; border-radius: 10px; cursor: pointer; transition: all .2s; display: flex; }
 
 /* kntSpk */
+.container-knt {padding-bottom: 160px;}
+
 .spk-cont {position: sticky; width: 100%; height: 100vh; top: 0; padding: 0 20px; background: #fff; box-sizing: border-box; display: grid; align-items: center; align-content: center; justify-content: center; justify-items: center; gap: 20px;}
 .spk-cont .seq {padding: 10px 20px; font-family: "Syncopate", serif;  font-weight: 600; font-size: 20px; color:#fff; background: #000; border-radius: 10px;}
 .spk-cont span {font-family: 'Pretendard Variable'; font-weight: 600; font-size: 40px; color: #000; line-height: 1.5; text-align: center;}
@@ -84,6 +86,8 @@ body#lngTrOver {overflow-x: hidden;}
 .tr-wrap .swiper .swiper-wrapper .swiper-slide .swiper-bg {position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: rgba(0,0,0,0.4); z-index: 0;}
 
 /* scd */
+.container-team {padding-bottom: 160px;}
+
 .scd-wrap {position: relative; width: 100%; max-width: 1320px; margin: 0 auto; padding: 160px 20px; box-sizing: border-box;}
 .scd-wrap .scd-tit {font-family: "Syncopate", serif; font-weight: 600; font-size: 60px;}
 .scd-wrap .scd {margin-top: 40px; padding: 0; }
@@ -110,3 +114,5 @@ body#lngTrOver {overflow-x: hidden;}
 .ktd .ktd-info .tit-wrap .main-tit {font-family: "Pretendard"; font-size: 50px; font-weight: 700; }
 .ktd .ktd-info .txt-wrap { width: calc(100% - 580px); min-width: 600px; background: #eee; padding: 30px 40px; box-sizing: border-box; border-radius: 10px;}
 .ktd .ktd-info .txt-wrap .txt { font-family: "Pretendard"; font-size: 16px; font-weight: 600; line-height: 1.7; text-align: justify;}
+
+#footer {margin-top: 0;}
