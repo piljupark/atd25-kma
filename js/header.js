@@ -41,25 +41,19 @@ document.addEventListener('DOMContentLoaded', function() {
     mainCateListItems.forEach(item => {
         item.addEventListener('mouseenter', function() {
             if (item === mainCateListItems[0]) {
-                subCate1.style.height = '380px';
-                subCate1.style.padding = '80px 0 0';
+                subCate1.style.visibility = 'visible';
                 subCate1.style.opacity = '1';
-                subCate2.style.height = '0';
-                subCate2.style.padding = '0';
+                subCate2.style.visibility = 'hidden';
                 subCate2.style.opacity = '0';
             } else if (item === mainCateListItems[1]) {
-                subCate1.style.height = '0';
-                subCate1.style.padding = '0';
+                subCate1.style.visibility = 'hidden';
                 subCate1.style.opacity = '0';
-                subCate2.style.height = '400px';
-                subCate2.style.padding = '80px 0 0';
+                subCate2.style.visibility = 'visible';
                 subCate2.style.opacity = '1';
             } else {
-                subCate1.style.height = '0';
-                subCate1.style.padding = '0';
+                subCate1.style.visibility = 'hidden';
                 subCate1.style.opacity = '0';
-                subCate2.style.height = '0';
-                subCate2.style.padding = '0';
+                subCate2.style.visibility = 'hidden';
                 subCate2.style.opacity = '0';
             }
         });
@@ -67,12 +61,60 @@ document.addEventListener('DOMContentLoaded', function() {
 
     pcCate.addEventListener('mouseleave', function(event) {
         if (event.target !== subCate1 && event.target !== subCate2 && event.target !== header) {
-            subCate1.style.height = '0';
-            subCate1.style.padding = '0';
+            subCate1.style.visibility = 'hidden';
             subCate1.style.opacity = '0';
-            subCate2.style.height = '0';
-            subCate2.style.padding = '0';
+            subCate2.style.visibility = 'hidden';
             subCate2.style.opacity = '0';
         }
     });
 });
+
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     const mainCateListItems = document.querySelectorAll('.pc-cate ul.main-cate li');
+//     const header = document.querySelector('#header');
+//     const subCate1 = document.querySelector('.sub-cate-1');
+//     const subCate2 = document.querySelector('.sub-cate-2');
+//     const pcCate = document.querySelector('.pc-cate');
+
+//     mainCateListItems.forEach(item => {
+//         item.addEventListener('mouseenter', function() {
+//             if (item === mainCateListItems[0]) {
+//                 subCate1.style.height = '400px';
+//                 subCate1.style.padding = '80px 0 0';
+//                 subCate1.style.opacity = '1';
+//                 subCate2.style.height = '0';
+//                 subCate2.style.padding = '0';
+//                 subCate2.style.opacity = '0';
+//             } else if (item === mainCateListItems[1]) {
+//                 subCate1.style.height = '0';
+//                 subCate1.style.padding = '0';
+//                 subCate1.style.visibility = 'hidden';
+//                 subCate1.style.opacity = '0';
+//                 subCate2.style.height = '400px';
+//                 subCate2.style.padding = '80px 0 0';
+//                 subCate2.style.opacity = '1';
+//             } else {
+//                 subCate1.style.height = '0';
+//                 subCate1.style.padding = '0';
+//                 subCate1.style.opacity = '0';
+//                 subCate2.style.height = '0';
+//                 subCate2.style.padding = '0';
+//                 subCate2.style.opacity = '0';
+//             }
+//         });
+//     });
+
+//     pcCate.addEventListener('mouseleave', function(event) {
+//         if (event.target !== subCate1 && event.target !== subCate2 && event.target !== header) {
+//             subCate1.style.height = '0';
+//             subCate1.style.padding = '0';
+//             subCate1.style.opacity = '0';
+//             subCate2.style.height = '0';
+//             subCate2.style.padding = '0';
+//             subCate2.style.opacity = '0';
+//         }
+//     });
+// });
+
