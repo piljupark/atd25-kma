@@ -2,7 +2,7 @@
 
 #container { position: relative; width: 100%; height: auto;  }
 
-.main { position: sticky; width: 100%; height: 100vh; top: 0; background-image: url('../assets/imgs/atdBanner_main.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; }
+.main { position: relative; width: 100%; height: 100vh; top: 0; background-image: url('../assets/imgs/atdBanner_main.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; }
 .main .main-sec1 { position: relative; width: 100%; height: 100vh; padding: 0 20px; box-sizing: border-box; display: grid; align-content: center; justify-items: center;}
 .main .main-sec1 img.main-logo { position: relative; width: 400px; filter: invert(1);}
 .main .main-sec1 .main-txt-wrap { position: relative; text-align: center; font-family: "Syncopate", serif;; color: #fff; font-size: 40px; font-weight: 600; line-height: 1.5;}

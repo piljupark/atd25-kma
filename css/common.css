@@ -11,10 +11,19 @@ p, a, h1, h2, h3, h4, button, ul, li { padding: 0; margin: 0; text-decoration: n
 #header .pc-cate ul { display: flex; gap: 20px; }
 #header .pc-cate ul.main-cate li {font-family: "Syncopate", serif; font-weight: 800; color: #000; font-size: 20px; cursor: pointer;}
 #header .pc-cate ul.main-cate li a {color: #000;}
-#header .pc-cate ul:hover > li:not(:hover) {opacity: .5;}
-#header .pc-cate ul.sub-cate {position: absolute; width: 100%; height: 140px; left: 0; top: -140px; padding: 20px; background: #fff; transition: all .2s; display: flex; align-items: flex-end; justify-content: center; gap: 30px; box-sizing: border-box; z-index: -1; }
+#header .pc-cate ul.main-cate:hover > li:not(:hover) {opacity: .5;}
+#header .pc-cate ul.sub-cate {position: absolute; width: 100%; height: 140px; left: 0; transition: all .2s; display: flex; align-items: flex-end; justify-content: center; gap: 30px; box-sizing: border-box; z-index: -1; }
+#header .pc-cate ul.sub-cate:hover > li:not(:hover) a {color: rgba(0,0,0,0.5);} 
+#header .pc-cate ul.sub-cate li {box-sizing: border-box;}
+#header .pc-cate ul.sub-cate li:nth-child(1){ border-top-left-radius: 10px; border-top-right-radius: 10px;}
+#header .pc-cate ul.sub-cate-1 li:nth-child(4){ border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;}
+#header .pc-cate ul.sub-cate-2 li:nth-child(5){ border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;}
 
-#header .pc-cate > ul.sub-cate-1 > li > a {font-family: "Syncopate", serif; font-weight: 700; text-transform: uppercase; color: #000; font-size: 16px;}
+#header .pc-cate > ul.sub-cate-1 { width: 200px; height: 0px; top:0px; right: 515px; left: unset; display: grid; align-content: center; justify-items: center; overflow: hidden; padding: 0; background: none; gap: 0;}
+#header .pc-cate > ul.sub-cate-2 { width: 200px; height: 0px; top:0px; right: 365px; left: unset; display: grid; align-content: center; justify-items: center; overflow: hidden; padding: 0; background: none; gap: 0;}
+#header .pc-cate > ul.sub-cate-1 > li { width: 100%; text-align: center; background: #fff; padding: 20px; }
+#header .pc-cate > ul.sub-cate-2 > li { width: 100%; text-align: center; background: #fff; padding: 20px 40px;}
+#header .pc-cate > ul.sub-cate-1 > li > a {font-family: "Syncopate", serif; font-weight: 700; text-transform: uppercase; color: #000; font-size: 16px; }
 #header .pc-cate > ul.sub-cate-2 > li > a {font-family: "Pretendard Variable"; font-weight: 700; color: #000; font-size: 16px;}
 
 
