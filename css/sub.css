@@ -23,17 +23,19 @@
 .info-atd .info .info-img .info-bg-b {position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: rgba(0,0,0,0.3); }
 
 .atd-value {position: relative; width: 100%; height: auto; background: #fff;}
-.atd-value .value-wrap {position: relative; width: 100%; max-width: 1320px; margin: 0 auto; padding: 160px 20px; }
-.atd-value .value-wrap .value-tit {font-family: "Syncopate", serif; font-weight: 600; font-size: 60px; color: #000;}
-.atd-value .value-wrap .value-kind {position: relative; width: 100%; margin-top: 40px; display: flex; justify-content: space-between;}
-.atd-value .value-wrap .value-kind .kind { display: grid; gap: 40px; align-content: center;}
-.atd-value .value-wrap .value-kind .kind .value {position: relative; width: 450px; height: 600px; padding: 40px; box-sizing: border-box; border-radius: 20px; background: #eee; display: grid; align-content: space-between; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden;}
-.atd-value .value-wrap .value-kind .kind .value .top {z-index: 1;}
-.atd-value .value-wrap .value-kind .kind .value .top .nm {font-family: "Syncopate", serif; font-weight: 600; color: #fff; font-size: 30px; line-height: 1.5;}
-.atd-value .value-wrap .value-kind .kind .value .top .sub-nm {font-family: 'Pretendard Variable'; font-weight: 600; color: #fff; font-size: 20px; margin-top: 10px;}
-.atd-value .value-wrap .value-kind .kind .value .bottom {position: absolute; bottom: 40px; left: 40px; z-index: 1;}
-.atd-value .value-wrap .value-kind .kind .value .bottom .txt {font-family: 'Pretendard Variable'; font-weight: 600; color: #fff; line-height: 2;}
-.atd-value .value-wrap .value-kind .kind .value .value-bg {position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: rgba(0,0,0,0.3); z-index: 0;}
+.atd-value .value-wrap {position: relative; width: 100%; max-width: 1320px; margin: 0 auto; padding: 160px 20px; box-sizing: border-box;}
+.atd-value .value-wrap .value-tit {font-family: "Pretendard Variable"; font-weight: 700; font-size: 60px; color: #000;}
+.atd-value .value-wrap .value-kind {position: relative; width: 100%; margin-top: 40px; display: grid; gap: 20px;}
+.atd-value .value-wrap .value-kind .kind.left {display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;}
+.atd-value .value-wrap .value-kind .kind.right {display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 60px;}
+
+.atd-value .value-wrap .value-kind .kind .value {position: relative; width: auto; box-sizing: border-box; border-radius: 20px; display: grid; align-content: flex-start; gap: 10px; overflow: hidden;}
+.atd-value .value-wrap .value-kind .kind .value .img-wrap {position: relative; width: 100%; height: auto; padding-top: 100%; }
+.atd-value .value-wrap .value-kind .kind .value .img-wrap .bg-img {position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 20px;}
+.atd-value .value-wrap .value-kind .kind .value .top .nm {font-family: 'Pretendard Variable'; font-weight: 700; color: #000; font-size: 26px; margin-top: 20px;}
+.atd-value .value-wrap .value-kind .kind .value .bottom {position: relative; width: 100%;}
+.atd-value .value-wrap .value-kind .kind .value .bottom .txt {font-family: 'Pretendard Variable'; font-weight: 500; color: #000; line-height: 2;}
+.atd-value .value-wrap .value-kind .kind .value .value-bg {position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: rgba(0,0,0,0.3); z-index: 0; display: none;}
 
 /* scd */
 .scd-btn-wrap {position: relative; width: 100%; max-width: 1320px; height: auto; margin: 40px auto 0; padding: 0 20px; display: flex; gap: 10px; box-sizing: border-box; z-index: 2;}
