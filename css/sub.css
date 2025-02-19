@@ -133,12 +133,24 @@ body#lngTrOver {overflow-x: hidden;}
 .ktd-wrap .ktd-main .main-bg {position: relative; width: 100%; height: 600px; display: grid; justify-items: center; align-content: center; gap: 10px; background-image: url('../assets/imgs/img_ktd_main.webp'); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 20px;}
 .ktd-wrap .ktd-main .main-bg .bg-b {position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: rgba(0,0,0,0.4); border-radius: 20px; z-index: 0;}
 .ktd-wrap .ktd-main .main-bg .sm-tit {text-align: center; color: #000; font-size: 18px; font-weight: 600; padding: 10px 20px; background: #fff; border-radius: 10px; z-index: 2;}
-.ktd-wrap .ktd-main .main-bg .big-tit {font-size: 40px; color: #fff; text-align: center; font-weight: 700; z-index: 2; }
+.ktd-wrap .ktd-main .main-bg .big-tit {font-size: 60px; color: #fff; text-align: center; font-weight: 700; line-height: 1.5; z-index: 2; }
 .ktd-wrap .ktd-int {position: sticky; width: 100%; height: 100vh; background: #fff; display: grid; justify-items: center; align-content: center; gap: 40px;}
 .ktd-wrap .ktd-int .int-tit{ position: relative; font-size: 40px; font-weight: 700; }
 .ktd-wrap .ktd-int .int-kind-wrap {position: relative; width: 100%; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;}
-.ktd-wrap .ktd-int .int-kind { position: relative; height: 305px; padding: 40px; font-size: 16px; font-weight: 600; line-height: 1.5; text-align: center; box-sizing: border-box; background: #eee; border-radius: 20px; display: grid; align-items: flex-end; box-shadow: rgba(33, 35, 38, 0.05) 0px 20px 20px 1px;}
-.ktd-wrap .ktd-int .int-kind img {position: absolute; width: 120px; top: 40px; left: 50%; transform: translate(-50%, 0);}
+.ktd-wrap .ktd-int .int-kind { position: relative; height: 305px; padding: 40px; font-size: 20px; font-weight: 600; line-height: 1.5; text-align: left; box-sizing: border-box; background: #eee; border-radius: 20px; display: grid; align-items: flex-start; box-shadow: rgba(33, 35, 38, 0.05) 0px 20px 20px 1px;}
+.ktd-wrap .ktd-int .int-kind img {position: absolute; width: 90px; bottom: 40px; right: 40px;}
+
+
+.ktd-wrap .program1 {position: relative; width: 100%; height: auto; background: #fff;}
+.ktd-wrap .program1 .prg-tit {position: relative; width: 100%; font-size: 60px; font-weight: 700; text-align: center; }
+.ktd-wrap .program1 .prg-sub-tit {position: relative; width: 100%; font-size: 34px; font-weight: 600; text-align: center; line-height: 1.5; margin-top: 60px;}
+
+.ktd-wrap .program1 .date { position: relative; width: 100%; display: flex; align-items: center; justify-content: center; margin-top: 40px; font-size: 20px; font-weight: 600; gap: 40px;}
+.ktd-wrap .program1 .date .day {display: flex; align-items: center; justify-content: center; gap: 5px;}
+.ktd-wrap .program1 .date .day .icon-cal {width: 30px;}
+.ktd-wrap .program1 .date .adr {display: flex; align-items: center; justify-content: center; gap: 5px;}
+.ktd-wrap .program1 .date .adr .icon-pin {width: 30px;}
+
 
 
 /* cnd */

@@ -74,10 +74,14 @@ p, a, h1, h2, h3, h4, button, ul, li { padding: 0; margin: 0; text-decoration: n
 .footer-wrap .footer-bottom .sub .sns {height: 100%; display: flex; gap: 10px; color: #999; font-size: 12px; align-items: flex-end;}
 .footer-wrap .footer-bottom .sub .sns a{font-family: 'Pretendard Variable'; font-weight: 500; font-size: 16px; color: #eee; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
     #header .pc-cate {display: none;}
     #header .menu-btn {display: block;}
-    .cate-wrap ul.cate > li > ul > li a {}
+}
+
+
+@media screen and (max-width: 768px) {
+    
 }
 
 
