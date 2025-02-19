@@ -148,12 +148,91 @@
                         <div class="info-kind">HR/HRD/TD 동종업 <br>담당자간 인사이트 공유</div>
                     </div>
                     <p class="info-tit">Be the Next Frontier!</p>
-                    <p class="info-txt">K-TD Frontier Awards 스피커로 참가해보세요!</p>
+                    <p class="info-txt">K-TD Frontier Awards 스피커로 참가해보세요! <br> 우리 기업/기관의 TD우수사례를 발표할 수 있는 기회입니다.</p>
+
+                    <div class="info-loop-wrap">
+                        <div class="loop-container">
+                            <div class="cpn">
+                                <img src="../assets/imgs/logo_ktd1.png" alt="한국전력공사">
+                            </div>
+                            <div class="cpn">
+                                <img src="../assets/imgs/logo_ktd2.png" alt="클라썸">
+                            </div>
+                            <div class="cpn">
+                                <img src="../assets/imgs/logo_ktd3.png" alt="기아">
+                            </div>
+                            <div class="cpn">
+                                <img src="../assets/imgs/logo_ktd4.png" alt="한국전력공사">
+                            </div>
+                            <div class="cpn">
+                                <img src="../assets/imgs/logo_ktd5.webp" alt="클라썸">
+                            </div>
+                            <div class="cpn">
+                                <img src="../assets/imgs/logo_ktd6.png" alt="기아">
+                            </div>
+                            <div class="cpn">
+                                <img src="../assets/imgs/logo_ktd7.png" alt="기아">
+                            </div>
+                            <div class="cpn">
+                                <img src="../assets/imgs/logo_ktd8.png" alt="기아">
+                            </div>
+                            <div class="cpn">
+                                <img src="../assets/imgs/logo_ktd9.svg" alt="기아">
+                            </div>
+                            <div class="cpn">
+                                <img src="../assets/imgs/logo_ktd10.png" alt="기아">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     
     </div>
+
+    <script>
+        function createLoopingText(el) {
+  const lerp = (current, target, factor) => current * (1 - factor) + target * factor;
+
+  const state = {
+    el, 
+    lerp: {
+      current: 0,
+      target: 0 
+    },
+    interpolationFactor: 0.1, // 선형 보간에 사용되는 요인
+    speed: 0.03, 
+    direction: -1
+  };
+  
+  state.el.style.cssText = 'position: relative; display: inline-flex; white-space: nowrap;';
+//   state.el.children[1].style.cssText = `position: absolute; left: ${100 * -state.direction}%;`;
+
+  
+  function animate() {
+    state.lerp.target += state.speed;
+    state.lerp.current = lerp(state.lerp.current, state.lerp.target, state.interpolationFactor);
+
+    if (state.lerp.target > 100) {
+      state.lerp.current -= state.lerp.target;
+      state.lerp.target = 0;
+    }
+
+    const x = state.lerp.current * state.direction;
+    state.el.style.transform = `translateX(${x}%)`;
+  }
+
+  function render() {
+    animate();
+    window.requestAnimationFrame(render);
+  }
+
+  render();
+  return state;
+}
+
+document.querySelectorAll('.loop-container').forEach(el => createLoopingText(el));
+    </script>
 
 
     <!-- AOS -->
