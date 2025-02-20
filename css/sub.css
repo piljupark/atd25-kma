@@ -176,13 +176,21 @@ body#lngTrOver {overflow-x: hidden;}
 .ktd-wrap .program2 .prg2-info .info-txt {position: relative; width: 100%; margin: 10px 0; font-size: 30px; font-weight: 500; text-align: center; line-height: 1.5; }
 .ktd-wrap .program2 .prg2-info .info-tit2 {margin-top: 100px;}
 
-.ktd-wrap .program2 .prg2-info .info-date-wrap { position: relative; width: 900px; padding: 40px 0; margin: 60px auto 0; display: flex; gap: 40px; }
-.ktd-wrap .program2 .prg2-info .info-date-wrap .info-date { position: relative; width: 33%; height: 350px; display: grid; justify-content: stretch; background: rgba(0,0,0,0.05); border-radius: 20px; overflow: hidden;}
+.ktd-wrap .program2 .prg2-info .info-date-wrap { position: relative; width: 1320px; padding: 40px 20px; margin: 60px auto 0; box-sizing: border-box; display: flex; gap: 40px; }
+.ktd-wrap .program2 .prg2-info .info-date-wrap .info-date { position: relative; width: 33%; display: grid; justify-content: stretch; background: rgba(0,0,0,0.05); border-radius: 20px; overflow: hidden;}
 .ktd-wrap .program2 .prg2-info .info-date-wrap .info-date .img-wrap { position: relative; width: 100%; height: 200px; }
 .ktd-wrap .program2 .prg2-info .info-date-wrap .info-date .img-wrap img{ position: absolute; width: 100%; height: 100%; object-fit: cover;}
-.ktd-wrap .program2 .prg2-info .info-date-wrap .info-date .img-wrap .bg-b {position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 25%, rgba(0,0,0,0) 50%);}
-.ktd-wrap .program2 .prg2-info .info-date-wrap .info-date .step { position: absolute; top: 20px; left: 20px; font-size: 30px; font-weight: 800; text-align: center; color: #fff;}
-.ktd-wrap .program2 .prg2-info .info-date-wrap .info-date .step-info {font-size: 20px; font-weight: 800; text-align: center; line-height: 1.5;}
+.ktd-wrap .program2 .prg2-info .info-date-wrap .info-date .img-wrap .bg-b {position: absolute; width: 100%; height: 100%; top: 0; left: 0; background:linear-gradient(0deg, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 85%);}
+.ktd-wrap .program2 .prg2-info .info-date-wrap .info-date .step { position: absolute; top: 35px; left: 40px; font-size: 30px; font-weight: 800; text-align: center; color: #fff;}
+.ktd-wrap .program2 .prg2-info .info-date-wrap .info-date .step-info {font-size: 22px; font-weight: 700; text-align: right; line-height: 1.5; padding: 40px 40px; box-sizing: border-box;}
+.ktd-wrap .program2 .prg2-info .info-date-wrap .info-date .step-info span { position: relative; float: right; color: rgba(0,0,0,0.5); font-size: 18px; font-weight: 500; margin-top: 40px;}
+
+.ktd-wrap .inq-wrap {position: relative; width: 100%; height: auto; padding-top: 200px; background: #fff;}
+.ktd-wrap .inq-wrap .inq-box {position: relative; width: 100%; height: auto; min-height: 120px;  padding: 40px; background: linear-gradient(124deg, rgba(152,50,148,1) 0%, rgba(88,78,184,1) 100%); border-radius: 20px; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between;}
+.ktd-wrap .inq-wrap .inq-box .inq {font-weight: 700; color: #fff; font-size: 20px;}
+.ktd-wrap .inq-wrap .inq-box .inq-btn {padding: 20px 50px; font-size: 16px; font-weight: 700; color: #000; background: #fff; border: none; border-radius: 40px; transition: all .2s;}
+.ktd-wrap .inq-wrap .inq-box .inq-btn a {position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2; }
+.ktd-wrap .inq-wrap .inq-box .inq-btn:hover {opacity: .8;}
 
 
 
