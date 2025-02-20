@@ -7,8 +7,13 @@
 
     <link rel="stylesheet" href="../css/font.css">
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/sub.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <script src="../js/header.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <div id="container">
@@ -82,5 +87,100 @@
             <p class="pg-tit pg-tit-kor pg-tit-bk">참가비용</p>
         </div>
     </div>
+
+    <div class="cost-wrap">
+        <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <p class="team-nm">TEAM A</p>
+                    <p class="price">
+                        1,050만원
+                        <span>VAT 별도</span>
+                    </p>
+                    <div class="line"></div>
+                    <div class="date-wrap">
+                        <p class="date">7박 10일 일정</p>
+                        <div class="route-wrap">
+                            <span class="v-line"></span>
+                            <p class="route">샌프란시스코</p>
+                            <p class="route">워싱턴 D.C.</p>
+                            <p class="route">뉴욕</p>
+                        </div>
+                    </div>
+                    <button class="view-btn">
+                        일정 살펴보기
+                        <a href="../kmaAtd25/teamScd.html"></a>
+                    </button>
+                    <div class="bg-wrap" style="background-image: url('../assets/imgs/img_scd_sanfransisco.webp');">
+                        <div class="bg-w"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <p class="team-nm">TEAM B</p>
+                    <p class="price">
+                        1,050만원
+                        <span>VAT 별도</span>
+                    </p>
+                    <div class="line"></div>
+                    <div class="date-wrap">
+                        <p class="date">7박 9일 일정</p>
+                        <div class="route-wrap">
+                            <span class="v-line"></span>
+                            <p class="route">뉴욕</p>
+                            <p class="route">워싱턴 D.C.</p>
+                        </div>
+                    </div>
+                    <button class="view-btn">
+                        일정 살펴보기
+                        <a href="../kmaAtd25/teamScd.html"></a>
+                    </button>
+                    <div class="bg-wrap" style="background-image: url('../assets/imgs/img_scd_newyork.webp');">
+                        <div class="bg-w"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <p class="team-nm">TEAM B</p>
+                    <p class="price">
+                        1,050만원
+                        <span>VAT 별도</span>
+                    </p>
+                    <div class="line"></div>
+                    <div class="date-wrap">
+                        <p class="date">8박 10일 일정</p>
+                        <div class="route-wrap">
+                            <span class="v-line"></span>
+                            <p class="route">토론토(캐나다)</p>
+                            <p class="route">워싱턴 D.C.</p>
+                            <p class="route">뉴욕</p>
+                        </div>
+                    </div>
+                    <button class="view-btn">
+                        일정 살펴보기
+                        <a href="../kmaAtd25/teamScd.html"></a>
+                    </button>
+                    <div class="bg-wrap" style="background-image: url('../assets/imgs/img_scd_canada.webp');">
+                        <div class="bg-w"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper2", {
+            slidesPerView: 3.5,
+            spaceBetween: 20,
+            mousewheel: true,
+            // pagination: {
+            //     el: ".swiper-pagination",
+            //     clickable: true,
+            // },
+        });
+    </script>
 </body>
 </html>
