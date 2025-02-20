@@ -229,6 +229,7 @@ body#lngTrOver {overflow-x: hidden;}
 .cost-wrap .mySwiper2 .swiper-wrapper .swiper-slide .date-wrap .route-wrap { margin-top: 30px; padding-left: 20px; font-size: 18px; font-weight: 500px; display: grid; gap: 20px;}
 .cost-wrap .mySwiper2 .swiper-wrapper .swiper-slide .date-wrap .route-wrap .v-line {position: absolute; width: 1px; height: 80px; background: #000; left: 2px; top: 65px;}
 .cost-wrap .mySwiper2 .swiper-wrapper .swiper-slide:nth-child(2) .date-wrap .route-wrap .v-line {height: 40px;}
+.cost-wrap .mySwiper2 .swiper-wrapper .swiper-slide:nth-child(4) .date-wrap .route-wrap .v-line {height: 0;}
 .cost-wrap .mySwiper2 .swiper-wrapper .swiper-slide .date-wrap .route-wrap .route {position: relative;}
 .cost-wrap .mySwiper2 .swiper-wrapper .swiper-slide .date-wrap .route-wrap .route::before { content: ''; position: absolute; top: 50%; left: -20px; width: 5px; height: 5px; background: #000; border-radius: 100%; transform: translate(0, -50%);}
 .cost-wrap .mySwiper2 .swiper-wrapper .swiper-slide .view-btn { position: absolute; bottom: 40px; right: 40px; padding: 20px 30px; margin-top: 30px; font-size: 16px; font-weight: 600; background: #fff; border: none; border-radius: 40px; transition: .2s;}
