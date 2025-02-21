@@ -2,10 +2,12 @@
 
 #container { position: relative; width: 100%; height: auto;  }
 
-.main { position: relative; width: 100%; height: 100vh; top: 0; background-image: url('../assets/imgs/atdBanner_main.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; }
+.main { position: relative; width: 100%; height: 100vh; top: 0; background-image: url('../assets/imgs/img_pattern_atd.webp'); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; }
 .main .main-sec1 { position: relative; width: 100%; height: 100vh; padding: 0 20px; box-sizing: border-box; display: grid; align-content: center; justify-items: center;}
 .main .main-sec1 img.main-logo { position: relative; width: 400px; filter: invert(1);}
 .main .main-sec1 .main-txt-wrap { position: relative; text-align: center; font-family: "Syncopate", serif;; color: #fff; font-size: 40px; font-weight: 600; line-height: 1.5;}
+.main .main-sec1 .main-tit { font-size: 60px; color: #000; font-weight: 700; text-align: center; line-height: 1.5;}
+.main .main-sec1 .main-tit span { font-size: 40px; color: rgba(255, 255, 255, 0.8); }
 /* //main */
 
 .intro {position: relative; width: 100%; height: auto; padding: 200px 20px; box-sizing: border-box; display: grid; align-content: center; justify-items: center; gap: 20px;}
@@ -36,23 +38,6 @@
 /* //tr */
 
 
-.mainstage {position: relative; width: 100%; max-width: 1280px; height: 100vh; margin: 0 auto; padding: 60px 20px; box-sizing: border-box;}
-.mainstage .tit {position: relative; width: 100%; font-family: "Syncopate", serif; text-transform: uppercase; font-size: clamp(2em, 6vw, 40px); font-weight: 600; text-align: left;}
-.mainstage .txt {position: relative; width: 100%; margin-top: 10px; font-family: 'Pretendard Variable'; font-size: 20px; font-weight: 600; }
-.mainstage .speaker-wrap { position: relative; width: 100%; margin-top: 40px; display: flex; gap: 20px;}
-.mainstage .speaker-wrap .speaker-info{ display: grid; width: 33.33%; height: auto; padding: 20px;  background: #eee; border-radius: 10px; box-sizing: border-box;}
-.mainstage .speaker-wrap .speaker-info .nm {font-family: "Syncopate", serif;; font-size: 40px; font-weight: 500;}
-.mainstage .speaker-wrap .speaker-info .pro { margin-top: 10px; font-family: "Syncopate", serif;; font-size: 18px; font-weight: 600;}
-.mainstage .speaker-wrap .speaker-info .speaker img{width: 100%; margin-top: 20px; }
-.mainstage .speaker-wrap .speaker-info .date { margin-top: 20px; font-family: "Syncopate", serif;; font-size: 14px; font-weight: 500; opacity: .8;}
-
-.mainstage .spk-wrap {position: relative; width: 100%; height: 600px; margin-top: 40px;}
-.mainstage .spk-wrap .btn-box {width: 100%; height: 600px; display: grid; align-items: flex-end; justify-content: flex-start; gap: 20px; align-content: flex-end; justify-items: start;}
-.mainstage .spk-wrap .btn-box .spk-btn {height: 66px; font-family: "Syncopate", serif;; font-size: 60px; font-weight: 500; color: #000; background: none; border: none; cursor: pointer;}
-.mainstage .spk-wrap .btn-box .spk-btn:not(.active) {opacity: .5;}
-.mainstage .spk-wrap .spk-box {position: absolute; width: 400px; height: 600px; top: 0; left: 50%; transform: translate(-50%, 0); overflow: hidden; z-index: -1;} 
-.mainstage .spk-wrap .spk-box img.spk{position: absolute; top: 0; left: 0; width: 100%; object-fit: cover;}
-/* //mainstage */
 
 .scd {position: relative; width: 100%; max-width: 1280px; height: auto; margin: 0 auto; padding: 0 20px; box-sizing: border-box;}
 .scd .tit {position: relative; width: 100%; font-family: "Syncopate", serif; text-transform: uppercase; font-size: clamp(2em, 6vw, 40px); font-weight: 600; text-align: left;}

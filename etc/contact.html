@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT | KMA 한국대표단</title>
+
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/contact.css">
+
+    <script src="../js/header.js"></script>
+</head>
+<body>
+    <div id="container">
+
+        <!-- header -->
+        <div id="header">
+            <a href="../index.html"><img src="../assets/imgs/atdLogo4.webp" alt="ATD2025 logo" class="header-logo"></a>
+        
+            <div class="pc-cate">
+                <ul class="main-cate">
+                    <li>ATD 25</li>
+                    <li>KMA-ATD 25</li>
+                    <li><a href="https://www.atdconference.td.org/program/sessions" target="_blank">SESSIONS</a></li>
+                    <li><a href="../etc/faq.html">FAQ</a></li>
+                    <li><a href="../etc/hstr.html">HISTORY</a></li>
+                </ul>
+                <ul class="sub-cate-1 sub-cate">
+                    <li><a href="../atd25/abtAtd25.html">About ATD 25</a></li>
+                    <li><a href="../atd25/kntSpk.html">키노트 스피커</a></li>
+                    <li><a href="../atd25/lngTr.html">학습 과정</a></li>
+                    <li><a href="../atd25/scd.html">일정</a></li>
+                </ul>
+                <ul class="sub-cate-2 sub-cate">
+                    <li><a href="../kmaAtd25/teamScd.html">팀별 일정표</a></li>
+                    <li><a href="../kmaAtd25/spcPrg.html">스페셜 프로그램</a></li>
+                    <li><a href="../kmaAtd25/cdnGrp.html">코디네이터 그룹</a></li>
+                    <li><a href="../kmaAtd25/ktdPrg.html">K-TD 프로그램</a></li>
+                    <li><a href="../kmaAtd25/cost.html">참가비용</a></li>
+                </ul>
+            </div>
+            
+            <button class="menu-btn"></button>
+
+            <!-- menu-wrap -->
+            <div class="cate-wrap">
+                <div class="top">
+                    <button class="close-btn"></button>
+                </div>
+                <ul class="cate">
+                    <li><a href="">HOME</a></li>
+                    <li>
+                        ATD 25
+                        <ul>
+                            <li><a href="../atd25/abtAtd25.html">About ATD 2025</a></li>
+                            <li><a href="../atd25/kntSpk.html">키노트 스피커</a></li>
+                            <li><a href="../atd25/lngTr.html">학습 과정</a></li>
+                            <li><a href="../atd25/scd.html">일정</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        KMA ATD 25
+                        <ul>
+                            <li><a href="../kmaAtd25/teamScd.html">팀별 일정표</a></li>
+                            <li><a href="../kmaAtd25/spcPrg.html">스페셜 프로그램</a></li>
+                            <li><a href="../kmaAtd25/cdnGrp.html">코디네이터 그룹</a></li>
+                            <li><a href="../kmaAtd25/ktdPrg.html">K-TD 프로그램</a></li>
+                            <li><a href="../kmaAtd25/cost.html">참가비용</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://www.atdconference.td.org/program/sessions" target="_blank">SESSIONS</a></li>
+                    <li><a href="../etc/faq.html">FAQ</a></li>
+                    <li><a href="../etc/hstr.html">HISTORY</a></li>
+                </ul>
+            </div>
+
+            <div class="bg-over"></div>
+        </div>
+
+        <!-- pg-top -->
+        <div class="pg-top" style="background-image: url('/assets/imgs/img_topbg04.webp');">
+            <p class="pg-tit pg-tit-eng pg-tit-bk">CONTACT</p>
+        </div>
+
+        
+        <div class="contact-wrap">
+          <p class="contact-tit">KMA-ATD 25 신청 & 문의</p>
+          <form id="myForm" action="https://formsubmit.co/pilpark25@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="KMA-ATD 25 신청 & 문의">
+        
+            <!-- 입력 필드 -->
+            <input type="text" name="성함" placeholder="성함" required autocomplete='off'>
+            <input type="text" name="기업명" placeholder="기업명" required autocomplete='off'>
+            <input type="text" name="부서" placeholder="부서" required autocomplete='off'>
+            <input type="text" name="직책" placeholder="직책" required autocomplete='off'>
+            <input type="email" name="email" placeholder="이메일 주소" required autocomplete='off'>
+            <input type="tel" name="전화번호" placeholder="전화번호" required autocomplete='off'>
+            <textarea name="message" placeholder="문의 내용" required autocomplete='off'></textarea>
+        
+            <!-- <input type="hidden" name="_next" value="http://127.0.0.1:3000/etc/submit.html"> -->
+            <input type="hidden" name="_subject" value="KMA-ATD 25 신청 & 문의">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+        
+            <!-- 제출 버튼 -->
+            <input type="submit" value="보내기" class="submit-btn">
+          </form>
+
+          <!-- 로딩 메시지 -->
+          <div id="loadingMessage" class="loading-message">잠시만 기다려주세요...</div>
+        </div>
+       
+  
+    </div>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('myForm');
+            const loadingMessage = document.getElementById('loadingMessage');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault(); // 폼 제출 기본 동작 중단
+
+                // 로딩 메시지 표시
+                loadingMessage.style.display = 'block';
+
+                // FormSubmit에 데이터 전송 (AJAX 사용)
+                fetch(form.action, {
+                    method: 'POST',
+                    body: new FormData(form),
+                })
+                .then(response => {
+                    if (response.ok) {
+                        alert('제출이 완료되었습니다. 감사합니다!'); 
+                        form.reset(); // 폼 초기화
+                    } else {
+                        alert('오류가 발생했습니다. 다시 시도해주세요.'); // 오류 체크
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('오류가 발생했습니다. 다시 시도해주세요.'); // 네트워크 오류 체크
+                })
+                .finally(() => {
+                    // 로딩 메시지
+                    loadingMessage.style.display = 'none';
+                });
+            });
+        });
+    </script>
+  
+</body>
+</html>

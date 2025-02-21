@@ -273,3 +273,44 @@ body#lngTrOver {overflow-x: hidden;}
 
 /* footer */
 #footer {margin-top: 0;}
+
+
+
+/* team */
+.inner-cate {position: relative; width: 100%; height: auto; margin-top: 100px; border-bottom: 1px solid #d5d5d5; padding-bottom: 18.5px;}
+.inner-cate .cate {position: relative; width: auto; display: flex; justify-content: center; align-items: center; gap: 90px; }
+.inner-cate .cate a { position: relative; color: rgba(153, 153, 153, 1); font-weight: 800; transition: all .2s;}
+.inner-cate .cate a:hover {color: rgba(93, 79, 250, 1);}
+.inner-cate .cate a.active {color: rgba(93, 79, 250, 1);}
+.inner-cate .cate a.active::after {content: ''; position: absolute; width: 80%; height: 3px; background: rgba(93, 79, 250, 1); bottom: -20px; left: 50%; transform: translate(-50%, 0);}
+
+.team-box {position: relative; width: 100%; height: auto; max-width: 1840px; margin: 0 auto; padding: 50px 20px; box-sizing: border-box; }
+.team-box .schedule {position: relative; display: grid; gap: 10px;}
+.team-box .schedule details summary::marker{ content: ''; }
+.team-box .schedule details summary {cursor: pointer;}
+
+.team-box .schedule details summary .img-box {position: relative; width: 100%; height: 230px; border-radius: 30px; overflow: hidden; background-position: center; background-repeat: no-repeat; background-size: cover; display: grid; align-content: center; justify-items: center; gap: 8px;}
+.team-box .schedule details summary .img-box .bg-b {position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: rgba(26, 24, 39, 0.7); z-index: 1; transition: all .2s;}
+.team-box .schedule details summary:hover .img-box .bg-b { background: rgba(26, 24, 39, 0.3);}
+.team-box .schedule details summary .img-box .team-nm { font-family: "Outfit", serif; font-size: 700; font-size: 60px; color: #fff; z-index: 2;}
+.team-box .schedule details summary .img-box .team-sub { font-family: "Outfit", serif; font-size: 25px; font-weight: 500; color: rgba(220, 217, 248, 1); z-index: 2;}
+
+.team-box .schedule details .team-info {position: relative; width: 100%; height: auto; background: rgba(247, 247, 247, 0.7);}
+.team-box .schedule details .team-info .info { position: relative; width: calc(100% - 100px); margin: 0 auto; height: auto; padding: 20px 65px; box-sizing: border-box; display: flex; gap: 170px; align-items: center; border-bottom: 1px solid #D6D6D6;}
+.team-box .schedule details .team-info .info .left { display: flex; align-items: center; gap: 160px; }
+.team-box .schedule details .team-info .info .left .date { font-size: 20px; font-weight: 800; color: #5D4FFA; }
+.team-box .schedule details .team-info .info .left .pin { font-size: 20px; font-weight: 600; color: #363636; text-align: center; line-height: 1.5;}
+.team-box .schedule details .team-info .info .right { font-size: 18px; font-weight: 500; color: #363636; line-height: 1.5;}
+.team-box .schedule details .team-info .info .right span {font-weight: 700;}
+
+.team-box .stay {position: relative; width: 100%; height: auto; margin-top: 150px; }
+.team-box .stay .stay-tit {position: relative; width: 100%; font-family: 'Outfit', serif; font-size: 56px; font-weight: 500; color: #292929}
+.team-box .stay .stay-sub {position: relative; width: 100%; font-family: 'Outfit', serif; font-size: 30px; font-weight: 400; color: #a3a3a3; margin-top: 20px;;}
+.team-box .stay .stay-info {display: flex; align-items: center; justify-content: space-between; gap: 100px;}
+.team-box .stay .stay-info .staySwiper {position: relative; width: 50%; margin-top: 80px; border-radius: 30px;} 
+.team-box .stay .stay-info .staySwiper .swiper-wrapper .swiper-slide {height: 600px; background: #eee; border-radius: 30px; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden;}
+.team-box .stay .stay-info .staySwiper .swiper-pagination {display: flex; justify-content: center; gap: 17px; margin-bottom: 20px;}
+.team-box .stay .stay-info .staySwiper .swiper-pagination-bullet { width: 13px; height: 13px; margin: 0; background: #d9d9d9;}
+
+.team-box .stay .stay-info .txt-wrap { position: relative; width: 50%; }
+/* //team */
