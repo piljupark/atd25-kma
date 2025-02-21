@@ -89,12 +89,13 @@
     </div>
 
     <div class="cost-wrap">
+        <p class="cost-tit">참가비용 안내</p>
         <div class="swiper mySwiper2">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <p class="team-nm">TEAM A</p>
                     <p class="price">
-                        1,050만원
+                        1,200만원
                         <span>VAT 별도</span>
                     </p>
                     <div class="line"></div>
@@ -118,7 +119,7 @@
                 <div class="swiper-slide">
                     <p class="team-nm">TEAM B</p>
                     <p class="price">
-                        1,050만원
+                        1,200만원
                         <span>VAT 별도</span>
                     </p>
                     <div class="line"></div>
@@ -141,7 +142,7 @@
                 <div class="swiper-slide">
                     <p class="team-nm">TEAM C</p>
                     <p class="price">
-                        940만원
+                        1,200만원
                         <span>VAT 별도</span>
                     </p>
                     <div class="line"></div>
@@ -187,7 +188,7 @@
                 <div class="swiper-slide">
                     <p class="team-nm">MY PASS</p>
                     <p class="price">
-                        350만원
+                        400만원
                         <span>VAT 별도</span>
                     </p>
                     
@@ -214,6 +215,8 @@
                     </div>
                 </div>
             </div>
+            <div class="swiper-button-prev swiper-prev"></div>
+            <div class="swiper-button-next swiper-next"></div>
         </div>
     </div>
 
@@ -224,10 +227,10 @@
             slidesPerView: 3.5,
             spaceBetween: 20,
             mousewheel: false,
-            // pagination: {
-            //     el: ".swiper-pagination",
-            //     clickable: true,
-            // },
+            navigation: {
+                prevEl: '.swiper-prev',
+                nextEl: '.swiper-next',
+            },
         });
     </script>
 </body>
