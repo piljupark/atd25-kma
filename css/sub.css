@@ -306,11 +306,17 @@ body#lngTrOver {overflow-x: hidden;}
 .team-box .stay {position: relative; width: 100%; height: auto; margin-top: 150px; }
 .team-box .stay .stay-tit {position: relative; width: 100%; font-family: 'Outfit', serif; font-size: 56px; font-weight: 500; color: #292929}
 .team-box .stay .stay-sub {position: relative; width: 100%; font-family: 'Outfit', serif; font-size: 30px; font-weight: 400; color: #a3a3a3; margin-top: 20px;;}
-.team-box .stay .stay-info {display: flex; align-items: center; justify-content: space-between; gap: 100px;}
-.team-box .stay .stay-info .staySwiper {position: relative; width: 50%; margin-top: 80px; border-radius: 30px;} 
+.team-box .stay .stay-info { margin-top: 80px;  display: flex; align-items: center; justify-content: space-between; gap: 100px;}
+.team-box .stay .stay-info .staySwiper {position: relative; width: 50%; border-radius: 30px;} 
 .team-box .stay .stay-info .staySwiper .swiper-wrapper .swiper-slide {height: 600px; background: #eee; border-radius: 30px; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden;}
 .team-box .stay .stay-info .staySwiper .swiper-pagination {display: flex; justify-content: center; gap: 17px; margin-bottom: 20px;}
 .team-box .stay .stay-info .staySwiper .swiper-pagination-bullet { width: 13px; height: 13px; margin: 0; background: #d9d9d9;}
 
 .team-box .stay .stay-info .txt-wrap { position: relative; width: 50%; }
+.team-box .stay .stay-info .txt-wrap .stay-info-tit { font-size: 32px; font-weight: 500; line-height: 1.7;}
+.team-box .stay .stay-info .txt-wrap .info-kind {margin-top: 50px; display: grid; gap: 20px;}
+.team-box .stay .stay-info .txt-wrap .info-kind .kind { font-size: 28px; font-weight: 400; color: #545454;  display: flex; align-items: center; gap: 20px; }
+.team-box .stay .stay-info .txt-wrap .info-kind .kind img.check {width: 30px;}
+
+.team-box .map {position: relative; width: 100%; height: 600px; margin-top: 110px; background: #eee; border-radius: 30px;}
 /* //team */
