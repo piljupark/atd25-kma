@@ -295,11 +295,12 @@ body#lngTrOver {overflow-x: hidden;}
 .team-box .schedule details summary .img-box .team-nm { font-family: "Outfit", serif; font-size: 700; font-size: 60px; color: #fff; z-index: 2;}
 .team-box .schedule details summary .img-box .team-sub { font-family: "Outfit", serif; font-size: 25px; font-weight: 500; color: rgba(220, 217, 248, 1); z-index: 2;}
 
-.team-box .schedule details .team-info {position: relative; width: 100%; height: auto; background: rgba(247, 247, 247, 0.7);}
-.team-box .schedule details .team-info .info { position: relative; width: calc(100% - 100px); margin: 0 auto; height: auto; padding: 20px 65px; box-sizing: border-box; display: flex; gap: 170px; align-items: center; border-bottom: 1px solid #D6D6D6;}
+.team-box .schedule details .team-info {position: relative; width: 100%; height: auto; margin-top: -20px; padding: 40px 0; background: rgba(247, 247, 247, 0.7); border-bottom-right-radius: 30px; border-bottom-left-radius: 30px;  z-index: -1;}
+.team-box .schedule details .team-info .info { position: relative; width: calc(100% - 100px); margin: 0 auto; height: auto; padding: 30px 65px; box-sizing: border-box; display: flex; gap: 170px; align-items: center; border-bottom: 1px solid #D6D6D6;}
+.team-box .schedule details .team-info .info:nth-last-child(1) {border-bottom: none;}
 .team-box .schedule details .team-info .info .left { display: flex; align-items: center; gap: 160px; }
-.team-box .schedule details .team-info .info .left .date { font-size: 20px; font-weight: 800; color: #5D4FFA; }
-.team-box .schedule details .team-info .info .left .pin { font-size: 20px; font-weight: 600; color: #363636; text-align: center; line-height: 1.5;}
+.team-box .schedule details .team-info .info .left .date { min-width: 82px; font-size: 20px; font-weight: 800; color: #5D4FFA; text-align: center;}
+.team-box .schedule details .team-info .info .left .pin { min-width: 130px; font-size: 20px; font-weight: 600; color: #363636; text-align: center; line-height: 1.5;}
 .team-box .schedule details .team-info .info .right { font-size: 18px; font-weight: 500; color: #363636; line-height: 1.5;}
 .team-box .schedule details .team-info .info .right span {font-weight: 700;}
 
