@@ -60,13 +60,13 @@ p, a, h1, h2, h3, h4, button, ul, li { padding: 0; margin: 0; text-decoration: n
 #footer {position: relative; width: 100%; height: auto; padding: 100px 0; margin-top: 140px; background: #000;}
 .footer-wrap {position: relative; width: 100%; max-width: 1840px; height: auto; margin: 0 auto; padding: 20px; box-sizing:border-box; }
 .footer-wrap .footer-top{position: relative; width: 100%; display: flex; justify-content: space-between; align-items: center;}
-.footer-wrap .footer-top .logo {width: 180px;}
-.footer-wrap .footer-top .footer-cate { height: min-content; display: flex; gap: 60px; justify-content: center; align-items: center;}
-.footer-wrap .footer-top .footer-cate a {font-family: "Vina Sans", serif; font-weight: 400; font-size: 80px; color: #fff;}
+.footer-wrap .footer-top .logo {width: min(13vw, 160px);}
+.footer-wrap .footer-top .footer-cate { height: min-content; display: flex; gap: min(6vw, 60px); justify-content: center; align-items: center;}
+.footer-wrap .footer-top .footer-cate a {font-family: "Vina Sans", serif; font-weight: 400; font-size: 80px; font-size: min(6vw, 80px); color: #fff;}
 .footer-wrap .footer-top .footer-cate span {color: #999; font-weight: 800; font-size: 12px;}
 .footer-wrap .footer-bottom {position: relative; width: 100%; margin-top: 60px; display: flex; align-items: flex-end; justify-content: space-between;}
 .footer-wrap .footer-bottom .f-b-l {position: relative; display: grid; justify-content: flex-start; gap: 40px;}
-.footer-wrap .footer-bottom .f-b-l .download { position: relative; width: 420px; height: 94px; display: flex; align-items: center; justify-content: center; background: none; border: 2px solid #e9e9e9; border-radius: 10px; font-size: 24px; font-weight: 600; color: #fff; transition: all .2s;}
+.footer-wrap .footer-bottom .f-b-l .download { position: relative; width: 416px; height: 90px; display: flex; align-items: center; justify-content: center; background: none; border: 2px solid #e9e9e9; border-radius: 10px; font-size: 24px; font-weight: 600; color: #fff; transition: all .2s;}
 .footer-wrap .footer-bottom .f-b-l .download a {position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 2;}
 .footer-wrap .footer-bottom .f-b-l .download:hover { background: #fff; border: none; color: #000;}
 
@@ -76,18 +76,39 @@ p, a, h1, h2, h3, h4, button, ul, li { padding: 0; margin: 0; text-decoration: n
 .footer-wrap .footer-bottom .f-b-r .r-txt a { font-size: 16px; font-weight: 300; color: #ededed; border-bottom: 1px solid #ededed;}
 .footer-wrap .footer-bottom .f-b-r .r-txt:nth-child(1) {padding-left: 26px;}
 .footer-wrap .footer-bottom .f-b-r .r-txt:nth-child(2) {padding-left: 47px;} 
-.footer-wrap .footer-bottom .f-b-r .r-txt:nth-child(3) {padding-left: 39px;}
-.footer-wrap .footer-bottom .f-b-r .r-txt:nth-child(4) {}
-.footer-wrap .footer-bottom .f-b-r .copy {font-size: 18px; font-weight: 600; color: #929292;}
+.footer-wrap .footer-bottom .f-b-r .r-txt:nth-child(3) {padding-left: 39px;} 
+.footer-wrap .footer-bottom .f-b-r .copy { font-size: 18px; font-weight: 600; color: #929292;}
+
+
+@media screen and (max-width: 1280px) {
+    .footer-wrap .footer-bottom .f-b-l {gap: 20px;}
+    .footer-wrap .footer-bottom .f-b-l .download { width: 300px; height: 70px; font-size: 18px;}
+
+    .footer-wrap .footer-bottom .f-b-r {gap: 100px;}
+}
+
 
 @media screen and (max-width: 1080px) {
     #header .pc-cate {display: none;}
     #header .menu-btn {display: block;}
+
+    #footer {padding: 20px 0;}
+    .footer-wrap .footer-top { flex-direction: column-reverse; align-items: flex-start; gap: 20px; }
+    .footer-wrap .footer-top .logo {width: 100px;}
+    .footer-wrap .footer-top .footer-cate {gap: 20px;}
+    .footer-wrap .footer-top .footer-cate a {font-size: 2.25rem;}
+    .footer-wrap .footer-bottom { flex-direction: column; align-items: flex-start; gap: 60px; }
+    .footer-wrap .footer-bottom .f-b-l .download {width: 280px; font-size: 16px; }
+    .footer-wrap .footer-bottom .f-b-r { width: 100%; gap: unset; justify-content: space-between;}
+    .footer-wrap .footer-bottom .f-b-r .r-txt {font-size: 14px; padding: 0 !important; display: flex; }
+    .footer-wrap .footer-bottom .f-b-r .r-txt span {font-size: 14px; min-width: 63px;}
+    .footer-wrap .footer-bottom .f-b-r .r-txt a { font-size: 14px;}
+    .footer-wrap .footer-bottom .f-b-r .copy {font-size: 14px;}
 }
 
 
 @media screen and (max-width: 768px) {
-    
+    .footer-wrap .footer-bottom .f-b-r {flex-direction: column; align-items: flex-start; gap: 60px;}
 }
 
 

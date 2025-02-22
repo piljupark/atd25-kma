@@ -1,3 +1,6 @@
+
+/* 팀별 일정 상단 버튼 */
+
 document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('.scd-btn-wrap .btn');
     const scdBoxes = document.querySelectorAll('.scd-box');
@@ -25,6 +28,27 @@ document.addEventListener('DOMContentLoaded', function() {
             if (targetBox) {
                 targetBox.style.display = 'grid';
             }
+        });
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const knts = document.querySelectorAll(".knt");
+
+    knts.forEach((knt) => {
+        knt.addEventListener("click", () => {
+            knts.forEach((item) => {
+                const bgKnt = item.querySelector(".bg-knt");
+
+                if (item === knt) {
+                    item.style.width = "70%";
+                    item.classList.remove("shrink");
+                } else {
+                    item.style.width = "15%";
+                    item.classList.add("shrink");
+                }
+            });
         });
     });
 });
