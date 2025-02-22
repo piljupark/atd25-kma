@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
+/* 키노트 스피커 */
 document.addEventListener("DOMContentLoaded", () => {
     const knts = document.querySelectorAll(".knt");
 
@@ -44,9 +44,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (item === knt) {
                     item.style.width = "70%";
                     item.classList.remove("shrink");
+                    item.classList.add('show');
                 } else {
                     item.style.width = "15%";
                     item.classList.add("shrink");
+                    item.classList.remove('show');
                 }
             });
         });
