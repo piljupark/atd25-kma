@@ -80,7 +80,7 @@
 
 /* kntSpk */
 .container-knt {}
-.knt-wrap { position: relative; width: 100%; height: auto; max-width: 1840px; margin: 0 auto; padding: 160px 20px; box-sizing: border-box; display: flex; justify-content: space-between; gap: 40px; }
+.knt-wrap { position: relative; width: 100%; height: auto; max-width: 1840px; margin: 0 auto; padding: 70px 20px 160px; box-sizing: border-box; display: flex; justify-content: space-between; gap: 40px; }
 .knt-wrap .knt { position: relative; width: 33%; height: auto; padding-top: min(56.25%, 900px); border-radius: 30px; background-position: left; background-repeat: no-repeat; background-size: cover; overflow: hidden; transition: all .5s; }
 
 .knt-wrap .knt .bg-knt {position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-position: left; background-repeat: no-repeat; background-size: cover; cursor: pointer; transition: all .5s;}
@@ -103,17 +103,14 @@
 .knt-wrap .knt.shrink .txt-wrap {opacity: 0; width: 0; z-index: -1; left: -100%;}
 .knt-wrap .knt.show .bg-b {opacity: 0;}
 .knt-wrap .knt.show .txt-wrap { opacity: 1; z-index: 3; left: unset;}
-/* .knt-wrap .knt.shrink .bg-b {opacity: 0;} */
+
 
 /* lngTr */
-body#lngTrOver {overflow-x: hidden;}
-.tr-wrap {position: relative; width: 100%; max-width: 1320px; margin: 0 auto; padding: 160px 20px; box-sizing: border-box;}
-.tr-wrap .tr-tit {font-family: "Syncopate", serif; font-weight: 600; font-size: 60px;}
-.tr-wrap .swiper {margin-top: 40px; overflow: visible; cursor: grab;}
-.tr-wrap .swiper .swiper-wrapper .swiper-slide {width: 400px !important; height: 45vh; max-height: 500px; padding: 40px; box-sizing: border-box; background: #DBF3FF; border-radius: 20px; display: grid; align-content: space-between; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden;}
-.tr-wrap .swiper .swiper-wrapper .swiper-slide .tr-kind-tit {font-family: "Syncopate", serif; font-weight: 600; font-size: 24px; color: #fff; line-height: 1.5; z-index: 1;}
-.tr-wrap .swiper .swiper-wrapper .swiper-slide .tr-kind-txt {font-family: "Pretendard"; font-size: 16px; font-weight: 600; color: #fff; text-align: justify; line-height: 1.5;  z-index: 1; }
-.tr-wrap .swiper .swiper-wrapper .swiper-slide .swiper-bg {position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: rgba(0,0,0,0.4); z-index: 0;}
+.lng-wrap {position: relative; width: auto; max-width: 1840px; height: auto; margin: 0 auto; padding: 70px 20px 160px; box-sizing: border-box; display: grid; grid-template-columns: repeat(3, 1fr); gap: 45px;}
+.lng-wrap .track-box {position: relative; width: auto; height: auto; padding: 50%; background: #fafcfb;  border: 1px solid #e4e4e4; border-radius: 30px;}
+.lng-wrap .track-box .track {position: absolute; width: 100%; height: 100%; top: 0; left: 0; padding: 40px; box-sizing: border-box; display: grid; align-content: flex-end; justify-content: flex-end; gap: 30px;}
+.lng-wrap .track-box .track .track-tit {font-size: 32px; font-weight: 500; line-height: 1.5; color: #121212;}
+.lng-wrap .track-box .track .track-info {font-size: 20px; font-weight: 500; color: #121212; line-height: 1.5; text-align: justify;} 
 
 /* scd */
 .container-team {padding-bottom: 160px;}
