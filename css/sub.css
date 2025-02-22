@@ -81,11 +81,14 @@
 /* kntSpk */
 .container-knt {}
 .knt-wrap { position: relative; width: 100%; height: auto; max-width: 1840px; margin: 0 auto; padding: 160px 20px; box-sizing: border-box; display: flex; justify-content: space-between; gap: 40px; }
-.knt-wrap .knt { position: relative; width: 33%; height: auto; padding-top: min(56.25%, 900px); border-radius: 30px; background-position: left; background-repeat: no-repeat; background-size: cover; overflow: hidden; transition: all .5s; }
+.knt-wrap .knt { position: relative; width: 33%; height: auto; padding-top: min(56.25%, 640px); border-radius: 30px; background-position: left; background-repeat: no-repeat; background-size: cover; overflow: hidden; transition: all .5s; }
 .knt-wrap .knt .bg-knt {position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-position: left; background-repeat: no-repeat; background-size: cover; cursor: pointer; transition: all .5s;}
 .knt-wrap .knt.shrink .bg-knt { background-position: 15%; }
 .knt-wrap .knt .bg-b {position: absolute; width: 100%; height: 40%; bottom: 0; left: 0; background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);}
-.knt-wrap .knt .knt-nm {position: relative; width: auto; float: left; }
+.knt-wrap .knt .knt-nm {position: relative; width: auto; float: left; font-weight: 500; font-size: 50px; color: #fff; padding: 40px; box-sizing: border-box;}
+.knt-wrap .knt.shrink .knt-nm { visibility: hidden; display: none; }
+.knt-wrap .knt .knt-nm span {font-size: 30px;}
+.knt-wrap .knt .txt-wrap { position: relative; width: auto; float: right; padding: 40px; box-sizing: border-box;}
 
 
 /* lngTr */
@@ -95,7 +98,7 @@ body#lngTrOver {overflow-x: hidden;}
 .tr-wrap .swiper {margin-top: 40px; overflow: visible; cursor: grab;}
 .tr-wrap .swiper .swiper-wrapper .swiper-slide {width: 400px !important; height: 45vh; max-height: 500px; padding: 40px; box-sizing: border-box; background: #DBF3FF; border-radius: 20px; display: grid; align-content: space-between; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden;}
 .tr-wrap .swiper .swiper-wrapper .swiper-slide .tr-kind-tit {font-family: "Syncopate", serif; font-weight: 600; font-size: 24px; color: #fff; line-height: 1.5; z-index: 1;}
-.tr-wrap .swiper .swiper-wrapper .swiper-slide .tr-kind-txt {font-family: "Pretendard"; font-size: 16px; font-weight: 600; color: #fff; text-align: justify; line-height: 1.5;  z-index: 1;}
+.tr-wrap .swiper .swiper-wrapper .swiper-slide .tr-kind-txt {font-family: "Pretendard"; font-size: 16px; font-weight: 600; color: #fff; text-align: justify; line-height: 1.5;  z-index: 1; }
 .tr-wrap .swiper .swiper-wrapper .swiper-slide .swiper-bg {position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: rgba(0,0,0,0.4); z-index: 0;}
 
 /* scd */
