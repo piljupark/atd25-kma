@@ -32,6 +32,18 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
+    const header = document.getElementById('innerHeader');
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 340) {
+            header.classList.add('fixed');
+        } else {
+            header.classList.remove('fixed');
+        }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
     const mainCateListItems = document.querySelectorAll('.pc-cate ul.main-cate li');
     const header = document.querySelector('#header');
     const subCate1 = document.querySelector('.sub-cate-1');

@@ -277,7 +277,8 @@ body#lngTrOver {overflow-x: hidden;}
 
 
 /* team */
-.inner-cate {position: relative; width: 100%; height: auto; margin-top: 100px; border-bottom: 1px solid #d5d5d5; padding-bottom: 18.5px;}
+.inner-cate {position: relative; width: 100%; height: auto; padding-top: 100px; border-bottom: 1px solid #d5d5d5; padding-bottom: 18.5px;}
+.inner-cate.fixed {position: fixed; top: 0px; z-index: 9; background: #fff;}
 .inner-cate .cate {position: relative; width: auto; display: flex; justify-content: center; align-items: center; gap: 90px; }
 .inner-cate .cate a { position: relative; color: rgba(153, 153, 153, 1); font-weight: 800; transition: all .2s;}
 .inner-cate .cate a:hover {color: rgba(93, 79, 250, 1);}
