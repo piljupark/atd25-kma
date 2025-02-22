@@ -197,7 +197,16 @@
 .ktd-wrap .inq-wrap .inq-box .inq-btn:hover {opacity: .8;}
 
 
-
+/* scdPrg */
+.spc-wrap {position: relative; width: 100%; height: auto; max-width: 1840px; margin: 0 auto; padding: 70px 20px 160px; box-sizing: border-box; display: grid; grid-template-columns: repeat(3, 1fr); gap: 45px;}
+.spc-wrap .spc-box {position: relative; width: auto; height: 310px; padding: 40px; box-sizing: border-box; background: rgba(93, 79, 250, 0.03); border: 1px solid rgba(93, 79, 250, 0.1); border-radius: 30px; display: grid; align-content: space-between;}
+.spc-wrap .spc-box .top {display: grid; align-content: flex-start; gap: 20px; }
+.spc-wrap .spc-box .top .spc-tit {font-size: 25px; font-weight: 700; color: #111; }
+.spc-wrap .spc-box .top .spc-info {font-size: 18px; font-weight: 500; color: #111; line-height: 1.5;}
+.spc-wrap .spc-box .bottom {width: 100%; display: flex; align-items: center; justify-content: space-between; }
+.spc-wrap .spc-box .bottom .spc-tag {font-size: 20px; font-weight: 600; color: #5D4FFA; }
+.spc-wrap .spc-box .bottom a {font-size: 0; background: #5D4FFA; padding: 5px 15px; box-sizing: border-box; border-radius: 40px;}
+.spc-wrap .spc-box .bottom a img {width: 40px;} 
 
 /* cnd */
 .cdn-wrap {position: relative; width: 100%; max-width: 1320px; height: auto; margin: 0 auto; padding: 160px 20px; box-sizing: border-box;}
@@ -281,13 +290,6 @@
 
 
 /* team */
-.inner-cate {position: relative; width: 100%; height: auto; padding-top: 100px; border-bottom: 1px solid #d5d5d5; padding-bottom: 18.5px;}
-.inner-cate.fixed {position: fixed; top: 0px; z-index: 9; background: #fff;}
-.inner-cate .cate {position: relative; width: auto; display: flex; justify-content: center; align-items: center; gap: 90px; }
-.inner-cate .cate a { position: relative; color: rgba(153, 153, 153, 1); font-weight: 800; transition: all .2s;}
-.inner-cate .cate a:hover {color: rgba(93, 79, 250, 1);}
-.inner-cate .cate a.active {color: rgba(93, 79, 250, 1);}
-.inner-cate .cate a.active::after {content: ''; position: absolute; width: 80%; height: 3px; background: rgba(93, 79, 250, 1); bottom: -20px; left: 50%; transform: translate(-50%, 0);}
 
 .team-box {position: relative; width: 100%; height: auto; max-width: 1840px; margin: 0 auto; padding: 50px 20px; box-sizing: border-box; }
 .team-box .schedule {position: relative; display: grid; gap: 10px;}

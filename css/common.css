@@ -56,6 +56,16 @@ p, a, h1, h2, h3, h4, button, ul, li { padding: 0; margin: 0; text-decoration: n
 .pg-top .pg-tit.pg-tit-wh {color: #fff;}
 .pg-top .pg-tit.pg-tit-bk {color: #000;}
 
+/* inner-cate */
+.inner-cate {position: relative; width: 100%; height: auto; padding-top: 100px; border-bottom: 1px solid #d5d5d5; padding-bottom: 18.5px;}
+.inner-cate.fixed {position: fixed; top: 0px; z-index: 9; background: #fff;}
+.inner-cate .cate {position: relative; width: auto; display: flex; justify-content: center; align-items: center; gap: 90px; }
+.inner-cate .cate a { position: relative; color: rgba(153, 153, 153, 1); font-weight: 800; transition: all .2s;}
+.inner-cate .cate a:hover {color: rgba(93, 79, 250, 1);}
+.inner-cate .cate a.active {color: rgba(93, 79, 250, 1);}
+.inner-cate .cate a.active::after {content: ''; position: absolute; width: 80%; height: 3px; background: rgba(93, 79, 250, 1); bottom: -20px; left: 50%; transform: translate(-50%, 0);}
+
+
 
 #footer {position: relative; width: 100%; height: auto; padding: 100px 0; margin-top: 140px; background: #000;}
 .footer-wrap {position: relative; width: 100%; max-width: 1840px; height: auto; margin: 0 auto; padding: 20px; box-sizing:border-box; }
