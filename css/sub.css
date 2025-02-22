@@ -328,3 +328,25 @@
 
 .team-box .map {position: relative; width: 100%; height: 600px; margin-top: 110px; background: #eee; border-radius: 30px;}
 /* //team */
+
+
+/* program */
+.prg-wrap {position: relative; width: 100%; height: auto; max-width: 1840px; margin: 0 auto; padding: 70px 20px 160px; box-sizing: border-box;}
+.prg-wrap .top {position: relative; width: 100%; padding-bottom: 20px; display: flex; align-items: center; justify-content: flex-start; gap: 30px; border-bottom: 1px solid #e4e4e4;} 
+.prg-wrap .top a {font-size: 0; background: #5D4FFA; padding: 5px 15px; box-sizing: border-box; border-radius: 40px;}
+.prg-wrap .top a img {width: 40px; transform: rotate(-180deg);} 
+.prg-wrap .top span {font-size: 30px; font-weight: 600; color: #5D4FFA;}
+.prg-wrap .tit-wrap {position: relative; width: 100%; display: flex; align-items: center -100px; justify-content: space-between; margin-top: 65px;}
+.prg-wrap .tit-wrap .tit-txt .tit{font-size: 56px; font-weight: 500; color: #292929; letter-spacing: 1px;}
+.prg-wrap .tit-wrap .tit-txt .sub {font-size: 26px; font-weight: 500; color: #a3a3a3; letter-spacing: -1px; margin-top: 10px;}
+
+
+/* 5-DSD */
+.prg-wrap .main-wrap {position: relative; width: 100%; height: 850px; margin-top: 40px; padding: 100px 85px; box-sizing: border-box; border-radius: 30px; background-repeat: no-repeat; background-size: cover; background-position: center; background-image: url('../assets/imgs/img_prg5_1.webp');}
+.prg-wrap .main-wrap .tit {position: relative; width: 100%; font-size: 50px; font-weight: 700; color: #fff; line-height: 1.5; letter-spacing: -1px;}
+.prg-wrap .main-wrap .txt {position: relative; width: 100%; margin-top: 70px; font-size: 20px; font-weight: 500; color: #fff; line-height: 1.5; letter-spacing: -1px; display: grid; gap: 20px;}
+.prg-wrap .main-wrap .txt span {font-size: 25px; font-weight: 700;}
+.prg-wrap .sub-wrap {position: relative; width: 100%; display: flex; justify-content: space-between; gap: 40px; margin-top: 40px;}
+.prg-wrap .sub-wrap .sub {width: 33%; height: 375px; display: grid; align-content: center; justify-items: center; gap: 30px; border-radius: 30px; overflow: hidden; background-position: center; background-repeat: no-repeat; background-size: cover; background: #eee;}
+.prg-wrap .sub-wrap .sub .sub-tit {font-size: 40px; font-weight: 700; color: #fff; }
+.prg-wrap .sub-wrap .sub .sub-txt {font-size: 23px; font-weight: 600; color: #fff; text-align: center; line-height: 1.5;}
