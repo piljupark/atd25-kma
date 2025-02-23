@@ -363,8 +363,29 @@
 .prg-wrap .ktd-fa .fa-info .info {position: relative; width: 25%; height: 235px; font-size: 23px; font-weight: 500; color: #292929; line-height: 1.5; letter-spacing: -1px; text-align: center; display: flex; align-items: center; justify-content: center; border-radius: 30px; background: rgba(93, 79, 250, 0.03); border: 1px solid rgba(93, 79, 250, 0.1); }
 .prg-wrap .ktd-fa .fa-int {position: relative; width: 100%; height: auto; margin-top: 150px; display: grid; justify-items: center;}
 .prg-wrap .ktd-fa .fa-int .int-tit {position: relative; width: auto; padding: 10px 100px; font-size: 32px; font-weight: 600; color: #5D4FFA; letter-spacing: -1px; box-sizing: border-box; border-radius: 40px; border: 3px solid #5D4FFA;}
-.prg-wrap .ktd-fa .fa-int .int-sub {position: relative; width: auto; margin-top: 60px; font-size: 32px; font-weight: 700; color: #292929; line-height: 1.5; letter-spacing: -1px;  }
+.prg-wrap .ktd-fa .fa-int .int-sub {position: relative; width: auto; margin-top: 60px; font-size: 32px; font-weight: 700; color: #292929; text-align: center; line-height: 1.5; letter-spacing: -1px;  }
 .prg-wrap .ktd-fa .fa-int .int-sub span {color: #5D4FFA;}
+.prg-wrap .ktd-fa .fa-int .date-tit {position: relative; width: auto; margin-top: 60px; font-size: 32px; font-weight: 700; color: #5D4FFA; letter-spacing: -1px; }
+.prg-wrap .ktd-fa .fa-int .date {position: relative; width: 100%; margin-top: 25px; display: flex; border: 1px solid #5D4FFA; border-bottom: 0;}
+.prg-wrap .ktd-fa .fa-int .date .d-l {position: relative; width: 20%;}
+.prg-wrap .ktd-fa .fa-int .date .d-l ul {position: relative; width: 100%; display: grid; justify-items: center; }
+.prg-wrap .ktd-fa .fa-int .date .d-l ul li {position: relative; width: 100%; padding: 20px 0; font-size: 20px; font-weight: 600; text-align: center; box-sizing: border-box; border-bottom: 1px solid #5D4FFA; border-right: 1px solid #5D4FFA; background: rgba(93, 79, 250, 0.05); display: flex; align-items: center; justify-content: center;}
+.prg-wrap .ktd-fa .fa-int .date .d-l ul li.y-2024 {height: 195px;}
+.prg-wrap .ktd-fa .fa-int .date .d-l ul li.y-2023 {height: 195px; background: #fff;}
+.prg-wrap .ktd-fa .fa-int .date .d-l ul li.y-2022 {height: 260px;}
+
+.prg-wrap .ktd-fa .fa-int .date .d-m {position: relative; width: 20%;}
+.prg-wrap .ktd-fa .fa-int .date .d-m ul {position: relative; width: 100%; display: grid; justify-items: center; }
+.prg-wrap .ktd-fa .fa-int .date .d-m ul li {position: relative; width: 100%; padding: 20px 0; font-size: 20px; font-weight: 600; text-align: center; box-sizing: border-box; border-bottom: 1px solid #5D4FFA; border-right: 1px solid #5D4FFA; background: rgba(93, 79, 250, 0.05);}
+.prg-wrap .ktd-fa .fa-int .date .d-m ul li:nth-child(n+5):nth-child(-n+7) {background: #fff;}
+
+.prg-wrap .ktd-fa .fa-int .date .d-r {position: relative; width: 60%;}
+.prg-wrap .ktd-fa .fa-int .date .d-r ul {position: relative; width: 100%; display: grid; justify-items: center; }
+.prg-wrap .ktd-fa .fa-int .date .d-r ul li {position: relative; width: 100%; padding: 20px 0; font-size: 20px; font-weight: 600; text-align: center; box-sizing: border-box; border-bottom: 1px solid #5D4FFA; background: rgba(93, 79, 250, 0.05);}
+.prg-wrap .ktd-fa .fa-int .date .d-r ul li:nth-child(n+5):nth-child(-n+7) {background: #fff;}
+
+.prg-wrap .ktd-fa .fa-int .date > div > ul li.idx {background: #fff;}
+
 
 .prg-wrap .tit-wrap2 {margin-top: 180px;}
 .prg-wrap .ktd-mu {position: relative; width: 100%; height: auto; margin-top: 40px;}
