@@ -2,54 +2,11 @@
 
 #container { position: relative; width: 100%; height: auto;  }
 
-.main { position: relative; width: 100%; height: 100vh; top: 0; background-image: url('../assets/imgs/img_pattern_atd.webp'); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; }
-.main .main-sec1 { position: relative; width: 100%; height: 100vh; padding: 0 20px; box-sizing: border-box; display: grid; align-content: center; justify-items: center;}
-.main .main-sec1 img.main-logo { position: relative; width: 400px; filter: invert(1);}
-.main .main-sec1 .main-txt-wrap { position: relative; text-align: center; font-family: "Syncopate", serif;; color: #fff; font-size: 40px; font-weight: 600; line-height: 1.5;}
-.main .main-sec1 .main-tit { font-size: 60px; color: #000; font-weight: 700; text-align: center; line-height: 1.5;}
-.main .main-sec1 .main-tit span { font-size: 40px; color: rgba(255, 255, 255, 0.8); }
-/* //main */
-
-.intro {position: relative; width: 100%; height: auto; padding: 200px 20px; box-sizing: border-box; display: grid; align-content: center; justify-items: center; gap: 20px;}
-.intro .tit {font-family: "Syncopate", serif; text-transform: uppercase; text-align: center; font-size: clamp(2em, 6vw, 60px); font-weight: 600; line-height: 1.5; color: #292929;}
-.intro .txt {font-family: 'Pretendard Variable'; font-size: 20px; font-weight: 600; text-align: center; line-height: 1.5; text-align: center; color: #292929;}
-.intro .view-dtl { padding: 20px 30px; margin-top: 40px; background: #292929; border: none; font-family: 'Pretendard Variable'; font-size: 16px; font-weight: 500; color:#fff; border-radius: 10px; cursor: pointer; transition: all .2s; }
-.intro .view-dtl:hover {background: rgba(0,0,0,0.7);}
-.intro .int-video {position: relative; width: 100%; max-width: 1280px; height: auto; padding-top: min(700px, 56.25%); margin-top: 40px; }
-.intro .int-video iframe { position: absolute; width: 100%; height: 100%; max-height: 720px; top: 0; left: 0; border-radius: 10px; overflow: hidden;}
-.intro .int-video iframe .ytp-chrome-top {display: none!important;}
-/* intro */
-
-.tr {position: relative; width: 100%; max-width: 1280px; height: auto; margin: 0 auto; padding: 60px 20px; box-sizing: border-box;}
-.tr .tit {position: relative; width: 100%; font-family: "Syncopate", serif; text-transform: uppercase; font-size: clamp(2em, 6vw, 40px); font-weight: 600; text-align: left;}
-.tr .txt {position: relative; width: 100%; margin-top: 10px; font-family: 'Pretendard Variable'; font-size: 20px; font-weight: 600; }
-
-.tr .tr-box-wrap { width: 100%; padding-bottom: 20px; margin-top: 40px; overflow-x: scroll; }
-.tr .tr-box-wrap::-webkit-scrollbar {  height: 10px; }
-.tr .tr-box-wrap::-webkit-scrollbar-thumb { background: #ccc; border-radius: 10px; cursor: grab;}
-.tr .tr-box-wrap::-webkit-scrollbar-track { background: none;}
-.tr .tr-box-wrap .overwrap { width: 100%; min-width: 1400px; display: flex; gap: 20px;}
-.tr .tr-box-wrap .tr-box { position: relative; width: 400px; height: 400px; padding: 20px; box-sizing: border-box; background: #eee; border-radius: 10px; display: grid; align-content: flex-start; gap: 15px; }
-.tr .tr-box-wrap .tr-box .tr-tit {font-family: "Syncopate", serif; text-transform: uppercase; font-weight: 600; font-size: 20px;}
-.tr .tr-box-wrap .tr-box .info {font-family: 'Pretendard Variable'; font-size: 18px; text-align: left; line-height: 1.5;}
-.tr .tr-box-wrap .tr-box .tr-tit-icon {position: absolute; width: 100px; opacity: .2; bottom: 0; right: 0;}
-.tr .tr-box-wrap .tr-box .tr-tit-img { position: absolute; bottom: 20px; left: 20px; width: calc(100% - 40px); height: 160px; background: #ccc; background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 10px;}
-
-/* //tr */
-
-
-
-.scd {position: relative; width: 100%; max-width: 1280px; height: auto; margin: 0 auto; padding: 0 20px; box-sizing: border-box;}
-.scd .tit {position: relative; width: 100%; font-family: "Syncopate", serif; text-transform: uppercase; font-size: clamp(2em, 6vw, 40px); font-weight: 600; text-align: left;}
-.scd .txt {position: relative; width: 100%; margin-top: 10px; font-family: 'Pretendard Variable'; font-size: 20px; font-weight: 600; }
-.scd .scd-box {position: relative; width: 100%;  margin-top: 40px; display: grid; gap: 10px; }
-.scd .scd-box .table {display: flex; width: 100%; gap: 10px;}
-.scd .scd-box .table .date {width: 100px; padding: 10px 20px; font-family: 'Pretendard Variable'; font-weight: 500; box-sizing: border-box; background: #eee; border-radius: 10px;}
-.scd .scd-box .table .info {width: calc(100% - 100px); padding: 10px 20px; font-family: 'Pretendard Variable'; font-weight: 500; line-height: 1.5; box-sizing: border-box; background: #eee; border-radius: 10px;}
-.scd .scd-box .table .info span {width: 100%; float: left; font-weight: 600; margin: 10px 0;}
-.scd .scd-box .blur-box {position: absolute; width: 100%; height: 100%; bottom: 0; left: 0; background: linear-gradient(180deg, rgba(0,212,255,0) 0%, rgba(165,240,255,1) 100%); border-radius: 10px;}
-.scd .scd-box .blur-box .more-txt{position: absolute; bottom: 60px; left: 50%; transform: translate(-50%, 0); font-family: 'Pretendard Variable'; font-size: 16px; font-weight: 600; } 
-.scd .view-dtl { padding: 20px 30px; margin: 0 auto; margin-top: 40px; background: #292929; border: none; font-family: 'Pretendard Variable'; font-size: 16px; font-weight: 500; color:#fff; border-radius: 10px; cursor: pointer; transition: all .2s; display: flex; }
+.main {position: relative; width: 100%; height: auto; }
+.main .m-logo {position: absolute; width: min(30vw, 400px); top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 3;}
+.main .bg-v{position: relative; width: 100%; height: auto; padding-top: min(56.25%, 100vh); max-height: 100vh;}
+.main .bg-v video {position: absolute; width: 100%; height: 100%; top: 0; left: 0;}
+.main .m-tit {position: relative; width: 100%; height: auto; padding: 150px 0; font-size: min(4vw, 50px); font-weight: 600; line-height: 2; color: #292929; text-align: center; }
 
 
 @media screen and (max-width: 768px) {
