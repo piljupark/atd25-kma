@@ -64,10 +64,11 @@
 
 @media screen and (max-width: 1180px) {
     .rc-wrap {height: auto;}
-    .rc-wrap .left {position: relative;}
+    .rc-wrap .left {position: relative; padding: 0 20px 50px;}
     .rc-wrap .right {height: auto; }
     .rc-wrap .right .right-wrap {height: auto; overflow: unset;}
-    .rc-wrap .right .right-wrap .right-box {width: 100%; overflow-y: scroll;}
+    .rc-wrap .right .right-wrap .right-box {width: 100%; overflow-y: scroll; -ms-overflow-style: none;}
+    .rc-wrap .right .right-wrap .right-box::-webkit-scrollbar {display: none;}
     .rc-wrap .right .right-wrap .c-wrap {left: 0; padding: 40px 20px; box-sizing: border-box; gap: 30px;}
     .rc-wrap .right .right-wrap .c-wrap .line {width:2px; left: 25px; height: 790px;}
     .rc-wrap .right .right-wrap .c-wrap .c-kind {white-space: nowrap;}
