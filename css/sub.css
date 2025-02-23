@@ -424,6 +424,8 @@
 }
 
 @media screen and (max-width: 768px) {
+
+    /* cdn group */
     .cdn-wrap {flex-direction: column;}
     .cdn-wrap .cdn {width: 100% !important; height: 400px;}
     .cdn-wrap .cdn .cdn-nm {padding: 20px; font-size: 28px; text-align: right; line-height: 1;}

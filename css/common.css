@@ -121,6 +121,11 @@ p, a, h1, h2, h3, h4, button, ul, li { padding: 0; margin: 0; text-decoration: n
 
 @media screen and (max-width: 768px) {
     .footer-wrap .footer-bottom .f-b-r {flex-direction: column; align-items: flex-start; gap: 60px;}
+
+    /* inner category */
+    .inner-cate .cate { padding: 0 20px; justify-content: space-between;  gap: 0px; }
+    .inner-cate .cate a {font-size: 14px; }
+
 }
 
 
