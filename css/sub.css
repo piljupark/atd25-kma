@@ -360,7 +360,7 @@
 /* //team */
 
 
-/* program */
+/* 1-program */
 .prg-wrap {position: relative; width: 100%; height: auto; max-width: 1840px; margin: 0 auto; padding: 70px 20px 160px; box-sizing: border-box;}
 .prg-wrap .top {position: relative; width: 100%; padding-bottom: 20px; display: flex; align-items: center; justify-content: flex-start; gap: 30px; border-bottom: 1px solid #e4e4e4;} 
 .prg-wrap .top a {font-size: 0; background: #5D4FFA; padding: 5px 15px; box-sizing: border-box; border-radius: 40px;}
@@ -369,6 +369,22 @@
 .prg-wrap .tit-wrap {position: relative; width: 100%; display: flex; align-items: center -100px; justify-content: space-between; margin-top: 65px;}
 .prg-wrap .tit-wrap .tit-txt .tit{font-size: 56px; font-weight: 500; color: #292929; letter-spacing: 1px;}
 .prg-wrap .tit-wrap .tit-txt .sub {font-size: 26px; font-weight: 500; color: #a3a3a3; letter-spacing: -1px; margin-top: 10px;}
+.prg-wrap .prg-int-wrap {position: relative; width: 100%; margin-top: 60px; display: flex; gap: 40px;}
+.prg-wrap .prg-int-wrap .int-bg {position: relative; width: 40%; height: 800px; border-radius: 30px; background-image: url('../assets/imgs/image_google.webp'); background-position: center; background-repeat: no-repeat; background-size: cover;}
+.prg-wrap .prg-int-wrap img {position: absolute; width: 150px; bottom: 20px; left: 40px;}
+.prg-wrap .prg-int-wrap .int-info-wrap {position: relative; width: 60%; padding: 40px; box-sizing: border-box; background: rgba(93, 79, 250, 0.03); border-radius: 30px; display: grid; align-content: space-between;}
+.prg-wrap .prg-int-wrap .int-info-wrap .info-tit-wrap {position: relative; width: 100%; display: flex; justify-content: space-between; align-items: center;}
+.prg-wrap .prg-int-wrap .int-info-wrap .info-tit-wrap .info-tit {font-size: 50px; font-weight: 700; color: #5d4ffa;}
+.prg-wrap .prg-int-wrap .int-info-wrap .info-tit-wrap .info-sub {font-size: 23px; font-weight: 500; color: #292929; text-align: right; line-height: 1.5;}
+.prg-wrap .prg-int-wrap .int-info-wrap .info-txt-wrap {position: relative;}
+.prg-wrap .prg-int-wrap .int-info-wrap .info-txt-wrap .info-txt-tit {position: relative; width: 100%; font-size: 25px; font-weight: 700; color: #292929;}
+.prg-wrap .prg-int-wrap .int-info-wrap .info-txt-wrap .info-txt {position: relative; width: 100%; font-size: 18px; font-weight: 500; color: #292929; line-height: 1.5; text-align: justify; margin-top: 20px; }
+.prg-wrap .prg-int-wrap .int-info-wrap .bm-wrap {position: relative; width: 100%; }
+.prg-wrap .prg-int-wrap .int-info-wrap .bm-wrap .bm-tit {position: relative; width: 100%; font-size: 25px; font-weight: 700; color: #292929;}
+.prg-wrap .prg-int-wrap .int-info-wrap .bm-wrap .bm-kind {position: relative; width: 100%; margin-top: 20px; display: flex; justify-content: space-between; gap: 40px;}
+.prg-wrap .prg-int-wrap .int-info-wrap .bm-wrap .bm-kind .kind {position: relative; width: 33%; height: 180px; padding: 20px; background: #fff; border-radius: 30px; box-sizing: border-box;}
+.prg-wrap .prg-int-wrap .int-info-wrap .bm-wrap .bm-kind .kind .kind-nm {position: absolute; bottom: 20px; left: 20px; font-size: 18px; font-weight: 500; color: #292929; text-align: left; line-height: 1.5; }
+.prg-wrap .prg-int-wrap .int-info-wrap .bm-wrap .bm-kind .kind .numb {position: relative; float: right; width: 45px; height: 45px; border-radius: 100%; background: rgba(93, 79, 250, 0.1); font-size: 23px; font-weight: 700; color: #5d4ffa; display: flex; align-items: center; justify-content: center; }
 
 
 /* 4-KTD */
