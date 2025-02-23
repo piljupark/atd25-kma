@@ -108,10 +108,11 @@
 
 /* lngTr */
 .lng-wrap {position: relative; width: auto; max-width: 1840px; height: auto; margin: 0 auto; padding: 70px 20px 160px; box-sizing: border-box; display: grid; grid-template-columns: repeat(3, 1fr); gap: 45px;}
-.lng-wrap .track-box {position: relative; width: auto; height: auto; padding: 50%; background: #fafcfb;  border: 1px solid #e4e4e4; border-radius: 30px;}
+.lng-wrap .track-box {position: relative; width: auto; height: 490px; /*padding: 50%;*/ background: rgba(93, 79, 250, 0.03);  border: 1px solid rgba(93, 79, 250, 0.1); border-radius: 30px;}
 .lng-wrap .track-box .track {position: absolute; width: 100%; height: 100%; top: 0; left: 0; padding: 40px; box-sizing: border-box; display: grid; align-content: flex-end; justify-content: flex-end; gap: 30px;}
+.lng-wrap .track-box .track img {position: absolute; width: 110px; height: auto; top: 40px; right: 40px;}
 .lng-wrap .track-box .track .track-tit {font-size: 32px; font-weight: 500; line-height: 1.5; color: #121212;}
-.lng-wrap .track-box .track .track-info {font-size: 20px; font-weight: 500; color: #121212; line-height: 1.5; text-align: justify;} 
+.lng-wrap .track-box .track .track-info {min-height: 90px; font-size: 20px; font-weight: 500; color: #121212; line-height: 1.5; text-align: justify;} 
 
 /* scd */
 .scd-wrap {position: relative; width: auto; max-width: 1840px; height: auto; margin: 0 auto; padding: 70px 20px 160px; box-sizing: border-box; }
@@ -314,7 +315,7 @@
 .team-box .schedule details summary .img-box .team-nm { font-family: "Outfit", serif; font-size: 700; font-size: 60px; color: #fff; z-index: 2;}
 .team-box .schedule details summary .img-box .team-sub { font-family: "Outfit", serif; font-size: 25px; font-weight: 500; color: rgba(220, 217, 248, 1); z-index: 2;}
 
-.team-box .schedule details .team-info {position: relative; width: 100%; height: auto; margin-top: -20px; padding: 40px 0; background: rgba(247, 247, 247, 0.7); border-bottom-right-radius: 30px; border-bottom-left-radius: 30px;  z-index: -1;}
+.team-box .schedule details .team-info {position: relative; width: 100%; height: auto; max-height: 0; margin-top: -20px; padding: 40px 0; background: rgba(247, 247, 247, 0.7); border-bottom-right-radius: 30px; border-bottom-left-radius: 30px;  z-index: -1; transition: max-height 0.3s ease-in;}
 .team-box .schedule details .team-info .info { position: relative; width: calc(100% - 100px); margin: 0 auto; height: auto; padding: 30px 65px; box-sizing: border-box; display: flex; gap: 170px; align-items: center; border-bottom: 1px solid #D6D6D6;}
 .team-box .schedule details .team-info .info:nth-last-child(1) {border-bottom: none;}
 .team-box .schedule details .team-info .info .left { display: flex; align-items: center; gap: 160px; }
@@ -322,6 +323,7 @@
 .team-box .schedule details .team-info .info .left .pin { min-width: 130px; font-size: 20px; font-weight: 600; color: #363636; text-align: center; line-height: 1.5;}
 .team-box .schedule details .team-info .info .right { font-size: 18px; font-weight: 500; color: #363636; line-height: 1.5;}
 .team-box .schedule details .team-info .info .right span {font-weight: 700;}
+.team-box .schedule details[open] .team-info {max-height: 700px; transition: max-height 0.3s ease-in;}
 
 .team-box .stay {position: relative; width: 100%; height: auto; margin-top: 150px; }
 .team-box .stay .stay-tit {position: relative; width: 100%; font-family: 'Outfit', serif; font-size: 56px; font-weight: 500; color: #292929}
