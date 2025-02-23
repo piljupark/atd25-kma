@@ -24,6 +24,43 @@
 .tc-wrap .c-kind-wrap .c-kind-box .c-kind .c-bottom .txt {font-size: 18px; font-weight: 500; color: #d4d4d4;}
 .tc-wrap .c-kind-wrap .c-kind-box .c-kind .c-bottom .date {font-size: 18px; font-weight: 600; color: #fff; line-height: 2; margin-top: 30px;}
 
+/* 러닝크루 */
+.rc-wrap {position: relative; width: 100%; height: 100vh;}
+.rc-wrap .left {position: absolute; width: 100%; max-width: 1840px; height: auto; left: 50%; transform: translate(-50%, 0); padding: 100px 20px; box-sizing: border-box;}
+.rc-wrap .left .rc-tit {position: relative; width: 100%; font-size: clamp(28px, 2vw, 50px); font-weight: 600; line-height: 1.5; color: #292929;}
+.rc-wrap .left .rc-txt {position: relative; width: 100%; margin-top: 40px; font-size: clamp(16px, 1.2vw, 23px); font-weight: 500; line-height: 2; color: #292929;} 
+.rc-wrap .right {position: relative; width: 100%; height: 1020px; z-index: 2; overflow: hidden;}
+.rc-wrap .right .right-wrap {position: relative; width: 100%; height: 1020px; overflow-y: scroll; -ms-overflow-style: none;}
+.rc-wrap .right .right-wrap::-webkit-scrollbar {display: none;}
+.rc-wrap .right .right-wrap .right-box {position: relative; float: right; width: 1020px; height: auto; right: 0; top: 0; background: #eee; overflow: hidden;}
+.rc-wrap .right .right-wrap .img-wrap {position: relative; width: 100%; height: auto; padding-bottom: 100%; overflow: hidden; background-size: cover; background-position: center; background-repeat: no-repeat;}
+.rc-wrap .right .right-wrap .img-wrap img {position: absolute; width: 100%; min-width: 1020px; height: 100%; min-height: 1020px; top: 0; left: 0;}
+.rc-wrap .right .right-wrap .img-wrap .bg-b {position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: rgba(93, 79, 250, 0.1);}
+.rc-wrap .right .right-wrap .img-wrap:nth-child(2) .bg-b {background: rgba(23, 22, 40, 0.75);}
+.rc-wrap .right .right-wrap .c-wrap {position: absolute; width: 100%; top: 0; left: 100px; padding: 100px 0; box-sizing: border-box; display: grid; gap: clamp(20px, 4vw, 100px); gap: 100px; z-index: 3;}
+.rc-wrap .right .right-wrap .c-wrap .line {position: absolute; top: 115px; left: 6px; width: 3px; height: 1670px; background: #fff;}
+.rc-wrap .right .right-wrap .c-wrap .c-kind {position: relative; width: auto; display: flex; gap: 20px;}
+.rc-wrap .right .right-wrap .c-wrap .c-kind .shape {width: 15px; height: 15px; background: #fff; border-radius: 100%; margin-top: 6px;}
+.rc-wrap .right .right-wrap .c-wrap .c-kind .txt {font-size: clamp(18px, 1.5vw, 23px); font-size: 23px;  font-weight: 700; color: #fff; }
+.rc-wrap .right .right-wrap .c-wrap .c-kind .txt span {font-size: clamp(14px, 1.2vw, 18px); font-size: 18px; font-weight: 400; }
+
+
+@media screen and (max-width: 1640px) {
+    .rc-wrap .right .right-wrap .right-box {width: 820px;}
+    .rc-wrap .right .right-wrap .c-wrap {gap: 70px;}
+    .rc-wrap .right .right-wrap .c-wrap .line {height: 1210px;}
+    .rc-wrap .right .right-wrap .c-wrap .c-kind .txt {font-size: 18px;}
+    .rc-wrap .right .right-wrap .c-wrap .c-kind .txt span {font-size: 14px;}
+}
+
+@media screen and (max-width: 1340px) {
+    .rc-wrap .right .right-wrap .right-box {width: 620px;}
+    .rc-wrap .right .right-wrap .img-wrap img {min-width: unset; min-height: unset;}
+    .rc-wrap .right .right-wrap .c-wrap {left: 40px; padding: 40px 0 0; gap: 40px;}
+    .rc-wrap .right .right-wrap .c-wrap .line { top: 50px; height: 970px;}
+    .rc-wrap .right .right-wrap .c-wrap .c-kind .txt {font-size: 18px;}
+    .rc-wrap .right .right-wrap .c-wrap .c-kind .txt span {font-size: 14px;}
+}
 
 
 @media screen and (max-width: 768px) {
