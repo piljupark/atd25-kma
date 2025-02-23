@@ -45,7 +45,7 @@
 .atd-gl-wrap .gl-info .gl-kind {position: relative; width: 60%; height: auto; display: grid; grid-template-columns: repeat(2, 1fr); column-gap: 40px;}
 .atd-gl-wrap .gl-info .gl-kind .kind {position: relative; height: 250px; display: grid; align-content: center; gap: 40px;}
 .atd-gl-wrap .gl-info .gl-kind .kind .kind-tit {font-size: 28px; font-weight: 500; color: #292929;}
-.atd-gl-wrap .gl-info .gl-kind .kind .kind-txt {font-size: 18px; font-weight: 500; color: #292929;}
+.atd-gl-wrap .gl-info .gl-kind .kind .kind-txt {font-size: 18px; font-weight: 500; color: #292929; line-height: 1.5;}
 
 
 /* scd */
