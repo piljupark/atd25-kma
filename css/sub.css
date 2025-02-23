@@ -342,7 +342,7 @@
 .team-box .schedule details .team-info .info .left .pin { min-width: 130px; font-size: 20px; font-weight: 600; color: #363636; text-align: center; line-height: 1.5;}
 .team-box .schedule details .team-info .info .right { font-size: 18px; font-weight: 500; color: #363636; line-height: 1.5;}
 .team-box .schedule details .team-info .info .right span {font-weight: 700;}
-.team-box .schedule details[open] .team-info {max-height: 700px; transition: max-height 0.3s ease-in;}
+.team-box .schedule details[open] .team-info {max-height: 100%; transition: max-height 0.3s ease-in;}
 
 .team-box .stay {position: relative; width: 100%; height: auto; margin-top: 150px; }
 .team-box .stay .stay-tit {position: relative; width: 100%; font-family: 'Outfit', serif; font-size: 56px; font-weight: 500; color: #292929}
