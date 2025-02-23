@@ -81,7 +81,7 @@
 /* kntSpk */
 .container-knt {}
 .knt-wrap { position: relative; width: 100%; height: auto; max-width: 1840px; margin: 0 auto; padding: 70px 20px 160px; box-sizing: border-box; display: flex; justify-content: space-between; gap: 40px; }
-.knt-wrap .knt { position: relative; width: 33%; height: auto; padding-top: min(56.25%, 900px); border-radius: 30px; background-position: left; background-repeat: no-repeat; background-size: cover; overflow: hidden; transition: all .5s; }
+.knt-wrap .knt { position: relative; width: 33%; height: auto; padding-top: min(56.25%, 900px); border-radius: 30px; background-position: left; background-repeat: no-repeat; background-size: cover; overflow: hidden; transition: all .5s; cursor: pointer; }
 
 .knt-wrap .knt .bg-knt {position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-position: left; background-repeat: no-repeat; background-size: cover; cursor: pointer; transition: all .5s;}
 .knt-wrap .knt .bg-b {position: absolute; width: 100%; height: 40%; bottom: 0; left: 0; background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);}
@@ -101,6 +101,7 @@
 .knt-wrap .knt.shrink .knt-nm { visibility: hidden; display: none; opacity: 0; }
 .knt-wrap .knt.shrink .bg-knt { background-position: 15%; }
 .knt-wrap .knt.shrink .txt-wrap {opacity: 0; width: 0; z-index: -1; left: -100%;}
+
 .knt-wrap .knt.show .bg-b {opacity: 0;}
 .knt-wrap .knt.show .txt-wrap { opacity: 1; z-index: 3; left: unset;}
 
