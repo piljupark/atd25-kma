@@ -13,7 +13,8 @@
 .tc-wrap .tit-wrap {position: relative; width: 100%; max-width: 1840px; margin: 0 auto; padding: 0 20px; box-sizing: border-box;}
 .tc-wrap .tit-wrap .tit {font-size: 50px; font-weight: 600; line-height: 1.5; color: #292929;}
 .tc-wrap .tit-wrap .sub {font-size: 23px; font-weight: 500; color: #292929; line-height: 1.5; margin-top: 20px;}
-.tc-wrap .c-kind-wrap {position: relative; width: 100%; height: 800px; margin: 100px auto 0; padding: 100px 0; box-sizing: border-box; display: flex; justify-content: space-between;}
+.tc-wrap .c-kind-wrap {position: relative; width: 100%; height: 800px; margin: 100px auto 0; padding: 100px 0; box-sizing: border-box; display: flex; justify-content: space-between; background-image: url(/assets/imgs/img_tc_bg.webp); background-position: center; background-repeat: no-repeat; background-size: cover;}
+.tc-wrap .c-kind-wrap .bg-b {position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: rgba(23, 22, 40, 0.75);}
 .tc-wrap .c-kind-wrap .c-kind-box {position: relative; width: 100%; max-width: 1840px; height: 800px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; display: flex; justify-content: space-between;}
 .tc-wrap .c-kind-wrap .c-kind-box .c-kind {position: relative; width: 30%; height: 600px; padding: 40px; box-sizing: border-box; background: #0000004D; border-radius: 30px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); display: grid; align-content: space-between;}
 .tc-wrap .c-kind-wrap .c-kind-box .c-kind .c-top {position: relative; width: 100%; display: flex; justify-content: space-between; align-items: center;}
