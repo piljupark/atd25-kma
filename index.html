@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/font.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -28,355 +29,362 @@
     <div id="container">
         <!-- header -->
         <div id="header">
-            <a href="index.html"><img src="/assets/imgs/atdLogo4.webp" alt="ATD2025 logo" class="header-logo"></a>
-        
-            <div class="pc-cate">
-                <ul class="main-cate">
-                    <li>ATD 25</li>
-                    <li>KMA-ATD 25</li>
-                    <li><a href="https://www.atdconference.td.org/program/sessions" target="_blank">SESSIONS</a></li>
-                    <li><a href="/etc/faq.html">FAQ</a></li>
-                    <li><a href="/etc/hstr.html">HISTORY</a></li>
-                </ul>
-                <ul class="sub-cate-1 sub-cate">
-                    <li><a href="/atd25/abtAtd25.html">About ATD 25</a></li>
-                    <li><a href="/atd25/kntSpk.html">키노트 스피커</a></li>
-                    <li><a href="/atd25/lngTr.html">학습 과정</a></li>
-                    <li><a href="/atd25/scd.html">일정</a></li>
-                </ul>
-                <ul class="sub-cate-2 sub-cate">
-                    <li><a href="/kmaAtd25/team.html">팀별 일정표</a></li>
-                    <li><a href="/kmaAtd25/spcPrg.html">스페셜 프로그램</a></li>
-                    <li><a href="/kmaAtd25/cdnGrp.html">코디네이터 그룹</a></li>
-                    <li><a href="/kmaAtd25/cost.html">참가비용</a></li>
-                </ul>
-            </div>
-            
-            <button class="reg">
-                Register
-                <a href="/etc/contact.html"></a>
-            </button>
-            
-            <button class="menu-btn"></button>
-
-            <!-- menu-wrap -->
-            <div class="cate-wrap">
-                <div class="top">
-                    <button class="close-btn"></button>
+            <div class="header-wrap">
+                <a href="index.html" class="header-logo-a">
+                    <img src="/assets/imgs/logo_atd_b.svg" alt="ATD2025 logo">
+                </a>
+                <a href="index.html" class="header-logo-k">
+                    <img src="/assets/imgs/logo_kma.svg" alt="ATD2025 logo" >
+                </a>
+                
+                <div class="pc-cate">
+                    <ul class="main-cate">
+                        <li>ATD 25</li>
+                        <li>KMA-ATD 25</li>
+                        <li><a href="" target="_blank">K-TD</a></li>
+                        <li><a href="/etc/faq.html">FAQ</a></li>
+                        <li><a href="/etc/hstr.html">HISTORY</a></li>
+                    </ul>
+                    <ul class="sub-cate-1 sub-cate">
+                        <li><a href="/atd25/abtAtd25.html">About ATD 25</a></li>
+                        <li><a href="/atd25/kntSpk.html">키노트 스피커</a></li>
+                        <li><a href="/atd25/lngTr.html">학습 과정</a></li>
+                        <li><a href="/atd25/scd.html">일정</a></li>
+                    </ul>
+                    <ul class="sub-cate-2 sub-cate">
+                        <li><a href="/kmaAtd25/team.html">팀별 일정표</a></li>
+                        <li><a href="/kmaAtd25/spcPrg.html">스페셜 프로그램</a></li>
+                        <li><a href="/kmaAtd25/cdnGrp.html">코디네이터 그룹</a></li>
+                        <li><a href="/kmaAtd25/cost.html">참가비용</a></li>
+                    </ul>
                 </div>
-                <ul class="cate">
-                    <li><a href="">HOME</a></li>
-                    <li>
-                        ATD 25
-                        <ul>
-                            <li><a href="/atd25/abtAtd25.html">About ATD 2025</a></li>
-                            <li><a href="/atd25/kntSpk.html">키노트 스피커</a></li>
-                            <li><a href="/atd25/lngTr.html">학습 과정</a></li>
-                            <li><a href="/atd25/scd.html">일정</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        KMA ATD 25
-                        <ul>
-                            <li><a href="/kmaAtd25/team.html">팀별 일정표</a></li>
-                            <li><a href="/kmaAtd25/spcPrg.html">스페셜 프로그램</a></li>
-                            <li><a href="/kmaAtd25/cdnGrp.html">코디네이터 그룹</a></li>
-                            <li><a href="/kmaAtd25/cost.html">참가비용</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/etc/ssns.html">SESSIONS</a></li>
-                    <li><a href="/etc/faq.html">FAQ</a></li>
-                    <li><a href="/etc/hstr.html">HISTORY</a></li>
-                </ul>
-            </div>
+                
+                <button class="reg">
+                    Register
+                    <a href="/etc/contact.html"></a>
+                </button>
+                
+                <button class="menu-btn"></button>
 
-            <div class="bg-over"></div>
+                <!-- menu-wrap -->
+                <div class="cate-wrap">
+                    <div class="top">
+                        <button class="close-btn"></button>
+                    </div>
+                    <ul class="cate">
+                        <li><a href="">HOME</a></li>
+                        <li>
+                            ATD 25
+                            <ul>
+                                <li><a href="/atd25/abtAtd25.html">About ATD 2025</a></li>
+                                <li><a href="/atd25/kntSpk.html">키노트 스피커</a></li>
+                                <li><a href="/atd25/lngTr.html">학습 과정</a></li>
+                                <li><a href="/atd25/scd.html">일정</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            KMA ATD 25
+                            <ul>
+                                <li><a href="/kmaAtd25/team.html">팀별 일정표</a></li>
+                                <li><a href="/kmaAtd25/spcPrg.html">스페셜 프로그램</a></li>
+                                <li><a href="/kmaAtd25/cdnGrp.html">코디네이터 그룹</a></li>
+                                <li><a href="/kmaAtd25/cost.html">참가비용</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/etc/ssns.html">SESSIONS</a></li>
+                        <li><a href="/etc/faq.html">FAQ</a></li>
+                        <li><a href="/etc/hstr.html">HISTORY</a></li>
+                    </ul>
+                </div>
+
+                <div class="bg-over"></div>
+            </div>
         </div>
+        <!-- header -->
 
         <div class="main">
-            <div class="bg-v">
-                <img src="/assets/imgs/logo_atd_w.webp" alt="ATD 25 한국대표단" class="m-logo">
-                <img src="/assets/imgs/a_m3.webp" alt="ATD 25 한국대표단" class="m-bg">
-            </div>
-            <div class="m-tit">
-                세계 최대 규모 대표단 운영 <br>
-                가장 많은 HR 담당자들이 KMA를 선택한 이유, <br>
-                직접 경험해보시길 바랍니다.
-            </div>
-        </div>
-
-        <section class="tc-wrap">
-            
             <div class="tit-wrap">
                 <p class="tit">
-                    KMA-ATD 2025 한국대표단<br>TEAM CONCEPT
+                    전 세계 최대 규모 ATD 대표단<br>
+                    가장 많은 HR 담당자들이 선택한 이유를<br>
+                    직접 경험해 보세요!
                 </p>
-                <p class="sub">
-                    KMA-ATD 코디네이터 교수진이 함께 고민하고, 실제 현장의 목소리를 반영하여 올해의 HR 테마를 선정하였습니다.
-                </p>
+                <div class="btn-wrap">
+                    <button class="sbm-btn">
+                        <a href=""></a>
+                        신청하기
+                    </button>
+                    <button class="down-bnt">
+                        브로슈어
+                    </button>
+                </div>
             </div>
-            <div class="c-kind-wrap">
-                <div class="bg-b"></div>
-                <div class="c-kind-box">
-                    <div class="c-kind">
-                        <div class="c-top">
-                            <p class="tit"># TECHNOLOGY</p>
-                            <p class="badge">TEAM A</p>
-                        </div>
-                        <div class="c-info">
-                            AI기술이 변화시키는 <br>
-                            HRD의 새로운 역할! <br>
-                            ‘AI Transformation’ 일정
-                        </div>
-                        <div class="c-bottom">
-                            <p class="txt">
-                                AI based 업스킬링 & 리스킬링
-                            </p>
-                            <p class="date">
-                                샌프란시스코 ㅣ 워싱턴 D.C. ㅣ 뉴욕 <br>
-                                5/15(목) ~ 5/24(토)  [ 7박 10일 ]
-                            </p>
-                        </div>
-                    </div>
-                    <div class="c-kind">
-                        <div class="c-top">
-                            <p class="tit"># HUMAN</p>
-                            <p class="badge">TEAM B</p>
-                        </div>
-                        <div class="c-info">
-                            Z세대 조직 문화의 <br>
-                            변화를 고민하는 <br>
-                            ‘New GEN’ 일정
-                        </div>
-                        <div class="c-bottom">
-                            <p class="txt">
-                                Gen Z 세대 중심의 조직 문화 변화
-                            </p>
-                            <p class="date">
-                                뉴욕 ㅣ 워싱턴 D.C. <br>
-                                5/15(목) ~ 5/23(금)  [ 7박 9일 ]
-                            </p>
+            <img src="/assets/imgs/img_m_bg.webp" alt="" class="bg-img">
+        </div>
+        <!-- <div class="m-bg"></div> -->
+
+        <!-- 무한 루프 -->
+        <div class="slider t-slider">
+            <div class="slide-track" id="slideTrack"></div>
+        </div>
+        <!-- //무한 루프 -->
+
+        <!-- only for kma -->
+        <section class="katd-wrap">
+            <p class="tit">오직 KMA만이 가능한</p>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p class="slide-txt">
+                            “KMA-ATD는 출발부터 현지 세션 참여와 벤치마킹, <br>
+                            참여한 기업들과의 네트워킹까지 ATD라는 컨퍼런스의 VIP라는 느낌을 받았어요“
+                        </p>
+                        <div class="prof">
+                            <div class="prof-img"></div>
+                            <div class="prof-txt">
+                                박민영 <br>
+                                <span>HR 담당자</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="c-kind">
-                        <div class="c-top">
-                            <p class="tit"># EXPERIENCE</p>
-                            <p class="badge">TEAM C</p>
-                        </div>
-                        <div class="c-info">
-                            초개인화가 곧 조직의 경쟁력! <br>
-                            기업 경쟁력을 높이는 <br>
-                            ‘직원경험(EX)’ 여정
-                        </div>
-                        <div class="c-bottom">
-                            <p class="txt">
-                                워라밸을 넘어 ‘일과 삶의 통합을 추구하는 직원 경험
-                            </p>
-                            <p class="date">
-                                뉴욕 ㅣ 워싱턴 D.C. ㅣ 토론토 <br>
-                                5/16(금) ~ 5/25(일)  [ 8박 10일 ]
-                            </p>
+                    <div class="swiper-slide">
+                        <p class="slide-txt">
+                            “HR 분야의 최고 전문가들이 함께 해줘서 <br>
+                            모든 세션들을 보는 깊이가 다른 ATD였습니다.“
+                        </p>
+                        <div class="prof">
+                            <div class="prof-img"></div>
+                            <div class="prof-txt">
+                                김민규 <br>
+                                <span>HR 담당자</span>
+                            </div>
                         </div>
                     </div>
+                    <div class="swiper-slide">
+                        <p class="slide-txt">
+                            “K-TD를 통해 다른 회사의 사례를 직접 듣고<br>
+                            같은 고민을 가진 실무자들과 의견을 나눌 수 있어  의미 있었어요 .“
+                        </p>
+                        <div class="prof">
+                            <div class="prof-img"></div>
+                            <div class="prof-txt">
+                                최영 <br>
+                                <span>HR 담당자</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="flow-box">
+                <p class="katd-m-tit outfit">
+                    ONLY FOR KMA
+                </p>
+                <div class="flow-wrap flow1">
+                    <div class="bg-b"></div>
+                    <p class="flow-tit">
+                        테마별 기업 탐방 및 <br>
+                        현직자와의 만남
+                    </p>
+                </div>
+                <div class="flow-wrap flow2">
+                    <div class="bg-b"></div>
+                    <p class="flow-tit">
+                        키노트 세션 <br>
+                        VIP석 제공
+                    </p>
+                </div>
+                <div class="flow-wrap flow3">
+                    <div class="bg-b"></div>
+                    <p class="flow-tit">
+                        현지 데일리 <br>
+                        디브리핑
+                    </p>
+                </div>
+                <div class="flow-wrap flow4">
+                    <div class="bg-b"></div>
+                    <p class="flow-tit">
+                        TD 우수사례 공유의 장, <br>
+                        K-TD Meet Up
+                    </p>
                 </div>
             </div>
         </section>
+        <!-- //only for kma -->
 
         <section class="rc-wrap">
-            <div class="left">
-                <p class="rc-tit">
-                    고객 경험과 학습 경험의 여정 <br>
-                    러닝크루가 되어 함께 달려요!
+            <div class="rc-txt-wrap">
+                <p class="tit">
+                    단 하루도 허투루 보내지 않는 <br>
+                    <span class="b">완벽한 학습 경험!</span> <br>
+                    1도 빈틈 없는 <br>
+                    <span class="b">완벽한 고객 경험!</span> <br>
+                    <span class="bb">러닝크루가 되어 함께 달려요!</span>
                 </p>
-                <p class="rc-txt">
+                <p class="txt">
                     이제 참가자들은 직접 체험하고 서로 협력하며 <br>
-                    스스로 학습을 창출할 수 있는 주체적인 학습자, 러닝 크루가 되어봅니다. <br><br>
-
+                    스스로 학습을 창출할 수 있는 주체적인 학습자, <br>
+                    러닝(Learning) 크루가 되어봅니다. <br>
                     이론과 현장 경험의 균형을 통해 학습효과를 극대화하고 <br>
                     현업에 적용 가능한 방안을 모색해봅니다.
                 </p>
             </div>
-            <div class="right">
-                <div class="right-wrap">
-                    <div class="right-box">
-                        <div class="img-wrap">
-                            <img src="assets/imgs/img_rc1.webp" alt="">
-                            <div class="bg-b"></div>
-                        </div>
-                        <div class="img-wrap">
-                            <img src="assets/imgs/img_rc2.webp" alt="">
-                            <div class="bg-b"></div>
-                        </div>
-                        <div class="c-wrap">
-                            <div class="line"></div>
-                            <div class="c-kind">
-                                <div class="shape"></div>
-                                <div class="txt">
-                                    연수중<br><br>
-                                    <span>
-                                        ATD 사전 학습자료 배포<br>
-                                        (추천 세션 리스트 등)
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="c-kind">
-                                <div class="shape"></div>
-                                <div class="txt">
-                                    출국<br><br>
-                                    <span>
-                                        A팀 ㅣ 샌프란시스코<br>
-                                        B팀 ㅣ 뉴욕 <br>
-                                        C팀 ㅣ 토론토 (ATD 이후)
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="c-kind">
-                                <div class="shape"></div>
-                                <div class="txt">
-                                    경유 도시<br><br>
-                                    <span>
-                                        팀별 벤치마킹 프로그램
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="c-kind">
-                                <div class="shape"></div>
-                                <div class="txt">
-                                    ATD START !<br><br>
-                                    <span>
-                                        2025년 5월 18일 - 21일
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="c-kind">
-                                <div class="shape"></div>
-                                <div class="txt">
-                                    ATD 1일차 (5/18)<br><br>
-                                    <span>
-                                        [Pre-Workshop] <br class="mo-only"> 코디네이터 교수의 ATD 지난대회 리뷰 및 ATD25 OT <br>
-                                        [K-TD Meet Up] <br class="mo-only"> 1단계 네트워킹 러닝 크루 간 상호 교류 및 주제별 네트워킹
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="c-kind">
-                                <div class="shape"></div>
-                                <div class="txt">
-                                    ATD 2일차 (5/19)<br><br>
-                                    <span>
-                                        [K-TD Frontier Awards]  <br class="mo-only"> 우리 기관/기업 TD 우수사례 공유회 <br>
-                                        [디브리핑]  <br class="mo-only"> 코디네이터 교수의 주요 Session 및 방향성 정리 <br>
-                                        [K-TD Meet Up]  <br class="mo-only"> 2단계 네트워킹 러닝 크루 간 상호 교류 및 주제별 네트워킹
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="c-kind">
-                                <div class="shape"></div>
-                                <div class="txt">
-                                    ATD 3일차 (5/20)<br><br>
-                                    <span>
-                                        [KMA-ATD 특전]  현지 특별 프로그램
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="c-kind">
-                                <div class="shape"></div>
-                                <div class="txt">
-                                    ATD 4일차 (5/21)<br><br>
-                                    <span>
-                                        [종합 디브리핑]  <br class="mo-only"> 코디네이터 교수진의 총평 및 ATD 2025 주요 내용 요약정리 <br>
-                                        [K-TD Meet Up]  <br class="mo-only"> 3단계 네트워킹 러닝 크루 간 상호 교류 및 주제별 네트워킹
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="c-kind">
-                                <div class="shape"></div>
-                                <div class="txt">
-                                    ATD Finish<br><br>
-                                    <span>
-                                        경유도시 이문화체험 후 귀국
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="rc-r-wrap">
+                <div class="bg-img"></div>
+                <!-- 무한 루프 -->
+            <div class="m-slider">
+                <div class="m-slide" id="m-slide">
                 </div>
             </div>
+            <!-- //무한 루프 -->
+            </div>
         </section>
-        <!-- //rc-wrap -->
 
-        <section class="aw-wrap">
-            <div class="aw-top">
-                <p class="aw-tit">
-                    KMA-ATD 한국대표단은 <br>
-                    늘 한걸음 앞서 나갑니다.
-                </p>
-                <div class="aw-sp">
-                    <div class="sp-kind">
-                        <img src="/assets/icons/icon_awards.svg" alt="">
-                        <div class="sp-txt">
-                            <p class="sp-eng">Largest Delegation of the World</p>
-                            <p class="sp-kor">세계 최대 규모 참여상</p>
-                        </div>
-                    </div>
-                    <div class="sp-kind">
-                        <img src="/assets/icons/icon_awards.svg" alt="">
-                        <div class="sp-txt">
-                            <p class="sp-eng">International Champion</p>
-                            <p class="sp-kor">29년 연속 참가 공로상</p>
-                        </div>
-                    </div>
-                    <div class="sp-kind">
-                        <img src="/assets/icons/icon_awards2.svg" alt="">
-                        <div class="sp-txt">
-                            <p class="sp-eng">International Partner Award</p>
-                            <p class="sp-kor">ATD 글로벌 공식 파트너</p>
-                        </div>
-                    </div>
+        <section class="cdn-wrap">
+            <p class="cdn-tit">
+                KMA-ATD 코디네이터 교수진이 함께 고민하고, <br>
+                실제현장의 목소리를 반영하여 올해의 HR 테마를 선정하였습니다.
+            </p>
+            <div class="cdn-card-wrap">
+                <div class="card" style="background-image: url('/assets/imgs/img_scd_sanfransisco.webp');">
+                    <div class="bg-b"></div>
+                    <p class="tit">Technology</p>
+                    <p class="txt">
+                        AI기술이 변화시키는 HRD의 새로운 역할 <br>
+                        <span>'AI Transformation'</span>
+                    </p>
+                    <p class="tag"># AI based 업스킬링 & 리스킬링</p>
+                    <p class="team">TEAM A</p>
+                    <a href="" class="dtl-btn">
+                        자세히 보기
+                        <img src="/assets/icons/icon_arrow_r.svg" alt="자세히 보기">
+                    </a>
                 </div>
-            </div>
-            <div class="aw-info-wrap">
-                <div class="aw-bg-wrap">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div class="card" style="background-image: url('/assets/imgs/img_scd_newyork.webp');">
+                    <div class="bg-b"></div>
+                    <p class="tit">Human</p>
+                    <p class="txt">
+                        Z세대 조직 문화의 변화를 고민하는 <br>
+                        ‘New GEN’
+                    </p>
+                    <p class="tag"># Gen Z 세대 중심의 조직 문화 변화</p>
+                    <p class="team">TEAM B </p>
+                    <a href="" class="dtl-btn">
+                        자세히 보기
+                        <img src="/assets/icons/icon_arrow_r.svg" alt="자세히 보기">
+                    </a>
                 </div>
-                <div class="aw-txt-wrap">
-                    <span>
-                        <p class="tit">World Largest ATD 한국대표단</p>
-                        <p class="txt">1994년부터 쌓아온 국내 업계 최고의 ATD 한국대표단의 안정적 운영 노하우! <br>
-                            30년 가까이 지켜온 1위 ATD 한국대표단 ‘Biggest Delegation of the world’</p>
-                    </span>
-                    <span>
-                        <p class="tit">다양하고 차별화된 일정</p>
-                        <p class="txt">2025년 KMA-ATD 한국대표단은 A~D팀까지 4개의 팀이 구성될 예정이며,  <br>
-                            여유있고 편안한 일정을 제공합니다.</p>
-                    </span>
-                    <span>
-                        <p class="tit">고객 맞춤형 프로그램 커스터마이징</p>
-                        <p class="txt">참가자 니즈에 따른 고객 맞춤형 프로그램 구성이 가능합니다. <br>
-                            15인 이상 단체 신청의 경우 단독팀으로 별도의 일정 구성이 가능하며,KMA 담당자가 전담 지원됩니다.</p>
-                    </span>
-                    <span>
-                        <p class="tit">실무+이론, 국내 최고 코디네이터 교수진</p>
-                        <p class="txt">다년간의 국내 대기업 HRD 실무 경험과 탄탄한 이론 지식을 겸비한 KMA 코디네이터 교수진들이  <br>
-                            세션 내용을 낱낱이 해부해 기업 담당자 시각에서의 insight를 제공해드립니다.</p>
-                    </span>
-                    <span>
-                        <p class="tit">k-td Program & C-level 별도 프로그램</p>
-                        <p class="txt">참가자간 네트워킹 강화와 Best Practice 공유를 위한 K-TD 프로그램이 진행되며, KMA-ATD 한국대표단  <br>
-                            참가자 중 C-Level 참가자 분들을 위해 별도로 ATD 회장과 Insight Exchange 미팅의 시간을 마련했습니다.</p>
-                    </span>
-                    <span>
-                        <p class="tit">ATD를 내 손 안에! KMA 디브리핑</p>
-                        <p class="txt">참가자들의 효율적인 시간관리와 컨디션을 고려해 연수기간 중 디브리핑을 실시합니다.  <br>
-                            차별화된 코디네이터 교수진의 디브리핑을 통해 ATD 컨퍼런스의 핵심 내용을 효율적이고 정확하게 파악할 수 있습니다.</p>
-                    </span>
+                <div class="card" style="background-image: url('/assets/imgs/img_scd_canada.webp');">
+                    <div class="bg-b"></div>
+                    <p class="tit">Experience</p>
+                    <p class="txt">
+                        초개인화가 곧 조직의 경쟁력! <br>
+                        기업 경쟁력을 높이는 <span>‘직원경험(EX)'</span>
+                    </p>
+                    <p class="tag"># 워라밸을 넘어 '일과 삶의 통합'을 추구하는 직원경험</p>
+                    <p class="team">TEAM C</p>
+                    <a href="" class="dtl-btn">
+                        자세히 보기
+                        <img src="/assets/icons/icon_arrow_r.svg" alt="자세히 보기">
+                    </a>
                 </div>
             </div>
         </section>
+        <!-- //cdn-wrap -->
+
+        <!-- m-bottom -->
+        <section class="m-bottom">
+            <p class="tit">
+                KMA-ATD에서는 <br>
+                여러분이 ATD의 주인공입니다. 
+            </p>
+            <div class="aw-wrap">
+                <div class="aw">
+                    <img src="/assets/icons/icon_awards.svg" alt="수상내역">
+                    <div class="aw-txt">
+                        <p class="aw-eng">Largest Delegation of the World</p>
+                        <p class="aw-kor">세계 최대 규모 참여상</p>
+                    </div>
+                </div>
+                <div class="aw">
+                    <img src="/assets/icons/icon_awards.svg" alt="수상내역">
+                    <div class="aw-txt">
+                        <p class="aw-eng">International Champion</p>
+                        <p class="aw-kor">29년 연속 참가 공로상</p>
+                    </div>
+                </div>
+                <div class="aw">
+                    <img src="/assets/icons/icon_awards.svg" alt="수상내역">
+                    <div class="aw-txt">
+                        <p class="aw-eng">International Partner Award</p>
+                        <p class="aw-kor">ATD 글로벌 공식 파트너</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kind-wrap">
+                <div class="kind">
+                    <div class="kind-tit">World Largest <br>
+                        ATD 한국대표단</div>
+                    <div class="kind-txt">
+                        1994년부터 쌓아온 국내 업계 최고의 
+                        ATD 한국대표단의 안정적 운영 노하우!
+                        30년 가까이 지켜온 1위 ATD 한국대표단
+                        ‘Biggest Delegation of the world’
+                    </div>
+                </div>
+                <div class="kind">
+                    <div class="kind-tit">다양하고 <br> 차별화된 일정</div>
+                    <div class="kind-txt">
+                        2025년 KMA-ATD 한국대표단은 A~D팀까지 
+                        4개의 팀이 구성될 예정이며, 여유있고 편안한 일정을 제공합니다.
+                    </div>
+                </div>
+                <div class="kind">
+                    <div class="kind-tit">
+                        고객 맞춤형
+                        프로그램 <br>
+                        커스터마이징
+                    </div>
+                    <div class="kind-txt">
+                        참가자 니즈에 따른 고객 맞춤형 프로그램 구성이 가능합니다. 15인 이상 단체 신청의 경우 단독팀으로 별도의 일정 구성이 가능하며, KMA 담당자가 전담 지원됩니다.
+                    </div>
+                </div>
+                
+                <div class="kind">
+                    <div class="kind-tit">
+                        실무+이론, 국내 최고 <br>
+                        코디네이터 교수진
+                    </div>
+                    <div class="kind-txt">
+                        다년간의 국내 대기업 HRD 실무 경험과 탄탄한 이론 지식을 겸비한 KMA 코디네이터 교수진들이 세션 내용을 낱낱이 해부해 기업 담당자 시각에서의 insight를 제공해드립니다.
+                    </div>
+                </div>
+                <div class="kind">
+                    <div class="kind-tit">
+                        K-TD Program &  <br>
+                        C-level 별도 프로그램
+                    </div>
+                    <div class="kind-txt">
+                        참가자간 네트워킹 강화와 Best Practice 공유를 위한 K-TD 프로그램이이 진행되며, KMA-ATD 한국대표단 참가자 중 C-Level 참가자 분들을 위해 별도로 ATD 회장과 Insight Exchange 미팅의 시간을 마련했습니다.
+                    </div>
+                </div>
+                <div class="kind">
+                    <div class="kind-tit">
+                        ATD를 내 손 안에!  <br>
+                        KMA 디브리핑
+                    </div>
+                    <div class="kind-txt">
+                        참가자들의 효율적인 시간관리와 컨디션을 고려해 연수기간 중 디브리핑을 실시합니다. 
+                        차별화된 코디네이터 교수진의 디브리핑을 통해 ATD 컨퍼런스의 핵심 내용을 효율적이고 정확하게 파악할 수 있습니다.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+        
 
     
 
@@ -445,43 +453,104 @@
         AOS.init();
     </script>
 
-    
-
+    <!-- 로고 루프 -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const imageBtns = document.querySelectorAll('.spk-btn');
-            const images = document.querySelectorAll('.spk');
-
-            // 기존에 노출된 이미지를 숨기기 함수
-            function hideImages() {
-                images.forEach(image => {
-                    image.style.display = 'none';
-                });
-            }
-
-            // 버튼 클릭 이벤트 처리
-            imageBtns.forEach(button => {
-                button.addEventListener('click', function() {
-                    // 기존에 활성화된 버튼의 클래스 제거
-                    imageBtns.forEach(btn => {
-                        btn.classList.remove('active');
-                    });
-
-                    // 클릭한 버튼에 활성화 클래스 추가
-                    button.classList.add('active');
-
-                    const targetImageId = button.getAttribute('data-image');
-                    const targetImage = document.getElementById(targetImageId);
-
-                    // 기존에 노출된 이미지를 숨기기
-                    hideImages();
-
-                    // 클릭한 버튼에 해당하는 이미지를 노출
-                    targetImage.style.display = 'block';
-                });
-            });
+        const slideTrack = document.getElementById("slideTrack");
+        const images = [
+            "assets/imgs/logo_m_l1.png", "assets/imgs/logo_m_l2.png","assets/imgs/logo_m_l4.png",  "assets/imgs/logo_m_l7.png","assets/imgs/logo_m_l8.png", "assets/imgs/logo_m_l9.png", "assets/imgs/logo_m_l10.png", "assets/imgs/logo_m_l12.png", "assets/imgs/logo_m_l15.png",  "assets/imgs/logo_m_l7.png", "assets/imgs/logo_m_l19.png", "assets/imgs/logo_m_l21.png", "assets/imgs/logo_m_l3.svg", "assets/imgs/logo_m_l11.svg", "assets/imgs/logo_m_l14.svg", "assets/imgs/logo_m_l18.svg", "assets/imgs/logo_m_l20.svg", "assets/imgs/logo_m_l20.svg", "assets/imgs/logo_m_l22.svg", "assets/imgs/logo_m_l23.svg", "assets/imgs/logo_m_l24.svg", "assets/imgs/logo_m_l25.svg", "assets/imgs/logo_m_l26.svg", "assets/imgs/logo_m_l27.svg", "assets/imgs/logo_m_l5.webp", "assets/imgs/logo_m_l6.webp", "assets/imgs/logo_m_l13.webp", "assets/imgs/logo_m_l16.png",
+        ];
+        
+        images.forEach(src => {
+            let slide = document.createElement("div");
+            slide.classList.add("slide");
+            let img = document.createElement("img");
+            img.src = src;
+            slide.appendChild(img);
+            slideTrack.appendChild(slide);
+        });
+        
+        images.forEach(src => {
+            let slide = document.createElement("div");
+            slide.classList.add("slide");
+            let img = document.createElement("img");
+            img.src = src;
+            slide.appendChild(img);
+            slideTrack.appendChild(slide);
         });
     </script>
 
+    <script>
+        const slider = document.getElementById('m-slide');
+        const slides = [
+            { title: "Learninig <br>Journey", text: "START" },
+            { title: "연수 전", text: "ATD 사전 학습자료 배포 <br>(추천 세션 리스트 등" },
+            { title: "출국", text: "A팀 ㅣ 샌프란시스코 <br> B팀 ㅣ 뉴욕 <br> C팀 ㅣ 토론토" },
+            { title: "경유 도시", text: "팀별 <br>벤치마킹 프로그램" },
+            { title: "ATD 1일차 (5/18)", text: "Pre-Workshop <br>K-TD Meet Up" },
+            { title: "ATD 2일차 (5/19)", text: "K-TD Frontier Awards <br> 디브리핑 <br> K-TD Meet Up" },
+            { title: "ATD 3일차 (5/20)", text: "KMA-ATD 특전" },
+            { title: "ATD Finish", text: "경유도시 <br>이문화 체험 후 귀국" }
+
+        ];
+        
+        function createSlides() {
+    slides.forEach(({ title, text }) => {
+        const slide = document.createElement('div');
+        slide.classList.add('slide');
+
+        const slideTitle = document.createElement('div');
+        slideTitle.classList.add('slide-title');
+        slideTitle.innerHTML = title;  // 여기서 innerHTML을 사용
+
+        const slideText = document.createElement('div');
+        slideText.classList.add('slide-text');
+        slideText.textContent = text;
+        slideText.innerHTML = text; 
+
+        slide.appendChild(slideTitle);
+        slide.appendChild(slideText);
+        slider.appendChild(slide);
+    });
+
+    // 무한 루프를 위해 동일한 슬라이드 복제
+    slides.forEach(({ title, text }) => {
+        const slide = document.createElement('div');
+        slide.classList.add('slide');
+
+        const slideTitle = document.createElement('div');
+        slideTitle.classList.add('slide-title');
+        slideTitle.innerHTML = title;  // 여기서도 innerHTML을 사용
+        slideText.innerHTML = text; 
+
+        const slideText = document.createElement('div');
+        slideText.classList.add('slide-text');
+        slideText.textContent = text;
+
+        slide.appendChild(slideTitle);
+        slide.appendChild(slideText);
+        slider.appendChild(slide);
+    });
+        }
+        
+        createSlides();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteratction: false,
+            },
+            loop: true,
+        });
+    </script>
 </body>
 </html>
