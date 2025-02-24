@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
-#container {position: relative; width: 100%; margin-top: 160px;}
+#container {position: relative; width: 100%; }
+#header .pc-cate ul.main-cate li, #header .pc-cate ul.main-cate li a {color: #fff;}
+#header.fixed .pc-cate ul.main-cate li, #header.fixed .pc-cate ul.main-cate li a {color: #000;}
+
 
 
 /* abtAbt25 */
