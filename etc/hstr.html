@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="../css/font.css">
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/sub.css">
 
     <script src="../js/header.js"></script>
 </head>
@@ -80,6 +81,65 @@
         <div class="pg-top" style="background-image: url('/assets/imgs/img_t_bg.webp');">
             <p class="pg-tit">HISTORY</p>
         </div>
+
+        <div class="gallery-container">
+            <div class="gallery" id="gallery"></div>
+            <div class="loading" id="loading">로딩 중...</div>
+        </div>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const gallery = document.getElementById("gallery");
+            const loading = document.getElementById("loading");
+            let images = []; 
+            let currentIndex = 0;
+            const batchSize = 20; // 한 번에 불러올 개수
+
+            // JSON에서 이미지 불러오기
+            fetch("image.json")
+                .then(response => response.json())
+                .then(data => {
+                    images = data;
+                    loadImages(); // 처음 20개 로드
+                })
+                .catch(error => console.error("❌ 이미지 로드 실패:", error));
+
+            // 이미지 로드 함수
+            function loadImages() {
+                console.log("📢 loadImages() 실행됨!");
+                const fragment = document.createDocumentFragment();
+                let loaded = 0;
+
+                for (let i = currentIndex; i < currentIndex + batchSize; i++) {
+                    if (i >= images.length) {
+                        loading.innerText = "더 이상 이미지가 없습니다.";
+                        return;
+                    }
+
+                    let img = document.createElement("img");
+                    img.src = images[i].src;
+                    img.alt = `갤러리 이미지 ${i + 1}`;
+                    img.loading = "lazy"; // 성능 최적화
+                    img.onerror = () => console.error("❌ 이미지 로드 실패:", img.src);
+                    
+                    fragment.appendChild(img);
+                    loaded++;
+                }
+
+                gallery.appendChild(fragment);
+                currentIndex += batchSize;
+
+                console.log(`🎯 ${loaded}개 이미지 추가 완료! 현재 인덱스: ${currentIndex}`);
+            }
+
+            // 스크롤 이벤트 (무한 스크롤)
+            window.addEventListener("scroll", () => {
+                if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
+                    loadImages();
+                }
+            });
+        });
+    </script>
 </body>
 </html>
