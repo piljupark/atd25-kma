@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/sub.css">
 
     <script src="../js/header.js"></script>
+   
 </head>
 <body>
     <div id="container">
@@ -82,64 +83,118 @@
             <p class="pg-tit">HISTORY</p>
         </div>
 
-        <div class="gallery-container">
-            <div class="gallery" id="gallery"></div>
-            <div class="loading" id="loading">로딩 중...</div>
+        <div class="hstr-wrap">
+            <div id="gallery"></div>
+            <div id="loading">
+                <button id="loadMore">더보기</button>
+            </div>
         </div>
     </div>
 
+    <!-- 팝업 요소 -->
+    <div id="popup" class="hidden">
+        <div class="popup-content">
+            <button id="closePopup" class="close-btn"></button>
+            <img id="popupImage" src="" alt="확대된 이미지">
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const gallery = document.getElementById("gallery");
-            const loading = document.getElementById("loading");
-            let images = []; 
-            let currentIndex = 0;
-            const batchSize = 20; // 한 번에 불러올 개수
+            const loadMoreButton = document.getElementById("loadMore");
 
-            // JSON에서 이미지 불러오기
+            if (!gallery || !loadMoreButton) {
+                console.error("❌ 필수 DOM 요소를 찾을 수 없습니다.");
+                return;
+            }
+
+            let images = []; // JSON 데이터를 저장할 배열
+            let currentIndex = 0; // 현재 인덱스
+            const batchSize = 20; // 한 번에 불러올 이미지 개수
+
+            // JSON 데이터 로드
             fetch("image.json")
-                .then(response => response.json())
-                .then(data => {
-                    images = data;
-                    loadImages(); // 처음 20개 로드
+                .then((response) => {
+                    if (!response.ok) throw new Error("❌ JSON 파일을 불러올 수 없습니다.");
+                    return response.json();
                 })
-                .catch(error => console.error("❌ 이미지 로드 실패:", error));
+                .then((data) => {
+                    images = data.length > 0 ? data : [{ src: "placeholder.jpg" }];
+                    loadImages(); // 처음 이미지를 로드
+                    loadMoreButton.style.display = "block";
+                })
+                .catch((error) => {
+                    console.error(error);
+                    loadMoreButton.style.display = "none";
+                });
 
-            // 이미지 로드 함수
+            // Masonry 레이아웃 조정 함수
+            function resizeGridItems() {
+                const items = document.querySelectorAll('.gallery-item');
+                items.forEach(item => {
+                    const rowHeight = parseInt(window.getComputedStyle(gallery).getPropertyValue('grid-auto-rows'));
+                    const rowGap = parseInt(window.getComputedStyle(gallery).getPropertyValue('gap'));
+                    const img = item.querySelector('img');
+
+                    if (img.complete) {
+                        const rowSpan = Math.ceil((img.offsetHeight + rowGap) / (rowHeight + rowGap));
+                        item.style.gridRowEnd = `span ${rowSpan}`;
+                        item.style.minHeight = "100px"; // 최소 높이 적용
+                    } else {
+                        img.addEventListener('load', () => {
+                            const rowSpan = Math.ceil((img.offsetHeight + rowGap) / (rowHeight + rowGap));
+                            item.style.gridRowEnd = `span ${rowSpan}`;
+                            item.style.minHeight = "100px"; // 최소 높이 적용
+                        });
+                    }
+                });
+            }
+
+            // 이미지 추가 함수
             function loadImages() {
-                console.log("📢 loadImages() 실행됨!");
                 const fragment = document.createDocumentFragment();
-                let loaded = 0;
 
                 for (let i = currentIndex; i < currentIndex + batchSize; i++) {
-                    if (i >= images.length) {
-                        loading.innerText = "더 이상 이미지가 없습니다.";
-                        return;
-                    }
+                    if (i >= images.length) break;
 
-                    let img = document.createElement("img");
+                    const item = document.createElement("div");
+                    item.classList.add("gallery-item");
+
+                    const img = document.createElement("img");
                     img.src = images[i].src;
                     img.alt = `갤러리 이미지 ${i + 1}`;
-                    img.loading = "lazy"; // 성능 최적화
-                    img.onerror = () => console.error("❌ 이미지 로드 실패:", img.src);
-                    
-                    fragment.appendChild(img);
-                    loaded++;
+                    img.loading = "lazy";
+                    img.onerror = () => {
+                        img.src = "placeholder.jpg";
+                        console.error(`❌ 이미지 로드 실패: ${img.src}`);
+                    };
+
+                    item.appendChild(img);
+                    fragment.appendChild(item);
                 }
 
                 gallery.appendChild(fragment);
+                resizeGridItems(); // Masonry 레이아웃 조정
+
                 currentIndex += batchSize;
 
-                console.log(`🎯 ${loaded}개 이미지 추가 완료! 현재 인덱스: ${currentIndex}`);
+                if (currentIndex >= images.length) {
+                    loadMoreButton.style.display = "none"; // 더 이상 로드할 이미지가 없으면 버튼 숨기기
+                    const noMoreText = document.createElement("p");
+                    noMoreText.innerText = " ";
+                    document.getElementById("loading").appendChild(noMoreText);
+                }
             }
 
-            // 스크롤 이벤트 (무한 스크롤)
-            window.addEventListener("scroll", () => {
-                if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
-                    loadImages();
-                }
-            });
+            // 더보기 버튼 클릭 이벤트
+            loadMoreButton.addEventListener("click", () => loadImages());
+
+            // 창 크기가 변경될 때 Masonry 레이아웃 재조정
+            window.addEventListener('resize', resizeGridItems);
         });
     </script>
+
 </body>
 </html>

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-#container { position: relative; width: 100%; height: auto;  }
+#container { position: relative; width: 100%; height: auto;}
 
 .main {position: relative; width: 100%; height: auto; }
 .main .bg-v{position: relative; width: 100%; height: auto; padding-top: min(56.25%, 100vh); max-height: 100vh;}

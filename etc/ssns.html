@@ -7,11 +7,12 @@
 
     <link rel="stylesheet" href="../css/font.css">
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/sub.css">
 
     <script src="../js/header.js"></script>
 </head>
 <body>
-    <div id="container">
+    <div id="container" class="ssnsContainer">
 
         <!-- header -->
         <div id="header">
@@ -81,6 +82,64 @@
         <div class="pg-top" style="background-image: url('/assets/imgs/img_t_bg.webp');">
             <p class="pg-tit pg-tit-eng pg-tit-bk">SESSIONS</p>
         </div>
+
+        <div class="cont-ss">
+            <div class="text">
+                <p>첫 번째 줄 텍스트입니다.</p>
+                <p>스크롤을 내려보세요.</p>
+            </div>
+            
+            <div class="box"></div>
+        </div>
+        <div class="cont-ss2"></div>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+    const box = document.querySelector(".box");
+    const contSs = document.querySelector(".cont-ss");
+
+    window.addEventListener("scroll", () => {
+        const scrollY = window.scrollY; // 현재 스크롤 위치
+        const contSsTop = contSs.offsetTop; // .cont-ss의 시작 위치
+        const contSsHeight = contSs.offsetHeight; // .cont-ss의 높이
+        const boxStart = contSsTop; // 박스가 이동 및 확대를 시작하는 지점
+        const boxEnd = contSsTop + contSsHeight - box.offsetHeight; // 박스가 멈추는 지점
+
+        if (scrollY >= boxStart && scrollY <= boxEnd) {
+            // 스크롤 진행 비율 계산
+            const progress = (scrollY - boxStart) / (boxEnd - boxStart);
+
+            // 박스 크기와 위치 변화
+            const size = 100 + progress * (300 - 100); // 크기를 점진적으로 변화
+            const top = progress * (contSsHeight - box.offsetHeight); // 컨테이너 안에서만 이동
+            const left = (window.innerWidth - size) / 2; // 화면 중앙으로 이동
+
+            box.style.width = `${size}px`;
+            box.style.height = `${size}px`;
+            box.style.top = `${top}px`;
+            box.style.left = `${left}px`;
+        } else if (scrollY > boxEnd) {
+            // 특정 지점 이후 고정된 크기와 위치로 설정
+            box.style.position = "absolute";
+            box.style.top = `${contSsHeight - box.offsetHeight}px`; // .cont-ss 바닥에 고정
+            box.style.left = "50%";
+            box.style.transform = "translateX(-50%)";
+            box.style.width = "300px";
+            box.style.height = "300px";
+        } else if (scrollY < boxStart) {
+            // 초기 상태로 복원
+            box.style.position = "absolute";
+            box.style.top = "50px"; // 초기 위치
+            box.style.left = "300px"; // 초기 위치
+            box.style.width = "100px";
+            box.style.height = "100px";
+            box.style.transform = "none";
+        }
+    });
+});
+
+
+    </script>
 </body>
 </html>
