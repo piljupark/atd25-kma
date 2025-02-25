@@ -11,15 +11,15 @@ p, a, h1, h2, h3, h4, button, ul, li { padding: 0; margin: 0; text-decoration: n
 #header .header-logo { width: 100px; padding-top: 10px; } 
 #header .pc-cate { position: absolute; padding-top: 20px; left: 50%; transform: translate(-50%, 0); display: block; } 
 #header .pc-cate ul { display: flex; gap: 80px; } 
-#header .pc-cate ul.main-cate li { font-family: "Pretendard Variable"; font-weight: 600; font-size: 24px; color: #000; cursor: pointer; inline-size: max-content; } 
+#header .pc-cate ul.main-cate li { font-family: "Pretendard Variable"; font-weight: 600; font-size: 23px; color: #000; cursor: pointer; inline-size: max-content; } 
 #header .pc-cate ul.main-cate li a { color: #000; } 
 #header .pc-cate ul.main-cate:hover > li:not(:hover) { opacity: 0.5; } 
 #header .pc-cate ul.sub-cate { position: absolute; width: 100%; height: 140px; left: 0; z-index: -1; display: flex; align-items: flex-end; justify-content: center; gap: 30px; box-sizing: border-box; transition: all 0.2s; } 
 #header .pc-cate ul.sub-cate:hover > li:not(:hover) a { color: rgba(0, 0, 0, 0.5); } 
 #header .pc-cate ul.sub-cate li { box-sizing: border-box; } 
 #header .pc-cate > ul.sub-cate-1, #header .pc-cate > ul.sub-cate-2 { width: 200px; top: 0; left: unset; display: grid; align-content: center; justify-items: center; overflow: hidden; padding: 40px 0 0; background: none; gap: 0; visibility: hidden; opacity: 0; } 
-#header .pc-cate > ul.sub-cate-1 { height: 340px; right: 605px; } 
-#header .pc-cate > ul.sub-cate-2 { height: 340px; right: 412px; } 
+#header .pc-cate > ul.sub-cate-1 { height: 340px; right: 592px; } 
+#header .pc-cate > ul.sub-cate-2 { height: 340px; right: 405px; } 
 #header .pc-cate > ul.sub-cate-1 > li, #header .pc-cate > ul.sub-cate-2 > li { width: 100%; text-align: center; line-height: inherit; background: #fff; padding: 20px; } 
 #header .pc-cate > ul.sub-cate-2 > li { padding: 20px 40px; } 
 #header .pc-cate > ul.sub-cate-1 > li > a, #header .pc-cate > ul.sub-cate-2 > li > a { font-family: "Pretendard Variable"; font-weight: 700; color: #000; font-size: 16px; line-height: inherit; } 
@@ -28,7 +28,7 @@ p, a, h1, h2, h3, h4, button, ul, li { padding: 0; margin: 0; text-decoration: n
 #header .pc-cate ul.sub-cate-1 li:nth-child(n+2):nth-child(-n+3), #header .pc-cate ul.sub-cate-2 li:nth-child(n+2):nth-child(-n+4) { border-left: 1px solid rgba(0, 0, 0, 0.05); border-right: 1px solid rgba(0, 0, 0, 0.05); } 
 #header .pc-cate ul.sub-cate-1 li:last-child, #header .pc-cate ul.sub-cate-2 li:last-child { border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; border: 1px solid rgba(0, 0, 0, 0.05); border-top: none; } 
 
-#header .reg { position: relative; width: 200px; height: 59px; margin-top: 20px; font-family: 'Pretendard Variable'; font-size: 23px; font-weight: 600; color: #fff; line-height: normal; background: #5D4FFA; border: none; border-radius: 40px; text-transform: uppercase; } 
+#header .reg { position: relative; width: 180px; height: 50px; margin-top: 20px; font-family: 'Pretendard Variable'; font-size: 20px; font-weight: 600; color: #fff; line-height: normal; background: #5D4FFA; border: none; border-radius: 40px; text-transform: uppercase; } 
 #header .reg a { position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2; } 
 
 /* menu-btn */
