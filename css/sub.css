@@ -28,7 +28,7 @@
 .int-atd-i .txt-wrap .view-dtl:hover { opacity: .8; } 
 .int-atd-i .txt-wrap .view-dtl img { width: 40px; } 
 
-.v-wrap { position: relative; width: 100%; max-width: 1540px; height: auto; margin: 140px auto 200px; padding:56.25% 20px 0; box-sizing: border-box; overflow: hidden; } 
+.v-wrap { position: relative; width: 100%; max-width: 1540px; height: auto; margin: 140px auto 200px; padding: 0 20px; box-sizing: border-box; overflow: hidden; padding-top: min(720px, 56.25%) } 
 .v-wrap iframe { position: absolute; width: calc(100% - 40px); height: 100%; top: 0; left: 20px; border-radius: 30px; } 
 
 /* .w-atd-wrap { position: relative; width: 100%; height: auto; padding: 100px 20px; box-sizing: border-box; background: rgba(250, 249, 254, 1); } 
