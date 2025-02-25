@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 #header { display: block; padding: 0; height: 130px; } 
-#header .header-wrap { position: relative; width: 100%; height: 100%; max-width: 1540px; margin: 0 auto; padding: 0 40px; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; } 
+#header .header-wrap { position: relative; width: 100%; height: 100%; max-width: 1840px; margin: 0 auto; padding: 0 40px; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; } 
 #header .header-wrap .header-logo-a { position: absolute; top: 44px; left: 50%; transform: translate(-50%, 0); } 
 
 #header .header-wrap .header-logo-k img {width: 100px; padding-top: 10px;}
@@ -128,7 +128,7 @@
 
 
 /* cdn-wrap */
-.cdn-wrap { position: relative; width: 100%; max-width: 1540px; height: auto; margin:186px auto 0; padding: 0 3vw; box-sizing: border-box; } 
+.cdn-wrap { position: relative; width: 100%; max-width: 1840px; height: auto; margin:186px auto 0; padding: 0 3vw; box-sizing: border-box; } 
 .cdn-wrap .cdn-tit { position: relative; width: 100%; height: auto; font-size: 50px; font-weight: 500; color: #6e6e6e; text-align: center; line-height: 77px; letter-spacing: -1px; } 
 .cdn-wrap .cdn-tit span.b {color: #282828;}
 .cdn-wrap .cdn-tit span.bb {color: #282828; font-weight: 700;}
@@ -161,7 +161,7 @@
 .m-bottom { position: relative; width: 100%; height: auto; margin-top: 234px; padding: 90px 0 100px; box-sizing: border-box; background: #f8f8f8; } 
 .m-bottom .tit { position: relative; width: 100%; font-size: 50px; font-weight: 500; color: #282828; line-height: 77px; line-height: -1px; text-align: center; } 
 
-.m-bottom .aw-wrap { position: relative; width: 100%; max-width: 1540px; margin: 52px auto 0; padding: 0 3vw; box-sizing: border-box; display: flex; justify-content: space-between; } 
+.m-bottom .aw-wrap { position: relative; width: 100%; max-width: 1840px; margin: 52px auto 0; padding: 0 3vw; box-sizing: border-box; display: flex; justify-content: space-between; } 
 .m-bottom .aw-wrap .aw { position: relative; display: flex; align-items: center; gap: 23px; } 
 .m-bottom .aw-wrap .aw img { width: 60px; } 
 .m-bottom .aw-wrap .aw .aw-txt { position: relative; display: grid; } 

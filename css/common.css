@@ -51,14 +51,19 @@ p, a, h1, h2, h3, h4, button, ul, li { padding: 0; margin: 0; text-decoration: n
 
 
 /* pg-top */
-.pg-top { position: relative; width: 100%; height: 400px; display: flex; align-items: flex-end; justify-content: center; box-sizing: border-box; background-position: center; background-repeat: no-repeat; background-size: cover; background: #000; padding-bottom: 122px; } 
-.pg-top .pg-wrap { position: relative; width: 100%; max-width: 1540px; padding: 0 3vw; box-sizing: border-box; } 
+.pg-top { position: relative; width: 100%; height: 400px; padding-bottom: 122px; display: flex; align-items: flex-end; justify-content: center; box-sizing: border-box; background-position: center; background-repeat: no-repeat; background-size: cover; background: #000; overflow: hidden;} 
+.pg-top .pg-wrap { position: relative; width: 100%; max-width: 1840px; padding: 0 3vw; box-sizing: border-box; } 
 .pg-top .pg-wrap .pg-sub { color: #877DF9; font-family: "Pretendard Variable"; font-size: 20px; font-style: normal; font-weight: 600; line-height: normal; } 
 .pg-top .pg-wrap .pg-tit { color: #FFF; font-family: "Pretendard Variable"; font-size: 50px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase; margin-top: 10px; } 
+.pg-top .pgt-img {position: absolute; right: -250px; bottom: -250px; width: 1000px; transform: rotate(-15deg);}
+.pg-top .pgt-img.pgt-img2 {bottom: -400px; width: 1100px;}
+.pg-top .pgt-img.pgt-img4 {bottom: 0px; right: -320px; transform: rotate(0deg); width: 1200px;}
+.pg-top .pgt-img.pgt-img5 {bottom: -180px; width: 1200px; right: -500px; transform: rotate(5deg);}
+
 
 /* inner-cate */
-.inner-cate { position: relative; width: 100%; max-width: 1540px; height: auto; padding: 0 3vw 18.5px; margin: -44px auto 0; box-sizing: border-box; } 
-.inner-cate.fixed { position: fixed; top: 0px; max-width: unset; margin-top: 0; padding-top: 150px; z-index: 9; background: #fff; } 
+.inner-cate { position: absolute; width: 100%; max-width: 1840px; height: auto; bottom: 2px; padding: 0 3vw 18.5px; margin: -44px auto 0; box-sizing: border-box; } 
+.inner-cate.fixed { position: fixed; height: 194px; top: 0px; max-width: unset; margin-top: 0; padding-top: 150px; z-index: 9; background: #fff; } 
 .inner-cate.fixed .cate { justify-content: center; } 
 .inner-cate.fixed .cate a { color: rgba(153, 153, 153, 1); } 
 .inner-cate.fixed .cate a.active { color: rgba(93, 79, 250, 1); } 
@@ -71,7 +76,7 @@ p, a, h1, h2, h3, h4, button, ul, li { padding: 0; margin: 0; text-decoration: n
 .inner-cate .cate a.active::after { content: ''; position: absolute; width: 80%; height: 3px; background: #877DF9; bottom: -20px; left: 50%; transform: translate(-50%, 0); } 
 
 /* inner-sub-cate */
-.inner-sub-cate { position: relative; width: 100%; max-width: 1540px; margin: 0 auto; padding: 0 3vw; box-sizing: border-box; } 
+.inner-sub-cate { position: relative; width: 100%; max-width: 1840px; margin: 0 auto; padding: 0 3vw; box-sizing: border-box; } 
 .inner-sub-cate .sub-cate-wrap { position: relative; width: 100%; display: flex; align-items: center; justify-content: center; padding: 60px 0 40px; gap: 8px; border-bottom: 1px solid #e8e8e8; } 
 .inner-sub-cate .sub-cate-wrap a { min-width: 100px; padding: 0px 20px; height: 45px; color: #949494; text-align: center; font-family: "Pretendard Variable"; font-size: 20px; font-style: normal; font-weight: 600; line-height: 0px; letter-spacing: -1px; display: flex; align-items: center; border-radius: 40px; transition: all .3s; justify-content: center;} 
 .inner-sub-cate .sub-cate-wrap a.active { background: #5D4FFA; color: #fff; }
