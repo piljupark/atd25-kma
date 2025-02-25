@@ -40,7 +40,7 @@
 .katd-wrap .swiper .swiper-slide { display: grid; align-content: center; justify-items: center; } 
 .katd-wrap .swiper .swiper-slide .slide-txt { position: relative; width: 100%; height: 130px; font-size: 24px; font-weight: 500; color: #525252; line-height: 40px; letter-spacing: -0.48px; text-align: center; display: flex; align-items: center; justify-content: center; } 
 .katd-wrap .swiper .swiper-slide .prof { display: flex; gap: 25px; align-items: center; } 
-.katd-wrap .swiper .swiper-slide .prof .prof-img { position: relative; width: 80px; height: 80px; border-radius: 10px; } 
+.katd-wrap .swiper .swiper-slide .prof .prof-img { position: relative; width: 80px; height: 80px; border-radius: 10px; overflow: hidden;} 
 .katd-wrap .swiper .swiper-slide .prof .prof-img img{ position: absolute; width: 100%; height: 100%; object-fit: cover;}
 .katd-wrap .swiper .swiper-slide .prof .prof-txt { position: relative; font-size: 18px; font-weight: 600; color: #525252; letter-spacing: -0.36px; line-height: 30px;} 
 .katd-wrap .swiper .swiper-slide .prof .prof-txt span {color: #949494;}
