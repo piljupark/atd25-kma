@@ -40,6 +40,11 @@
                     <li><a href="../kmaAtd25/cost.html">참가비용</a></li>
                 </ul>
             </div>
+
+            <button class="reg">
+                Register
+                <a href="../etc/contact.html"></a>
+            </button>
             
             <button class="menu-btn"></button>
 
@@ -79,24 +84,32 @@
         </div>
 
         <!-- pg-top -->
-        <div class="pg-top" style="background-image: url('/assets/imgs/img_t_bg.webp');">
-            <p class="pg-tit">CONTACT</p>
+        <div class="pg-top">
+            <div class="pg-wrap">
+                <p class="pg-sub">신청하기</p>
+                <p class="pg-tit pg-tit-wh">Contact</p>
+            </div>
+            <img src="../assets/imgs/img_pgt4.svg" alt="ATD 25" class="pgt-img pgt-img4">
         </div>
 
         
         <div class="contact-wrap">
-          <p class="contact-tit">KMA-ATD 25 신청 & 문의</p>
+            <p class="contact-tit">KMA-ATD 25 신청 & 문의</p>
+            <p class="contact-txt">
+                입력하신 이메일로 KMA-ATD 24 안내자료와 신청서를 전달드립니다. <br>
+                <span>※이메일 미수신 등 오류나 문의사항은 사무국으로 연락해주세요!</span>
+            </p>
           <form id="myForm" action="https://formsubmit.co/pilpark25@gmail.com" method="POST">
             <input type="hidden" name="_subject" value="KMA-ATD 25 신청 & 문의">
         
             <!-- 입력 필드 -->
-            <input type="text" name="성함" placeholder="성함" required autocomplete='off'>
+            <input type="text" name="이름" placeholder="이름" required autocomplete='off'>
             <input type="text" name="기업명" placeholder="기업명" required autocomplete='off'>
             <input type="text" name="부서" placeholder="부서" required autocomplete='off'>
             <input type="text" name="직책" placeholder="직책" required autocomplete='off'>
             <input type="email" name="email" placeholder="이메일 주소" required autocomplete='off'>
             <input type="tel" name="전화번호" placeholder="전화번호" required autocomplete='off'>
-            <textarea name="message" placeholder="문의 내용" required autocomplete='off'></textarea>
+            <textarea name="message" placeholder="문의 내용" autocomplete='off'></textarea>
         
             <!-- <input type="hidden" name="_next" value="http://127.0.0.1:3000/etc/submit.html"> -->
             <input type="hidden" name="_subject" value="KMA-ATD 25 신청 & 문의">
