@@ -74,7 +74,7 @@
 .scd .view-dtl { padding: 20px 30px; margin: 0 auto; margin-top: 40px; background: #282828; border: none; font-family: 'Pretendard Variable'; font-size: 16px; font-weight: 500; color:#fff; border-radius: 10px; cursor: pointer; transition: all .2s; display: flex; } 
 
 /* kntSpk */
-.knt-wrap { position: relative; width: 100%; height: auto; max-width: 1840px; margin: 0 auto; padding: 70px 20px 160px; box-sizing: border-box; } 
+.knt-wrap { position: relative; width: 100%; height: auto; max-width: 1840px; margin: 0 auto; padding: 70px 3vw 160px; box-sizing: border-box; } 
 .knt-wrap .knt-tit {position: relative; width: 100%; margin-top: 65px; font-size: 24px; color: #282828; font-weight: 500; line-height: 38px; letter-spacing: 0.48px; text-align: center;}
 .knt-wrap .knt-int {position: relative; width: 100%; margin-top: 240px; display: flex; justify-content: space-between; gap: 38px;}
 .knt-wrap .knt-int .knt {position: relative; width: 33%; display: grid; justify-items: flex-start;}
