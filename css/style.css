@@ -1,22 +1,23 @@
 @charset "UTF-8";
 
-#header { display: block; padding: 0; height: 214px; } 
-#header .header-wrap { position: relative; width: 100%; height: 100%; max-width: 1580px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; display: flex; align-items: flex-end; justify-content: space-between; } 
-#header .header-wrap .header-logo-a { position: absolute; top: 66px; left: 50%; transform: translate(-50%, 0); } 
-#header .header-wrap .header-logo-a img { width: 134px; } 
+#header { display: block; padding: 0; height: 170px; } 
+#header .header-wrap { position: relative; width: 100%; height: 100%; max-width: 1580px; margin: 0 auto; padding: 24px 20px; box-sizing: border-box; display: flex; align-items: flex-end; justify-content: space-between; } 
+#header .header-wrap .header-logo-a { position: absolute; top: 44px; left: 50%; transform: translate(-50%, 0); } 
+#header .header-wrap .header-logo-a img { width: 92.4px; } 
 #header .header-wrap .header-logo-k { width: 105px; padding-bottom: 15px; } 
 #header .pc-cate { padding-top: 0; padding-bottom: 15px; } 
 #header .reg { background: #000; color: #Fff; margin: 0; } 
+#header .pc-cate ul.main-cate li {font-size: 23px;}
 #header .pc-cate > ul.sub-cate-1 { right: 610px; } 
 #header .pc-cate > ul.sub-cate-2 { right: 420px; } 
 
 #container { position: relative; width: 100%; height: auto; } 
 
 .main { position: relative; width: 100%; height: 100vh; overflow: hidden; } 
-.main .tit-wrap { position: relative; width: 100%; height: 100%; display: grid; align-content: center; justify-items: center; gap: 105px; } 
+.main .tit-wrap { position: relative; width: 100%; height: 100%; display: grid; align-content: center; justify-items: center; gap: 4vw; } 
 .main .tit-wrap .tit { 
  text-align: center; font-family: "Pretendard Variable"; font-size: 63px; font-style: normal; font-weight: 500; line-height: 93px; /* 147.619% */
- letter-spacing: -1.26px; padding-bottom: 60px; margin-top: -100px; } 
+ letter-spacing: -1.26px; padding-bottom: 0px;  } 
 .main .tit-wrap .btn-wrap { position: relative; width: auto; display: flex; justify-content: center; gap: 60px; } 
 .main .tit-wrap .btn-wrap button {position: relative; display: flex; width: 300px; height: 75px; padding: 10px; justify-content: center; align-items: center; gap: 10px; border-radius: 30px; background: #000; color: #FFF; text-align: center; font-family: "Pretendard Variable"; font-size: 23px; font-style: normal; font-weight: 800; line-height: normal; } 
 .main .tit-wrap .btn-wrap button a { position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2; } 
@@ -35,7 +36,7 @@
 /* //무한 루프 */
 
 /* rc-wrap */
-.rc-wrap { position: relative; width: 100%; height: 100vh; } 
+.rc-wrap { position: relative; width: 100%; height: auto; } 
 /* //rc-wrap */
 
 
@@ -77,8 +78,8 @@
 
 /* rc-wrap */
 .rc-wrap { position: relative; width: 100%; height: 100vh; margin-top: 400px; } 
-.rc-txt-wrap { position: absolute; width: 100%; max-width: 2440px; height: 100vh; left: 50%; top: 0; transform: translate(-50%, 0); padding: 0 20px; box-sizing: border-box; padding-top: 35px; } 
-.rc-txt-wrap .tit { position: relative; width: auto; font-size: 50px; font-weight: 500; line-height: 80px; color: #868686; letter-spacing: -1px; } 
+.rc-txt-wrap { position: absolute; width: 100%; max-width: 2440px; height: auto; left: 50%; top: 0; transform: translate(-50%, 0); padding: 35px 3vw 0; box-sizing: border-box; } 
+.rc-txt-wrap .tit { position: relative; width: auto; font-size: 50px; font-weight: 500; line-height: 70px; color: #868686; letter-spacing: -1px; } 
 .rc-txt-wrap .tit span.b { color: #282828; } 
 .rc-txt-wrap .tit span.bb { font-weight: 700; color: #000 } 
 .rc-txt-wrap .txt { position: relative; margin-top: 50px; font-size: 20px; font-weight: 500; color: #b0b0b0; line-height: 32px; letter-spacing: -0.4px; } 
