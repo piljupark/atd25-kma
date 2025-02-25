@@ -325,7 +325,7 @@
 
 
 /* team */
-.team-box { position: relative; width: 100%; height: auto; max-width: 1840px; margin: 0 auto; padding: 50px 20px; box-sizing: border-box; } 
+.team-box { position: relative; width: 100%; height: auto; max-width: 1840px; margin: 0 auto; padding: 50px 3vw; box-sizing: border-box; } 
 .team-box .schedule { position: relative; display: grid; gap: 10px; } 
 .team-box .schedule details summary::marker { content: ''; } 
 .team-box .schedule details summary { cursor: pointer; } 
@@ -348,18 +348,20 @@
 
 .team-box .stay { position: relative; width: 100%; height: auto; margin-top: 150px; } 
 .team-box .stay .stay-tit { position: relative; width: 100%; font-family: 'Outfit', serif; font-size: 56px; font-weight: 500; color: #282828 } 
-.team-box .stay .stay-sub { position: relative; width: 100%; font-family: 'Outfit', serif; font-size: 30px; font-weight: 400; color: #a3a3a3; margin-top: 20px;; } 
-.team-box .stay .stay-info { margin-top: 80px; display: flex; align-items: center; justify-content: space-between; gap: 100px; } 
+.team-box .stay .stay-sub { position: relative; width: 100%; font-family: 'Outfit', serif; font-size: 30px; font-weight: 400; color: #a3a3a3; margin-top: 20px; } 
+.team-box .stay .stay-info { margin-top: 120px; display: flex; align-items: center; justify-content: space-between; gap: 100px; } 
+.team-box .stay .stay-info-tit { position: relative; width: 100%; font-size: 32px; color: #282828; font-weight: 500; line-height: 50px; letter-spacing: 0.64px; text-align: center; margin-top: 60px; } 
+.team-box .stay .stay-info-txt {position: relative; width: 100%; text-align: center; font-size: 24px; font-weight: 400; color: #282828; line-height: 42px; letter-spacing: -0.48px; margin-top: 60px;}
 .team-box .stay .stay-info .staySwiper { position: relative; width: 50%; border-radius: 30px; } 
 .team-box .stay .stay-info .staySwiper .swiper-wrapper .swiper-slide { height: 600px; background: #eee; border-radius: 30px; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden; } 
 .team-box .stay .stay-info .staySwiper .swiper-pagination { display: flex; justify-content: center; gap: 17px; margin-bottom: 20px; } 
 .team-box .stay .stay-info .staySwiper .swiper-pagination-bullet { width: 13px; height: 13px; margin: 0; background: #d9d9d9; } 
 
 .team-box .stay .stay-info .txt-wrap { position: relative; width: 50%; } 
-.team-box .stay .stay-info .txt-wrap .stay-info-tit { font-size: 32px; font-weight: 500; line-height: 1.7; } 
-.team-box .stay .stay-info .txt-wrap .info-kind { margin-top: 50px; display: grid; gap: 20px; } 
-.team-box .stay .stay-info .txt-wrap .info-kind .kind { font-size: 28px; font-weight: 400; color: #545454; display: flex; align-items: center; gap: 20px; } 
-.team-box .stay .stay-info .txt-wrap .info-kind .kind img.check { width: 30px; } 
+
+.team-box .stay .stay-info .txt-wrap .info-kind { margin-top: 50px; display: grid; gap: 30px; } 
+.team-box .stay .stay-info .txt-wrap .info-kind .kind { position: relative; min-width: 440px; padding: 10px 0; font-size: 23px; font-weight: 400; color: #545454; letter-spacing: -0.46px; text-align: center; border: 1.5px solid #5D4FFA; border-radius: 40px; transition: all .3s;} 
+.team-box .stay .stay-info .txt-wrap .info-kind .kind:hover {background: #5d4ffa; color: #fff; }
 
 .team-box .map { position: relative; width: 100%; height: 600px; margin-top: 110px; background: #eee; border-radius: 30px; } 
 /* //team */
