@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 #header { display: block; padding: 0; height: 130px; } 
-#header .header-wrap { position: relative; width: 100%; height: 100%; max-width: 1580px; margin: 0 auto; padding: 0 40px; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; } 
+#header .header-wrap { position: relative; width: 100%; height: 100%; max-width: 1540px; margin: 0 auto; padding: 0 40px; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; } 
 #header .header-wrap .header-logo-a { position: absolute; top: 44px; left: 50%; transform: translate(-50%, 0); } 
 
 #header .header-wrap .header-logo-k img {width: 100px; padding-top: 10px;}
@@ -49,7 +49,7 @@
 
 .katd-wrap .katd-m-tit { position: absolute; width: 100%; left: 50%; top: 50%; transform: translateZ(0) translate(-50%, -50%) !important; color: #282828; text-align: center; font-size: min(10vw, 250px); font-style: normal; font-weight: 300; line-height: 93px; /* 37.2% */ z-index: 2; } 
 
-.katd-wrap .flow-box { position: relative; width: 100%; max-width: 1920px; height: 50vh; min-height: 770px; max-height: 1080px; margin: 0 auto; margin-top: -150px; padding: 0 20px; box-sizing: border-box; } 
+.katd-wrap .flow-box { position: relative; width: 100%; max-width: 1920px; height: 50vh; min-height: 770px; max-height: 1080px; margin: 0 auto; margin-top: -150px; padding: 0 3vw; box-sizing: border-box; } 
 .katd-wrap .flow-wrap { position: absolute; padding: 60px; box-sizing: border-box; background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 30px; overflow: hidden; opacity: .8; animation: floating 3s ease-in-out infinite; } 
 .katd-wrap .bg-b { position: absolute; width: 100%; height: 100%; left: 0; top: 0; background:rgba(0, 0, 0, 0.40); backdrop-filter: blur(2.5px); -webkit-backdrop-filter: blur(2.5px); } 
 .katd-wrap .flow-wrap .flow-tit { position: relative; font-size: 32px; font-weight: 600; line-height: 45px; letter-spacing: -2.24px; color: #fff; } 
@@ -128,7 +128,7 @@
 
 
 /* cdn-wrap */
-.cdn-wrap { position: relative; width: 100%; max-width: 1540px; height: auto; margin:186px auto 0; padding: 0 20px; box-sizing: border-box; } 
+.cdn-wrap { position: relative; width: 100%; max-width: 1540px; height: auto; margin:186px auto 0; padding: 0 3vw; box-sizing: border-box; } 
 .cdn-wrap .cdn-tit { position: relative; width: 100%; height: auto; font-size: 50px; font-weight: 500; color: #6e6e6e; text-align: center; line-height: 77px; letter-spacing: -1px; } 
 .cdn-wrap .cdn-tit span.b {color: #282828;}
 .cdn-wrap .cdn-tit span.bb {color: #282828; font-weight: 700;}
@@ -161,7 +161,7 @@
 .m-bottom { position: relative; width: 100%; height: auto; margin-top: 234px; padding: 90px 0 100px; box-sizing: border-box; background: #f8f8f8; } 
 .m-bottom .tit { position: relative; width: 100%; font-size: 50px; font-weight: 500; color: #282828; line-height: 77px; line-height: -1px; text-align: center; } 
 
-.m-bottom .aw-wrap { position: relative; width: 100%; max-width: 1540px; margin: 52px auto 0; padding: 0 20px; box-sizing: border-box; display: flex; justify-content: space-between; } 
+.m-bottom .aw-wrap { position: relative; width: 100%; max-width: 1540px; margin: 52px auto 0; padding: 0 3vw; box-sizing: border-box; display: flex; justify-content: space-between; } 
 .m-bottom .aw-wrap .aw { position: relative; display: flex; align-items: center; gap: 23px; } 
 .m-bottom .aw-wrap .aw img { width: 60px; } 
 .m-bottom .aw-wrap .aw .aw-txt { position: relative; display: grid; } 
@@ -236,7 +236,7 @@
 
 @media screen and (max-width: 768px) {
     .main .tit-wrap {gap: 40px;}
-    .main .tit-wrap .tit {font-size: 32px; line-height: 50px; padding: 0 20px; padding-bottom: 20px; box-sizing: border-box;}
+    .main .tit-wrap .tit {font-size: 32px; line-height: 50px; padding: 0 3vw; padding-bottom: 20px; box-sizing: border-box;}
     .main .tit-wrap .btn-wrap button {width: 150px; font-size: 16px;}
     .main .bg-img { width: 1500px; left: 50%; transform: translate(-50%, 40%) rotate(180deg);}
 

@@ -35,7 +35,7 @@ p, a, h1, h2, h3, h4, button, ul, li { padding: 0; margin: 0; text-decoration: n
 #header .menu-btn::after { position: absolute; content: ''; left: 0; top: 50%; width: 20px; height: 3px; background: #282828; transform: translate(0, -50%); } 
 
 /* cate-wrap */
-.cate-wrap { position: fixed; width: 100%; max-width: 500px; height: 100vh; top:0; right: 0; padding: 0 20px; background: #282828; box-sizing: border-box; transform: translateX(100%); transition: transform 0.5s; z-index: 99; } 
+.cate-wrap { position: fixed; width: 100%; max-width: 500px; height: 100vh; top:0; right: 0; padding: 0 3vw; background: #282828; box-sizing: border-box; transform: translateX(100%); transition: transform 0.5s; z-index: 99; } 
 .cate-wrap.show { transform: translateX(0); } 
 .cate-wrap .top { position: relative; width: 100%; height: 80px; display: flex; justify-content: flex-end; align-items: center; } 
 .cate-wrap .top .close-btn { position: relative; width: 20px; height: 20px; background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; } 
@@ -57,7 +57,7 @@ p, a, h1, h2, h3, h4, button, ul, li { padding: 0; margin: 0; text-decoration: n
 .pg-top .pg-wrap .pg-tit { color: #FFF; font-family: "Pretendard Variable"; font-size: 50px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase; margin-top: 10px; } 
 
 /* inner-cate */
-.inner-cate { position: relative; width: 100%; max-width: 1540px; height: auto; padding: 0 20px 18.5px; margin: -44px auto 0; box-sizing: border-box; } 
+.inner-cate { position: relative; width: 100%; max-width: 1540px; height: auto; padding: 0 3vw 18.5px; margin: -44px auto 0; box-sizing: border-box; } 
 .inner-cate.fixed { position: fixed; top: 0px; max-width: unset; margin-top: 0; padding-top: 150px; z-index: 9; background: #fff; } 
 .inner-cate.fixed .cate { justify-content: center; } 
 .inner-cate.fixed .cate a { color: rgba(153, 153, 153, 1); } 
@@ -77,7 +77,7 @@ p, a, h1, h2, h3, h4, button, ul, li { padding: 0; margin: 0; text-decoration: n
 .inner-sub-cate .sub-cate-wrap a.active { background: #5D4FFA; color: #fff; }
 .inner-sub-cate .sub-cate-wrap a:hover {background: rgba(93, 79, 250, .6); color: #fff; }
 
-#footer { position: relative; width: 100%; height: auto; padding: 100px 0; margin-top: 140px; background: #000; } 
+#footer { position: relative; width: 100%; height: auto; padding: 67.5px 0 58px; margin-top: 140px; background: #000; } 
 .footer-wrap { position: relative; width: 100%; max-width: 1840px; height: auto; margin: 0 auto; padding: 0 3vw; box-sizing:border-box; } 
 .footer-wrap .footer-top { position: relative; width: 100%; display: flex; justify-content: space-between; align-items: center; padding-bottom: 28.5px; border-bottom: 2px solid #5d4ffa } 
 .footer-wrap .footer-top .logo { width: min(13vw, 128px); } 
@@ -138,7 +138,7 @@ p, a, h1, h2, h3, h4, button, ul, li { padding: 0; margin: 0; text-decoration: n
  .footer-wrap .footer-bottom .f-b-r { flex-direction: column; align-items: flex-start; gap: 60px; } 
 
  /* inner category */
- .inner-cate .cate { padding: 0 20px; justify-content: space-between; gap: 0px; } 
+ .inner-cate .cate { padding: 0 3vw; justify-content: space-between; gap: 0px; } 
  .inner-cate .cate a { font-size: 14px; } 
  }
 

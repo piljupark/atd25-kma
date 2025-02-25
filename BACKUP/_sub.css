@@ -7,7 +7,7 @@
 .main-abt { position: relative; width: 100%; height: auto; }
 .main-abt .bg-vid { position: fixed; width: 100%; height: 100vh; top: 0; left: 0; }
 .main-abt .bg-vid video {width: 100%; height: 100vh; object-fit: cover;}
-.main-abt .abt-tit {position: relative; width: 100%; max-width: 1320px; height: 100vh; margin: 0 auto; padding: 0 20px; display: grid; align-content: center; justify-items: center; box-sizing: border-box;}
+.main-abt .abt-tit {position: relative; width: 100%; max-width: 1320px; height: 100vh; margin: 0 auto; padding: 0 3vw; display: grid; align-content: center; justify-items: center; box-sizing: border-box;}
 .main-abt .abt-tit span {width: auto; min-width: 827px; font-family: "Syncopate", serif; font-weight: 600; font-size: 100px; line-height: 1.2;}
 .main-abt .abt-tit span.tit3 {text-align: right; margin-left: 60px;}
 .main-abt .abt-tit span.tit5 {margin-left: 244px;}
@@ -25,7 +25,7 @@
 .atd-benefit {position: relative; width: 100%; height: auto; background: #fff; }
 
 .atd-benefit .benefit-wrap {position: sticky;  top: 0;width: 100%; height: 100vh;  } 
-.atd-benefit .benefit-wrap .benefit {position: relative; width: 100%; max-width: 1320px; height: 100vh; padding: 0 20px; margin: 0 auto; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-end;}
+.atd-benefit .benefit-wrap .benefit {position: relative; width: 100%; max-width: 1320px; height: 100vh; padding: 0 3vw; margin: 0 auto; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-end;}
 .atd-benefit .benefit-txt {width: 50%; text-align: left; }
 .atd-benefit .benefit-txt .benefit-tit { font-family: 'Pretendard Variable'; font-size: 60px; font-weight: 700; color: #000}
 .atd-benefit .benefit-txt .benefit-sub{ font-family: 'Pretendard Variable'; font-size: 24px; font-weight: 600; color: #000; margin-top: 10px; }
@@ -59,11 +59,11 @@
 
 
 /* scd */
-.scd-btn-wrap {position: relative; width: 100%; max-width: 1320px; height: auto; margin: 40px auto 0; padding: 0 20px; display: flex; gap: 10px; box-sizing: border-box; z-index: 2;}
+.scd-btn-wrap {position: relative; width: 100%; max-width: 1320px; height: auto; margin: 40px auto 0; padding: 0 3vw; display: flex; gap: 10px; box-sizing: border-box; z-index: 2;}
 .scd-btn-wrap .btn { padding: 15px 22px; font-family: "Syncopate", serif; font-weight: 600; font-size: 16px; background-color: #ccc; border: none; border-radius: 10px; cursor: pointer; transition: .2s; opacity: .3;}
 .scd-btn-wrap .btn.btn-a {opacity: 1;} 
 
-.scd {position: relative; width: 100%; max-width: 1320px; margin: 0 auto; padding: 0 20px; box-sizing: border-box;}
+.scd {position: relative; width: 100%; max-width: 1320px; margin: 0 auto; padding: 0 3vw; box-sizing: border-box;}
 .scd .scd-box {position: relative; width: 100%;  margin-top: 10px; display: grid; gap: 10px; display: none;}
 .scd .scd-box.scd-box-a {display: grid;}
 .scd .scd-box .scd-bg {position: relative; width: 100%; height: 400px; padding: 40px; display: flex; align-items: flex-end; box-sizing: border-box; border-radius: 10px; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden;}
@@ -132,7 +132,7 @@
 
 /* ktd */
 /* .ktd-bg {position: fixed; width: 100%; height: 50vh; top: 0; left: 0; background: linear-gradient(0deg, rgba(255,255,255,1) 00%, rgba(252,176,69,1) 100%); opacity: .8;} */
-.ktd-wrap {position: relative; width: 100%; max-width: 1320px; height: auto; margin:0 auto; padding: 0 20px 160px; box-sizing: border-box;}
+.ktd-wrap {position: relative; width: 100%; max-width: 1320px; height: auto; margin:0 auto; padding: 0 3vw 160px; box-sizing: border-box;}
 .ktd-wrap .ktd-main {position: sticky; width: 100%; height: 100vh; top:0; display: flex; align-items: center; justify-content: center;} 
 .ktd-wrap .ktd-main .main-bg {position: relative; width: 100%; height: 600px; display: grid; justify-items: center; align-content: center; gap: 10px; background-image: url('../assets/imgs/img_ktd_main.webp'); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 20px;}
 .ktd-wrap .ktd-main .main-bg .bg-b {position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: rgba(0,0,0,0.4); border-radius: 20px; z-index: 0;}
