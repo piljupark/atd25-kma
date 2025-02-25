@@ -24,39 +24,3 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-
-
-/* 코디네이터 그룹 */
-document.addEventListener("DOMContentLoaded", () => {
-    const knts = document.querySelectorAll(".cdn");
-
-    knts.forEach((knt) => {
-        knt.addEventListener("click", () => {
-            if (knt.classList.contains('show')) {
-                // .show 클래스를 가진 요소를 클릭했을 때
-                knts.forEach((item) => {
-                    item.style.width = "50%";
-                    item.classList.remove("shrink");
-                    item.classList.remove('show');
-                });
-            } else {
-                // 일반적인 .cdn 요소를 클릭했을 때
-                knts.forEach((item) => {
-                    const bgKnt = item.querySelector(".bg-cdn");
-
-                    if (item === knt) {
-                        item.style.width = "90%";
-                        item.classList.remove("shrink");
-                        item.classList.add('show');
-                    } else {
-                        item.style.width = "15%";
-                        item.classList.add("shrink");
-                        item.classList.remove('show');
-                    }
-                });
-            }
-        });
-    });
-});
-
-
