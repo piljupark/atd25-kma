@@ -14,13 +14,13 @@
 .main .bg-v{position: relative; width: 100%; height: auto; padding-top: min(56.25%, 100vh); max-height: 100vh;}
 .main .bg-v .m-logo {position: absolute; width: min(30vw, 400px); top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 3;}
 .main .bg-v .m-bg {position: absolute; width: 100%; height: 100%; top: 0; left: 0;}
-.main .m-tit {position: relative; width: 100%; height: auto; padding: 150px 0; font-size: min(4vw, 50px); font-weight: 600; line-height: 2; color: #292929; text-align: center; letter-spacing: 0; line-height: 90px;}
+.main .m-tit {position: relative; width: 100%; height: auto; padding: 150px 0; font-size: min(4vw, 50px); font-weight: 600; line-height: 2; color: #282828; text-align: center; letter-spacing: 0; line-height: 90px;}
 
 /* 팀 컨셉 */
 .tc-wrap {position: relative; width: 100%; height: auto; padding: 100px 0 0; box-sizing: border-box;}
 .tc-wrap .tit-wrap {position: relative; width: 100%; max-width: 1840px; margin: 0 auto; padding: 0 20px; box-sizing: border-box;}
-.tc-wrap .tit-wrap .tit {font-size: 50px; font-weight: 600; line-height: 75px; color: #292929; letter-spacing: 0;}
-.tc-wrap .tit-wrap .sub {font-size: 23px; font-weight: 500; color: #292929; line-height: 40px; margin-top: 20px; letter-spacing: 0;}
+.tc-wrap .tit-wrap .tit {font-size: 50px; font-weight: 600; line-height: 75px; color: #282828; letter-spacing: 0;}
+.tc-wrap .tit-wrap .sub {font-size: 23px; font-weight: 500; color: #282828; line-height: 40px; margin-top: 20px; letter-spacing: 0;}
 .tc-wrap .c-kind-wrap {position: relative; width: 100%; height: 800px; margin: 100px auto 0; padding: 100px 0; box-sizing: border-box; display: flex; justify-content: space-between; background-image: url(/assets/imgs/img_tc_bg.webp); background-position: center; background-repeat: no-repeat; background-size: cover;}
 .tc-wrap .c-kind-wrap .bg-b {position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: rgba(23, 22, 40, 0.75);}
 .tc-wrap .c-kind-wrap .c-kind-box {position: relative; width: 100%; max-width: 1840px; height: 800px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; display: flex; justify-content: space-between;}
@@ -36,8 +36,8 @@
 /* 러닝크루 */
 .rc-wrap {position: relative; width: 100%; height: auto;}
 .rc-wrap .left {position: absolute; width: 100%; max-width: 1840px; height: auto; left: 50%; transform: translate(-50%, 0); padding: 100px 20px; box-sizing: border-box;}
-.rc-wrap .left .rc-tit {position: relative; width: 100%; font-size: clamp(28px, 2vw, 50px); font-weight: 600; line-height: 1.5; color: #292929;}
-.rc-wrap .left .rc-txt {position: relative; width: 100%; margin-top: 40px; font-size: clamp(16px, 1.2vw, 23px); font-weight: 500; line-height: 2; color: #292929;} 
+.rc-wrap .left .rc-tit {position: relative; width: 100%; font-size: clamp(28px, 2vw, 50px); font-weight: 600; line-height: 1.5; color: #282828;}
+.rc-wrap .left .rc-txt {position: relative; width: 100%; margin-top: 40px; font-size: clamp(16px, 1.2vw, 23px); font-weight: 500; line-height: 2; color: #282828;} 
 .rc-wrap .right {position: relative; width: 100%; height: 1020px; z-index: 2; overflow: hidden;}
 .rc-wrap .right .right-wrap {position: relative; width: 100%; height: 1020px; overflow-y: scroll; -ms-overflow-style: none;}
 .rc-wrap .right .right-wrap::-webkit-scrollbar {display: none;}
@@ -59,13 +59,13 @@
 /* aw-wrap */
 .aw-wrap {position: relative; width: 100%; height: auto; margin-top: 200px;}
 .aw-wrap .aw-top {position: relative; width: 100%; max-width: 1840px; height: auto; margin: 0 auto; padding: 0 20px; box-sizing: border-box;}
-.aw-wrap .aw-top .aw-tit {position: relative; width: 100%; font-size: 50px; font-weight: 600; color: #292929; line-height: 1.5;}
+.aw-wrap .aw-top .aw-tit {position: relative; width: 100%; font-size: 50px; font-weight: 600; color: #282828; line-height: 1.5;}
 .aw-wrap .aw-top .aw-sp {position: relative; width: 100%; margin-top: 40px; display: flex; justify-content: space-between;}
 .aw-wrap .aw-top .aw-sp .sp-kind {display: flex; gap: 20px; align-items: center;}
 .aw-wrap .aw-top .aw-sp .sp-kind img {width: 60px;}
 .aw-wrap .aw-top .aw-sp .sp-kind .sp-txt {display: grid; gap: 5px;}
-.aw-wrap .aw-top .aw-sp .sp-kind .sp-txt .sp-eng {font-size: 23px; font-weight: 500; color: #292929;}
-.aw-wrap .aw-top .aw-sp .sp-kind .sp-txt .sp-kor {font-size: 26px; font-weight: 700; color: #292929;;}
+.aw-wrap .aw-top .aw-sp .sp-kind .sp-txt .sp-eng {font-size: 23px; font-weight: 500; color: #282828;}
+.aw-wrap .aw-top .aw-sp .sp-kind .sp-txt .sp-kor {font-size: 26px; font-weight: 700; color: #282828;;}
 .aw-wrap .aw-info-wrap {position: relative; width: 100%; height: 690px; margin-top: 100px; background-image: url('/assets/imgs/img_m_aw1.webp'); background-position: center; background-repeat: no-repeat; background-size: cover;}
 .aw-wrap .aw-info-wrap .aw-bg-wrap {position: absolute; width: 100%; height: 100%; top: 0; left: 0; display: grid; grid-template-columns: repeat(2, 1fr);}
 .aw-wrap .aw-info-wrap .aw-bg-wrap span:nth-child(1), .aw-wrap .aw-info-wrap .aw-bg-wrap span:nth-child(4), .aw-wrap .aw-info-wrap .aw-bg-wrap span:nth-child(5) { background: rgba(18, 16, 49, 0.9);}

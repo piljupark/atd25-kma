@@ -76,7 +76,7 @@
 .scd .scd-box .table .info-wrap {width: calc(100% - 190px); display: grid; gap: 10px;}
 .scd .scd-box .table .info {width: 100%; min-height: 60px; padding: 10px 20px; font-family: 'Pretendard Variable'; font-weight: 500; line-height: 1.5; box-sizing: border-box; background: #eee; border-radius: 10px;}
 .scd .scd-box .table .info span {width: 100%; float: left; font-weight: 700; margin: 0 0 10px;}
-.scd .view-dtl { padding: 20px 30px; margin: 0 auto; margin-top: 40px; background: #292929; border: none; font-family: 'Pretendard Variable'; font-size: 16px; font-weight: 500; color:#fff; border-radius: 10px; cursor: pointer; transition: all .2s; display: flex; }
+.scd .view-dtl { padding: 20px 30px; margin: 0 auto; margin-top: 40px; background: #282828; border: none; font-family: 'Pretendard Variable'; font-size: 16px; font-weight: 500; color:#fff; border-radius: 10px; cursor: pointer; transition: all .2s; display: flex; }
 
 /* kntSpk */
 .container-knt {}
@@ -310,7 +310,7 @@
 .team-box .schedule details .team-info .info .right span {font-weight: 700;}
 
 .team-box .stay {position: relative; width: 100%; height: auto; margin-top: 150px; }
-.team-box .stay .stay-tit {position: relative; width: 100%; font-family: 'Outfit', serif; font-size: 56px; font-weight: 500; color: #292929}
+.team-box .stay .stay-tit {position: relative; width: 100%; font-family: 'Outfit', serif; font-size: 56px; font-weight: 500; color: #282828}
 .team-box .stay .stay-sub {position: relative; width: 100%; font-family: 'Outfit', serif; font-size: 30px; font-weight: 400; color: #a3a3a3; margin-top: 20px;;}
 .team-box .stay .stay-info { margin-top: 80px;  display: flex; align-items: center; justify-content: space-between; gap: 100px;}
 .team-box .stay .stay-info .staySwiper {position: relative; width: 50%; border-radius: 30px;} 
