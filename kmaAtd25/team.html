@@ -778,6 +778,23 @@
         });
     </script>
 
+<script>
+  document.querySelectorAll("details").forEach((detail) => {
+      detail.addEventListener("toggle", function() {
+          if (this.open) {
+              const headerOffset = 200; // 헤더 높이
+              const elementPosition = this.getBoundingClientRect().top + window.scrollY;
+              const offsetPosition = elementPosition - headerOffset;
+
+              window.scrollTo({
+                  top: offsetPosition,
+                  behavior: "smooth"
+              });
+          }
+      });
+  });
+</script>
+
     <!-- google map -->
     <script>
       function myMap(){
