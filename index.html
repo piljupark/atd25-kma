@@ -45,7 +45,7 @@
                             <img src="/assets/icons/icon_arrow_r.svg" alt="화살표">
                         </li>
                         <li><a href="/program/5.html">K-TD</a></li>
-                        <li><a href="/faq/1.html">FAQ</a></li>
+                        <li><a href="/faq/1.html">FAQs</a></li>
                         <li><a href="/etc/hstr.html">HISTORY</a></li>
                     </ul>
                     <ul class="sub-cate-1 sub-cate">
@@ -95,7 +95,7 @@
                             </ul>
                         </li>
                         <li><a href="/etc/ssns.html">SESSIONS</a></li>
-                        <li><a href="/faq/1.html">FAQ</a></li>
+                        <li><a href="/faq/1.html">FAQs</a></li>
                         <li><a href="/etc/hstr.html">HISTORY</a></li>
                     </ul>
                 </div>
@@ -116,12 +116,12 @@
                 <div class="btn-wrap" data-aos="fade-up"
                 data-aos-duration="700">
                     <button class="sbm-btn">
-                        <a href=""></a>
+                        <a href="/etc/contact.html"></a>
                         신청하기
                         <img src="/assets/icons/icon_arrow_submit.svg" alt="신청하기">
                     </button>
                     <button class="down-bnt">
-                        <a href=""></a>
+                        <a href="/filedown/KMA_ATD_2025.pdf" target="_blank"></a>
                         브로슈어
                         <img src="/assets/icons/icon_download.svg" alt="다운로드">
                     </button>
@@ -427,7 +427,7 @@
                 <!-- <span>|</span> -->
                 <a href="/kmaAtd25/ktdPrg.html">KMA-ATD 25</a>
                 <!-- <span>|</span> -->
-                <a href="/faq/1.html">FAQ</a>
+                <a href="/faq/1.html">FAQs</a>
                 <a href="/etc/hstr.html">HISTORY</a>
                 <a href="/etc/contact.html">CONTACT</a>
                 </div>
@@ -485,7 +485,7 @@
     <script>
         const slideTrack = document.getElementById("slideTrack");
         const images = [
-            "assets/imgs/logo_m_l1.png", "assets/imgs/logo_m_l2.png","assets/imgs/logo_m_l4.png",  "assets/imgs/logo_m_l7.png","assets/imgs/logo_m_l8.png", "assets/imgs/logo_m_l9.png", "assets/imgs/logo_m_l10.png", "assets/imgs/logo_m_l12.png", "assets/imgs/logo_m_l15.png",  "assets/imgs/logo_m_l7.png", "assets/imgs/logo_m_l19.png", "assets/imgs/logo_m_l21.png", "assets/imgs/logo_m_l3.svg", "assets/imgs/logo_m_l11.svg", "assets/imgs/logo_m_l14.svg", "assets/imgs/logo_m_l18.svg", "assets/imgs/logo_m_l20.svg", "assets/imgs/logo_m_l22.svg", "assets/imgs/logo_m_l23.svg", "assets/imgs/logo_m_l24.svg", "assets/imgs/logo_m_l25.svg", "assets/imgs/logo_m_l26.svg", "assets/imgs/logo_m_l27.svg", "assets/imgs/logo_m_l5.webp", "assets/imgs/logo_m_l6.webp", "assets/imgs/logo_m_l13.webp", "assets/imgs/logo_m_l16.png",
+            "assets/imgs/logo_m_l1.png", "assets/imgs/logo_m_l2.png","assets/imgs/logo_m_l4.png",  "assets/imgs/logo_m_l7.png","assets/imgs/logo_m_l8.png", "assets/imgs/logo_m_l9.png", "assets/imgs/logo_m_l10.png", "assets/imgs/logo_m_l12.png", "assets/imgs/logo_m_l15.png",  "assets/imgs/logo_m_l7.png", "assets/imgs/logo_m_l19.png", "assets/imgs/logo_m_l21.png", "assets/imgs/logo_m_l3.svg", "assets/imgs/logo_m_l11.svg", "assets/imgs/logo_m_l14.svg", "assets/imgs/logo_m_l18.svg", "assets/imgs/logo_m_l20.svg", "assets/imgs/logo_m_l22.svg", "assets/imgs/logo_m_l24.svg", "assets/imgs/logo_m_l25.svg", "assets/imgs/logo_m_l26.svg", "assets/imgs/logo_m_l27.svg", "assets/imgs/logo_m_l5.webp", "assets/imgs/logo_m_l6.webp", "assets/imgs/logo_m_l13.webp", "assets/imgs/logo_m_l16.png",
         ];
         
         images.forEach(src => {
@@ -609,30 +609,27 @@
 <script>
     const cards = document.querySelectorAll(".cdn-card-wrap .card");
     const secondCard = document.querySelector(".cdn-card-wrap .card:nth-child(2)");
-    let firstInteraction = true; // 첫 번째 인터랙션 여부 확인
 
     cards.forEach(card => {
         card.addEventListener("mouseenter", () => {
-            if (firstInteraction) {
-                // 첫 번째 인터랙션 발생 후 기본 스케일을 1로 설정
-                firstInteraction = false;
+            if (card !== secondCard) {
                 secondCard.style.transform = "scale(1)";
-            }
+                secondCard.style.zIndex = "1";
 
-            // 현재 hover한 카드 확대
-            cards.forEach(c => {
-                c.style.transform = "scale(1)";
-                c.style.zIndex = "1";
-            });
-            card.style.transform = "scale(1.3)";
-            card.style.zIndex = "2";
+                card.style.transform = "scale(1.3)";
+                card.style.zIndex = "2";
+            }
         });
 
         card.addEventListener("mouseleave", () => {
-            // 마우스를 떼면 모든 카드의 기본 상태 유지 (두 번째 카드의 초기 확대는 더 이상 없음)
+            secondCard.style.transform = "scale(1.3)";
+            secondCard.style.zIndex = "2";
+
             cards.forEach(c => {
-                c.style.transform = "scale(1)";
-                c.style.zIndex = "1";
+                if (c !== secondCard) {
+                    c.style.transform = "scale(1)";
+                    c.style.zIndex = "1";
+                }
             });
         });
     });

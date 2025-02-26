@@ -89,7 +89,7 @@
 .knt-wrap .knt-info-wrap .info-txt {position: relative; width: 100%; font-size: 18px; font-weight: 400; line-height: 28px; color: #282828; letter-spacing: -0.9px;}
 
 /* lngTr */
-.lng-wrap { position: relative; width: auto; max-width: 1840px; height: auto; margin: 0 auto; padding: 70px 20px 160px; box-sizing: border-box; display: grid; grid-template-columns: repeat(3, 1fr); gap: 45px; } 
+.lng-wrap { position: relative; width: auto; max-width: 1840px; height: auto; margin: 0 auto; padding: 65px 3vw 0; box-sizing: border-box; display: grid; grid-template-columns: repeat(3, 1fr); gap: 45px; } 
 .lng-wrap .track-box { position: relative; width: auto; height: 490px; /*padding: 50%; */ background: rgba(93, 79, 250, 0.03); border: 1px solid rgba(93, 79, 250, 0.1); border-radius: 30px; } 
 .lng-wrap .track-box .track { position: absolute; width: 100%; height: 100%; top: 0; left: 0; padding: 40px; box-sizing: border-box; display: grid; align-content: flex-end; justify-content: flex-end; gap: 30px; } 
 .lng-wrap .track-box .track img { position: absolute; width: 110px; height: auto; top: 40px; right: 40px; } 
@@ -97,7 +97,7 @@
 .lng-wrap .track-box .track .track-info { min-height: 90px; font-size: 20px; font-weight: 500; color: #121212; line-height: 1.5; text-align: justify; } 
 
 /* scd */
-.scd-wrap { position: relative; width: auto; max-width: 1840px; height: auto; margin: 0 auto; padding: 70px 20px 160px; box-sizing: border-box; } 
+.scd-wrap { position: relative; width: auto; max-width: 1840px; height: auto; margin: 0 auto; padding: 65px 3vw 0; box-sizing: border-box; } 
 .scd-wrap .scd-box { position: relative; width:100%; display: grid; align-content: center; justify-items: center; gap: 50px; } 
 .scd-wrap .scd-box .date { width: 100%; } 
 .scd-wrap .scd-box .date ul { position: relative; width: 100%; display: flex; justify-content: space-around; } 
@@ -182,7 +182,7 @@
 
 
 /* scdPrg */
-.spc-wrap { position: relative; width: 100%; height: auto; max-width: 1840px; margin: 0 auto; padding: 70px 3vw 0; box-sizing: border-box; display: grid; grid-template-columns: repeat(3, 1fr); gap: 45px; } 
+.spc-wrap { position: relative; width: 100%; height: auto; max-width: 1840px; margin: 0 auto; padding: 65px 3vw 0; box-sizing: border-box; display: grid; grid-template-columns: repeat(3, 1fr); gap: 45px; } 
 .spc-wrap .spc-box { position: relative; width: auto; height: 310px; padding: 40px; box-sizing: border-box; background: rgba(93, 79, 250, 0.03); border: 1px solid rgba(93, 79, 250, 0.1); border-radius: 30px; display: grid; align-content: space-between; } 
 .spc-wrap .spc-box .top { display: grid; align-content: flex-start; gap: 20px; } 
 .spc-wrap .spc-box .top .spc-tit { font-size: 25px; font-weight: 700; color: #111; } 
@@ -208,7 +208,7 @@
 
 /* cost */
 .cost-wrap { position: relative; width: 100%; } 
-.cost-kind { position: relative; width: 100%; height: auto; max-width: 1840px; margin: 0 auto; padding: 70px 3vw 0; box-sizing: border-box; display: flex; gap: 40px; } 
+.cost-kind { position: relative; width: 100%; height: auto; max-width: 1840px; margin: 0 auto; padding: 65px 3vw 0; box-sizing: border-box; display: flex; gap: 40px; } 
 .cost-kind .kind { position: relative; width: 25%; height: 610px; padding: 60px 40px; display:grid; align-content: space-between; justify-items: center; box-sizing: border-box; border-radius: 30px; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden; z-index: 2; } 
 .cost-kind .kind .bg-b { position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: rgba(26, 24, 39, 0.8); z-index: 0; } 
 .cost-kind .kind .k-tit { position: relative; width: 100%; font-size: 50px; font-weight: 700; color: #fff; text-align: center; line-height: 1.5; } 
@@ -243,7 +243,7 @@
 .eb-wrap .countdown .time-box .time .digit { font-size: 32px; font-weight: 600px; color: #111; text-align: center; background: #fff; padding: 5px 7px; box-sizing: border-box; border-radius: 2px; } 
 .eb-wrap .countdown .time-box .label { font-size: 15px; font-weight: 500; color: #5f5f5f; } 
 
-.etc-wrap { position: relative; width: 100%; margin: 0 auto; height: auto; padding: 100px 20px; box-sizing: border-box; /*background: #EFEEFF; */ } 
+.etc-wrap { position: relative; width: 100%; max-width: 1840px; margin: 0 auto; height: auto; padding: 100px 3vw 0; box-sizing: border-box; /*background: #EFEEFF; */ } 
 .mp-wrap { position: relative; width: 100%; max-width: 1840px; height: 325px; margin: 0 auto; padding: 70px 100px; display: grid; align-content: space-between; box-sizing: border-box; border-radius: 30px; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden; z-index: 2; } 
 .mp-wrap .bg-b { position: absolute; width: 100%; height: 100%; left: 0; top: 0; background: #1A1827CC; backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); z-index: 0; } 
 .mp-wrap .mp-tit { position: relative; font-size: 50px; font-weight: 700; color: #fff; } 
@@ -275,7 +275,7 @@
 
 /* faq */
 
-.faq-wrap { position: relative; width: 100%; max-width: 1840px; height: auto; margin: 0 auto; padding: 160px 3vw; box-sizing: border-box; } 
+.faq-wrap { position: relative; width: 100%; max-width: 1840px; height: auto; margin: 0 auto; padding: 65px 3vw 0; box-sizing: border-box; } 
 .faq-wrap .faq-tit { position: relative; width: 100%; height: auto; padding: 30px 0; font-family: 'Pretendard Variable'; font-size: 30px; font-weight: 700; box-sizing: border-box; border-bottom: 2px solid #000; } 
 .faq-wrap .faq-tit.faq-tit-margin { margin-top: 60px; } 
 .faq-wrap details { position: relative; width: 100%; height: auto; padding: 30px 0; box-sizing: border-box; font-family: 'Pretendard Variable'; font-size: 20px; font-weight: 600; border-bottom: 1px solid rgba(0,0,0,0.8); cursor: pointer; transition: all .2s; } 
@@ -433,7 +433,7 @@
 .prg-wrap .ktd-fa .fa-int .date > div > ul li.idx { background: #fff; } 
 
 
-.prg-wrap .tit-wrap2 { margin-top: 180px; } 
+.prg-wrap .tit-wrap2 { padding-top: 120px; border-top: 1px solid #e8e8e8; } 
 .prg-wrap .ktd-mu { position: relative; width: 100%; height: auto; margin-top: 40px; } 
 .prg-wrap .ktd-mu .banner { position: relative; width: 100%; height: 360px; display: flex; align-items: center; justify-content: center; border-radius: 30px; background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('../assets/imgs/img_ktd_prg2_1.webp'); overflow: hidden; } 
 .prg-wrap .ktd-mu .banner .tit { font-size: 32px; font-weight: 700; color: #fff; text-align: center; line-height: 1.5; letter-spacing: -1px; z-index: 2; } 
