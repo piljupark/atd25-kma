@@ -277,18 +277,22 @@
 
 /* faq */
 
-.faq-wrap { position: relative; width: 100%; max-width: 1840px; height: auto; margin: 0 auto; padding: 65px 3vw 0; box-sizing: border-box; } 
+.faq-wrap { position: relative; width: 100%; max-width: 1840px; height: auto; min-height: 951px;  margin: 0 auto; padding: 65px 3vw 0; box-sizing: border-box; } 
 .faq-wrap .faq-tit { position: relative; width: 100%; height: auto; padding: 30px 0; font-family: 'Pretendard Variable'; font-size: 30px; font-weight: 700; box-sizing: border-box; border-bottom: 2px solid #000; } 
 .faq-wrap .faq-tit.faq-tit-margin { margin-top: 60px; } 
-.faq-wrap details { position: relative; width: 100%; height: auto; padding: 30px 0; box-sizing: border-box; font-family: 'Pretendard Variable'; font-size: 20px; font-weight: 600; border-bottom: 1px solid rgba(0,0,0,0.8); cursor: pointer; transition: all .2s; } 
+.faq-wrap details { position: relative; width: 100%; height: auto; padding: 40px 17px; box-sizing: border-box; font-family: 'Pretendard Variable'; font-size: 20px; font-weight: 600; border-bottom: 1px solid rgba(0,0,0,0.8); cursor: pointer; transition: all .2s; color: rgba(0,0,0,0.7);} 
 .faq-wrap details[open] { height: auto; } 
 .faq-wrap details > summary { position: relative; width: auto; } 
-.faq-wrap details > p { position: relative; width: 100%; padding: 40px 0 0; box-sizing: border-box; font-size: 18px; color: rgba(0,0,0,0.8); line-height: 1.5; display: flex; gap:8px; cursor: auto; } 
+.faq-wrap details > p { position: relative; width: 100%; padding: 32px 0 0; box-sizing: border-box; font-size: 18px; color: rgba(0,0,0,0.6); line-height: 1.5; display: flex; align-items: center; gap:8px; cursor: auto; } 
+.faq-wrap details > p span {font-size: 20px;}
 .faq-wrap details > summary::marker { content: ''; } 
 .faq-wrap details > summary::before { content: ''; position: absolute; display: inline-block; width: 20px; height: 2px; background: #000; right: 0; top: 50%; transform: translate(0, -50%); display: flex; align-items: center; justify-content: center; } 
 .faq-wrap details > summary::after { content: ''; position: absolute; display: inline-block; width: 2px; height: 20px; background: #000; right: 9px; top: 50%; transform: translate(0, -50%); transition: .3s; } 
 
+.faq-wrap details:hover {color: #000;}
+.faq-wrap details[open] > summary{color: #000;}
 .faq-wrap details[open] > summary::after { transform: rotate(90deg) translate(-500%, 0); opacity: 0; } 
+
 
 /* footer */
 
