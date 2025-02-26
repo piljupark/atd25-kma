@@ -343,7 +343,7 @@
 
 
 /* 1-program */
-.prg-wrap { position: relative; width: 100%; height: auto; max-width: 1840px; margin: 0 auto; padding: 0px 3vw 160px; box-sizing: border-box; } 
+.prg-wrap { position: relative; width: 100%; height: auto; max-width: 1840px; margin: 0 auto; padding: 0px 3vw; box-sizing: border-box; } 
 .prg-wrap .top { position: relative; width: 100%; padding-bottom: 20px; display: flex; align-items: center; justify-content: flex-start; gap: 30px; border-bottom: 1px solid #e4e4e4; } 
 .prg-wrap .top a { font-size: 0; background: #5D4FFA; padding: 5px 15px; box-sizing: border-box; border-radius: 40px; } 
 .prg-wrap .top a img { width: 40px; transform: rotate(-180deg); } 
