@@ -471,7 +471,7 @@
 
 /* history */
 /* 갤러리 컨테이너 스타일 */
-.hstr-wrap { position: relative; width: 100%; max-width: 1840px; height: auto; margin: 0 auto; padding: 70px 20px; box-sizing: border-box; } 
+.hstr-wrap { position: relative; width: 100%; max-width: 1840px; height: auto; margin: 0 auto; padding: 65px 3vw 0; box-sizing: border-box; } 
 
 #gallery { display: grid; grid-template-columns: repeat(4, minmax(150px, 1fr)); /* 반응형 그리드 */
  grid-auto-rows: 10px; /* 기본 행 높이 */

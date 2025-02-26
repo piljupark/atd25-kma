@@ -60,7 +60,7 @@ p, a, h1, h2, h3, h4, button, ul, li { padding: 0; margin: 0; text-decoration: n
 .pg-top { position: relative; width: 100%; height: 400px; padding-bottom: 122px; display: flex; align-items: flex-end; justify-content: center; box-sizing: border-box; background-position: center; background-repeat: no-repeat; background-size: cover; background: #000; overflow: hidden;} 
 .pg-top .pg-wrap { position: relative; width: 100%; max-width: 1840px; padding: 0 3vw; box-sizing: border-box; } 
 .pg-top .pg-wrap .pg-sub { color: #877DF9; font-family: "Pretendard Variable"; font-size: 20px; font-style: normal; font-weight: 600; line-height: normal; } 
-.pg-top .pg-wrap .pg-tit { color: #FFF; font-family: "Pretendard Variable"; font-size: 50px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase; margin-top: 10px; } 
+.pg-top .pg-wrap .pg-tit { color: #FFF; font-family: "Pretendard Variable"; font-size: 50px; font-style: normal; font-weight: 700; line-height: normal; margin-top: 10px; } 
 .pg-top .pgt-img {position: absolute; right: -250px; bottom: -250px; width: 1000px; transform: rotate(-15deg);}
 .pg-top .pgt-img.pgt-img2 {bottom: -400px; width: 1100px;}
 .pg-top .pgt-img.pgt-img4 {bottom: 0px; right: -320px; transform: rotate(0deg); width: 1200px;}
