@@ -219,9 +219,9 @@
 .cost-kind .kind .course .c-wrap span { width: 15px; height: 15px; background: #fff; border-radius: 100%; } 
 .cost-kind .kind .amount-wrap { position: relative; width: 100%; height: auto; padding: 20px 0; background: #fff; display: grid; align-content: center; justify-items: center; gap: 10px; border-radius: 30px; transition: all .3s; } 
 .cost-kind .kind .amount-wrap .eb { font-size: 23px; font-weight: 500; color: #818181; text-decoration: line-through; transition: all .3s; } 
-.cost-kind .kind .amount-wrap .c { font-size: 32px; font-weight: 700; letter-spacing: -1px; transition: all .3s; } 
+.cost-kind .kind .amount-wrap .c { font-size: 28px; font-weight: 700; letter-spacing: -1px; transition: all .3s; } 
 .cost-kind .kind .amount-wrap .c span { font-size: 18px; font-weight: 500; color: #808080; } 
-.cost-kind .kind .amount-wrap .af { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 32px; font-weight: 700; color: #fff; opacity: 0; transition: all .3s; } 
+.cost-kind .kind .amount-wrap .af { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 28px; font-weight: 700; color: #fff; opacity: 0; transition: all .3s; } 
 .cost-kind .kind .amount-wrap .dtl-btn { position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2; } 
 .cost-kind .kind .amount-wrap:hover { background: #5D4FFA; } 
 .cost-kind .kind .amount-wrap:hover .eb { opacity: 0; } 
@@ -233,14 +233,15 @@
 .cost-kind .kind:nth-child(2) .course .line { height: 75px; } 
 .cost-kind .kind:nth-child(4) .course .line { height: 0; } 
 
-.eb-wrap { position:relative; width: 100%; height: 300px; margin: 65px auto; background: #EFEEFF; display: grid; justify-items: center; align-content: center; } 
-.eb-wrap .eb-tit { position: relative; font-size: 18px; font-weight: 500; color: #5d4ffa; text-align: center; line-height: 1.5; letter-spacing: -2px; } 
-.eb-wrap .eb-info { position: relative; margin-top: 10px; font-size: 23px; font-weight: 600; color: #111; text-align: center; line-height: 1.5; letter-spacing: -1px; } 
+.eb-wrap { position:relative; width: 100%; height: 300px; margin: 0 auto 65px; padding: 30px 0; background: #EFEEFF; display: grid; justify-items: center; align-content: center; } 
+.eb-wrap .eb-tit { position: relative; font-size: 24px; font-weight: 500; color: #5d4ffa; text-align: center; line-height: 1.5; letter-spacing: -2px; } 
+.eb-wrap .eb-info { position: relative; margin-top: 20px; font-size: 28px; font-weight: 600; color: #111; text-align: center; line-height: 1.5; letter-spacing: -1px; } 
 
 .eb-wrap .countdown { display: flex; gap: 10px; margin-top: 30px; } 
 .eb-wrap .countdown .bd { font-size: 30px; } 
-.eb-wrap .countdown .time-box { display: grid; align-content: center; justify-items: center; gap: 20px; } 
-.eb-wrap .countdown .time-box .time .digit { font-size: 32px; font-weight: 600px; color: #111; text-align: center; background: #fff; padding: 5px 7px; box-sizing: border-box; border-radius: 2px; } 
+.eb-wrap .countdown .time-box { display: grid; align-content: center; justify-items: center; gap: 8px; } 
+.eb-wrap .countdown .time-box .time {position: relative; display: flex; gap: 2px;}
+.eb-wrap .countdown .time-box .time .digit { position:relative; width: 28px; font-size: 32px; font-weight: 600; color: #111; text-align: center; background: #fff; padding: 5px 7px; box-sizing: border-box; border-radius: 2px; } 
 .eb-wrap .countdown .time-box .label { font-size: 15px; font-weight: 500; color: #5f5f5f; } 
 
 .etc-wrap { position: relative; width: 100%; max-width: 1840px; margin: 0 auto; height: auto; padding: 100px 3vw 0; box-sizing: border-box; /*background: #EFEEFF; */ } 
@@ -250,11 +251,11 @@
 .mp-wrap .txt-wrap { position: relative; max-width: 70%; } 
 .mp-wrap .txt-wrap .mp-info { position: relative; font-size: 23px; font-weight: 600; color: #fff; margin-top: 30px; line-height: 1.5; } 
 .mp-wrap .txt-wrap .mp-txt { position: relative; font-size: 18px; font-weight: 500; color: #fff; margin-top: 10px; line-height: 1.5; } 
-.mp-wrap .dtl-btn { position: absolute; right: 40px; bottom: 40px; padding: 15px 50px; font-family: 'Pretendard Variable'; border-radius: 40px; background: #fff; border: none; transition: all .3s; } 
+.mp-wrap .dtl-btn { position: absolute; min-width: 328px; right: 40px; bottom: 40px; padding: 15px 50px; font-family: 'Pretendard Variable'; border-radius: 40px; background: #fff; border: none; transition: all .3s; } 
 .mp-wrap .dtl-btn a { position: absolute; width: 100%; height: 100%; left: 0; top: 0; z-index: 2; } 
-.mp-wrap .dtl-btn .bf { font-size: 32px; font-weight: 700; transition: all .3s; } 
+.mp-wrap .dtl-btn .bf { font-size: 28px; font-weight: 700; transition: all .3s; } 
 .mp-wrap .dtl-btn .bf span { font-size: 18px; font-weight: 500; color: #8B8B8B; } 
-.mp-wrap .dtl-btn .af { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-size: 32px; font-weight: 700; text-align: center; color: #fff; opacity: 0; transition: all .3s; } 
+.mp-wrap .dtl-btn .af { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-size: 28px; font-weight: 700; text-align: center; color: #fff; opacity: 0; transition: all .3s; } 
 .mp-wrap .dtl-btn .af a{position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2;}
 .mp-wrap .dtl-btn:hover { background: #5D4FFA; } 
 .mp-wrap .dtl-btn:hover .bf { opacity: 0; } 
@@ -266,10 +267,10 @@
 .sm-wrap .sm-tit { position: relative; font-size: 50px; font-weight: 700; color: #fff; } 
 .sm-wrap .txt-wrap .sm-info { position: relative; font-size: 23px; font-weight: 600; color: #fff; margin-top: 30px; line-height: 1.5; } 
 .sm-wrap .txt-wrap .sm-txt { position: relative; font-size: 18px; font-weight: 500; color: #fff; margin-top: 10px; line-height: 1.5; } 
-.sm-wrap .dtl-btn { position: absolute; right: 40px; bottom: 40px; padding: 15px 50px; font-family: 'Pretendard Variable'; border-radius: 40px; background: #fff; border: none; transition: all .3s; } 
+.sm-wrap .dtl-btn { position: absolute; min-width: 328px; right: 40px; bottom: 40px; padding: 15px 50px; font-family: 'Pretendard Variable'; border-radius: 40px; background: #fff; border: none; transition: all .3s; } 
 .sm-wrap .dtl-btn a { position: absolute; width: 100%; height: 100%; left: 0; top: 0; z-index: 2; } 
-.sm-wrap .dtl-btn .bf { font-size: 32px; font-weight: 700; transition: all .3s; } 
-.sm-wrap .dtl-btn .af { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-size: 32px; font-weight: 700; text-align: center; color: #fff; opacity: 0; transition: all .3s; } 
+.sm-wrap .dtl-btn .bf { font-size: 28px; font-weight: 700; transition: all .3s; } 
+.sm-wrap .dtl-btn .af { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-size: 28px; font-weight: 700; text-align: center; color: #fff; opacity: 0; transition: all .3s; } 
 .sm-wrap .dtl-btn:hover { background: #5D4FFA; } 
 .sm-wrap .dtl-btn:hover .bf { opacity: 0; } 
 .sm-wrap .dtl-btn:hover .af { opacity: 1; } 

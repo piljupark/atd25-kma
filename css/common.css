@@ -85,7 +85,7 @@ p, a, h1, h2, h3, h4, button, ul, li { padding: 0; margin: 0; text-decoration: n
 .inner-sub-cate .sub-cate-wrap { position: relative; width: 100%; display: flex; align-items: center; justify-content: center; padding: 60px 0 40px; gap: 8px; border-bottom: 1px solid #e8e8e8; } 
 .inner-sub-cate .sub-cate-wrap a { min-width: 100px; padding: 0px 20px; height: 45px; color: #949494; text-align: center; font-family: "Pretendard Variable"; font-size: 20px; font-style: normal; font-weight: 600; line-height: 0px; letter-spacing: -1px; display: flex; align-items: center; border-radius: 40px; transition: all .3s; justify-content: center;} 
 .inner-sub-cate .sub-cate-wrap a.active { background: #5D4FFA; color: #fff; }
-.inner-sub-cate .sub-cate-wrap a:hover {background: rgba(93, 79, 250, .6); color: #fff; }
+.inner-sub-cate .sub-cate-wrap a:hover {color: rgba(93, 79, 250, 1);}
 
 #footer { position: relative; width: 100%; height: auto; padding: 67.5px 0 58px; margin-top: 140px; background: #000; } 
 .footer-wrap { position: relative; width: 100%; max-width: 1840px; height: auto; margin: 0 auto; padding: 0 3vw; box-sizing:border-box; } 
