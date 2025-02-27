@@ -1,7 +1,9 @@
 [
   { "src": "../assets/history_img/2024/ATD_DeepDive_Workshop1.webp" },
   { "src": "../assets/history_img/2024/ATD_DeepDive_Workshop3.webp" },
+  { "src": "../assets/history_img/2024/ATD_DeepDive_Workshop4.webp" },
   { "src": "../assets/history_img/2024/ATD_Debriefing1.webp" },
+  { "src": "../assets/history_img/2024/ATD_Debriefing2.webp" },
   { "src": "../assets/history_img/2024/ATD_HR_Tech_Expo0.webp" },
   { "src": "../assets/history_img/2024/ATD_HR_Tech_Expo1.webp" },
   { "src": "../assets/history_img/2024/ATD_HR_Tech_Expo2.webp" },
@@ -14,6 +16,7 @@
   { "src": "../assets/history_img/2024/ATD_MeetUp2.webp" },
   { "src": "../assets/history_img/2024/ATD_MeetUp3.webp" },
   { "src": "../assets/history_img/2024/ATD_Merck.webp" },
+  { "src": "../assets/history_img/2024/ATD_Merck2.webp" },
   { "src": "../assets/history_img/2024/ATD_Microsoft1.webp" },
   { "src": "../assets/history_img/2024/ATD_Microsoft2.webp" },
   { "src": "../assets/history_img/2024/ATD_NewOralans__SocialDining3.webp" },
@@ -23,5 +26,7 @@
   { "src": "../assets/history_img/2024/ATD_Pre_OT2.webp" },
   { "src": "../assets/history_img/2024/ATD_UW1.webp" },
   { "src": "../assets/history_img/2024/ATD_UW2.webp" },
-  { "src": "../assets/history_img/2024/ATD_UW4.webp" }
+  { "src": "../assets/history_img/2024/ATD_UW4.webp" },
+  { "src": "../assets/history_img/2024/ATD_NYU1.webp" },
+  { "src": "../assets/history_img/2024/ATD_NYU2.webp" }
 ]
