@@ -16,36 +16,6 @@
   <script src="../js/header.js"></script>
   <script src="../js/sub.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="../config.js"></script>
-
-  <!-- Google Map -->
-  <script>
-    function loadGoogleMapsScript() {
-      const script = document.createElement("script");
-      script.src = `https://maps.googleapis.com/maps/api/js?key=${CONFIG.GOOGLE_MAPS_API_KEY}&callback=myMap`;
-      script.async = true;
-      script.defer = true;
-      document.head.appendChild(script);
-    }
-  
-    function myMap() {
-      var mapOptions = {
-        center: new google.maps.LatLng(38.90712888572752, -77.03807017118325),
-        zoom: 18
-      };
-  
-      var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
-  
-      var marker = new google.maps.Marker({
-        position: mapOptions.center,
-        map: map,
-        title: "Beacon Hotel & Corporate Quarters"
-      });
-    }
-  
-    // Google Maps 스크립트 동적으로 추가
-    window.onload = loadGoogleMapsScript;
-  </script>
 
 </head>
 
@@ -818,6 +788,29 @@
       });
     });
   </script>
+
+  <!-- google map -->
+  <script>
+    function myMap() {
+      var mapOptions = {
+        center: new google.maps.LatLng(38.90712888572752, -77.03807017118325),
+        zoom: 18
+      };
+      
+
+      var map = new google.maps.Map(
+        document.getElementById("googleMap")
+        , mapOptions);
+
+        var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(38.90712888572752, -77.03807017118325), // 마커 위치
+        map: map,
+        title: "Beacon Hotel & Corporate Quarters" // 마커에 마우스를 올렸을 때 표시될 텍스트
+      });
+    }
+  </script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABdjCCFaJLcBSgnn1fRulW_NcAPJu05hE&callback=myMap"></script>
 </body>
 
 </html>
