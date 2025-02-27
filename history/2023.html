@@ -280,23 +280,43 @@
     });
   </script>
 
-  <script>
-    document.addEventListener("click", function (event) {
-      const target = event.target;
+<script>
+  document.addEventListener("click", function (event) {
+    const target = event.target;
 
-      if (target.matches(".gallery-item img")) {
-        const popup = document.getElementById("popup");
-        const popupImg = document.getElementById("popup-img");
-        popupImg.src = target.src;
-        popup.style.display = "flex";
+    // 이미지 클릭 시 팝업 띄우기
+    if (target.matches(".gallery-item img")) {
+      const popup = document.getElementById("popup");
+      const popupImg = document.getElementById("popup-img");
+      const popupCaption = document.getElementById("popup-caption"); // 이미지 이름 표시할 요소
+
+      // 이미지 경로 설정
+      popupImg.src = target.src;
+
+      // 이미지 이름 추출 (예: "example.jpg" -> "example")
+      const imageName = target.src.split("/").pop();
+      const nameWithoutExtension = imageName.split('.').slice(0, -1).join('.');
+      popupCaption.textContent = nameWithoutExtension; // 이미지 이름 설정
+
+      popup.style.display = "grid";
+    }
+
+    // 팝업 닫기
+    if (target.matches("#popup, #close")) {
+      document.getElementById("popup").style.display = "none";
+    }
+  });
+
+  // ESC 키 눌렀을 때 팝업 닫기
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      const popup = document.getElementById("popup");
+      if (popup.style.display === "grid") {
+        popup.style.display = "none";
       }
-
-      if (target.matches("#popup, #close")) {
-        document.getElementById("popup").style.display = "none";
-      }
-    });
-
-  </script>
+    }
+  });
+</script>
 
 </body>
 
