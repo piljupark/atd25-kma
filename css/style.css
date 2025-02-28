@@ -48,7 +48,7 @@
 
 
 /* katd-wrap */
-.katd-wrap { position: relative; width: 100%; height: auto; margin-top: 128px; } 
+.katd-wrap { position: relative; width: 100%; height: auto; margin-top: 250px; } 
 .katd-wrap .shape-wrap {position: absolute; width: 100%; height: auto; top: 70px; left: 0; display: grid; grid-template-columns: repeat(2,1fr);}
 .katd-wrap .shape-wrap .shape {position: relative; height: 213px; border-bottom: 1px solid #cdcdcd; }
 .katd-wrap .shape-wrap .shape:nth-child(odd) {border-right: 1px solid #cdcdcd;}
