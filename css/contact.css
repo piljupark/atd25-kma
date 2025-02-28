@@ -28,7 +28,7 @@ input.error { border: 2px solid red !important; background-color: #ffe6e6; }
 @media screen and (max-width: 1280px){
  .contact-wrap .contact-tit {font-size: 32px;  } 
 .contact-wrap .contact-txt { font-size: 18px; } 
-.contact-wrap .contact-txt span {  font-size: 14px; margin-top: 20px; font-weight: 400; } 
+.contact-wrap .contact-txt span { font-size: 14px; margin-top: 20px; font-weight: 400; } 
  }
 
  @media screen and (max-width: 1080px) {

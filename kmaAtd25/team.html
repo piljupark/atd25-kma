@@ -29,34 +29,41 @@
   <script src="../js/sub.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <script src="../config.js"></script>
+  <!-- <script src="../config.json"></script> -->
 
   <!-- Google Map -->
   <script>
-    function loadGoogleMapsScript() {
-      const script = document.createElement("script");
-      script.src = `https://maps.googleapis.com/maps/api/js?key=${CONFIG.GOOGLE_MAPS_API_KEY}&callback=myMap`;
-      script.async = true;
-      script.defer = true;
-      document.head.appendChild(script);
-    }
+    fetch('../config.json')
+    .then(response => response.json())
+    .then(data => {
+      const apiKey = data.GOOGLE_MAPS_API_KEY;
+      loadGoogleMapsScript(apiKey);
+    })
+    .catch(error => console.error('Error loading config:', error));
 
-    function myMap() {
-      var mapOptions = {
-        center: new google.maps.LatLng(38.90712888572752, -77.03807017118325),
-        zoom: 18
-      };
+  // Google Maps API 스크립트 로드
+  function loadGoogleMapsScript(apiKey) {
+    const script = document.createElement("script");
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=myMap`;
+    script.async = true;
+    script.defer = true;
+    document.head.appendChild(script);
+  }
 
-      var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+  // 지도 초기화 함수
+  function myMap() {
+    var mapOptions = {
+      center: new google.maps.LatLng(38.90712888572752, -77.03807017118325),
+      zoom: 18
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
 
-      var marker = new google.maps.Marker({
-        position: mapOptions.center,
-        map: map,
-        title: "Beacon Hotel & Corporate Quarters"
-      });
-    }
-
-    window.onload = loadGoogleMapsScript;
+    // 마커 추가
+    var marker = new google.maps.Marker({
+      position: mapOptions.center,
+      map: map
+    });
+  }
   </script>
 
 </head>
