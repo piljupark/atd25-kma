@@ -36,7 +36,7 @@
         <div id="header">
             <div class="header-wrap">
                 <a href="index.html" class="header-logo-k">
-                    <img src="/assets/imgs/logo_atd_b.svg" alt="ATD2025 logo">
+                    <img src="/assets/imgs/logo_kma_atd.webp" alt="ATD2025 logo">
                 </a>
 
                 <div class="pc-cate">
@@ -144,23 +144,23 @@
         <section class="numb-wrap">
             <div class="numb-box" data-aos="fade-up" data-aos-duration="700">
                 <div class="numb">
-                    <p class="numb-tit">1996년~</p>
-                    <p class="numb-txt">대한민국 No.1 한국대표단</p>
+                    <p class="numb-tit" data-target="1994" data-aos="fade-up" data-aos-duration="1000">1994년~</p>
+                    <p class="numb-txt" data-aos="fade-up" data-aos-duration="1400">대한민국 No.1 한국대표단</p>
                 </div>
                 <div class="numb">
-                    <p class="numb-tit">5000여 명+</p>
-                    <p class="numb-txt">실제 누적 참가자 수</p>
+                    <p class="numb-tit" data-target="8000" data-aos="fade-up" data-aos-duration="1000">8,000여 명+</p>
+                    <p class="numb-txt" data-aos="fade-up" data-aos-duration="1400">실제 누적 참가자 수</p>
                 </div>
                 <div class="numb">
-                    <p class="numb-tit">53% vs 47%</p>
-                    <p class="numb-txt">
+                    <p class="numb-tit" data-target="53-47" data-aos="fade-up" data-aos-duration="1000">53% vs 47%</p>
+                    <p class="numb-txt" data-aos="fade-up" data-aos-duration="1400">
                         민간/공공 참가사 비율 <br>
                         <span>* 최근 3개년 추이</span>
                     </p>
                 </div>
                 <div class="numb">
-                    <p class="numb-tit">97.1%</p>
-                    <p class="numb-txt">기참가사 재신청 비율<br>
+                    <p class="numb-tit" data-target="97.1" data-aos="fade-up" data-aos-duration="1000">97.1%</p>
+                    <p class="numb-txt" data-aos="fade-up" data-aos-duration="1400">기참가사 재신청 비율<br>
                         <span>* 최근 3개년 추이</span>
                     </p>
                 </div>
@@ -169,7 +169,6 @@
                 The World's Largest Delegation <br>
                 대한민국 최강 HRD 네트워크 플랫폼에 꼭 참여하시기 바랍니다!
             </p>
-
         </section>
 
         <section class="katd-wrap">
@@ -243,7 +242,7 @@
                         K-TD Frontier Awards
 
                     </p>
-                    
+
                 </div>
                 <div class="cont">
                     <p class="cont-txt">
@@ -749,6 +748,98 @@
                 });
             });
         });
+    </script>
+
+    <!-- Count Up -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const counters = document.querySelectorAll(".numb-tit");
+            const options = {
+                root: null, // 뷰포트를 기준으로 관찰
+                threshold: 0.5, // 요소가 50% 이상 보일 때 실행
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counter = entry.target;
+                        const target = counter.getAttribute("data-target");
+
+                        if (counter.dataset.counted) return; // 이미 실행된 경우 중복 방지
+                        counter.dataset.counted = true;
+
+                        if (target.includes("-")) {
+                            // "53-47" 형식 처리
+                            const [firstTarget, secondTarget] = target.split("-").map(Number);
+                            let firstCurrent = 0;
+                            let secondCurrent = 0;
+
+                            const duration = 1000; // 애니메이션 지속 시간 (ms)
+                            const stepTime = 10; // 업데이트 간격 (ms)
+                            const steps = duration / stepTime;
+                            const firstIncrement = firstTarget / steps;
+                            const secondIncrement = secondTarget / steps;
+
+                            function updateDualCounter() {
+                                firstCurrent += firstIncrement;
+                                secondCurrent += secondIncrement;
+
+                                if (firstCurrent >= firstTarget && secondCurrent >= secondTarget) {
+                                    counter.textContent = `${firstTarget}% vs ${secondTarget}%`;
+                                } else {
+                                    counter.textContent = `${Math.floor(firstCurrent)}% vs ${Math.floor(secondCurrent)}%`;
+                                    setTimeout(updateDualCounter, stepTime);
+                                }
+                            }
+
+                            updateDualCounter();
+                        } else {
+                            // 일반 숫자 처리
+                            const numericTarget = parseFloat(target);
+                            const isPercentage = counter.textContent.includes('%'); // 퍼센트 여부
+                            const hasYear = counter.textContent.includes('년'); // 년도 여부
+                            const hasPeople = counter.textContent.includes('명'); // 명수 여부
+                            let current = 0;
+
+                            const duration = 1000; // 애니메이션 지속 시간 (ms)
+                            const stepTime = 20; // 업데이트 간격 (ms)
+                            const steps = duration / stepTime;
+                            const increment = numericTarget / steps;
+
+                            function updateCounter() {
+                                current += increment;
+                                if (current >= numericTarget) {
+                                    if (isPercentage) {
+                                        counter.textContent = `${numericTarget}%`;
+                                    } else if (hasYear) {
+                                        counter.textContent = `${numericTarget}년~`;
+                                    } else if (hasPeople) {
+                                        counter.textContent = `${Math.floor(numericTarget).toLocaleString()}여 명+`;
+                                    }
+                                } else {
+                                    if (isPercentage) {
+                                        counter.textContent = `${current.toFixed(1)}%`;
+                                    } else if (hasYear) {
+                                        counter.textContent = `${Math.floor(current)}년~`;
+                                    } else if (hasPeople) {
+                                        counter.textContent = `${Math.floor(current).toLocaleString()}여 명+`;
+                                    }
+                                    setTimeout(updateCounter, stepTime);
+                                }
+                            }
+
+                            updateCounter();
+                        }
+
+                        observer.unobserve(counter); // 한 번 실행 후 관찰 중지
+                    }
+                });
+            }, options);
+
+            counters.forEach(counter => observer.observe(counter));
+        });
+
+
     </script>
 </body>
 
