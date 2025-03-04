@@ -52,7 +52,7 @@
 .katd-wrap .shape-wrap {position: absolute; width: 100%; height: auto; top: 70px; left: 0; display: grid; grid-template-columns: repeat(2,1fr);}
 .katd-wrap .shape-wrap .shape {position: relative; height: 213px; border-bottom: 1px solid #cdcdcd; }
 .katd-wrap .shape-wrap .shape:nth-child(odd) {border-right: 1px solid #cdcdcd;}
-.katd-wrap .shape-wrap .shape:nth-child(2) {border-top: 1px solid #cdcdcd;} 
+.katd-wrap .shape-wrap .shape:nth-child(2) {border-top: 1px solid #cdcdcd; height: 212px;} 
 .katd-wrap .cont-wrap {position: relative; width: 100%; max-width: 1840px; height: auto; margin: 0 auto; padding: 0 3vw; display: grid; grid-template-columns: repeat(2, 1fr); box-sizing: border-box;}
 .katd-wrap .cont-wrap .cont {position: relative; width: auto; height: 213px; padding: 35px 35px 35px 0px; box-sizing: border-box; display: grid; align-content: center;} 
 .katd-wrap .cont-wrap .cont:nth-child(1) {padding-top: 0;}
