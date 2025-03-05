@@ -39,6 +39,8 @@
                     <img src="/assets/imgs/logo_kma_atd.webp" alt="ATD2025 logo">
                 </a>
 
+                <h1></h1>
+
                 <div class="pc-cate">
                     <ul class="main-cate">
                         <li>
@@ -142,33 +144,37 @@
 
 
         <section class="numb-wrap">
-            <div class="numb-box" data-aos="fade-up" data-aos-duration="700">
+            <div class="numb-box">
                 <div class="numb">
-                    <div class="numb-tit" data-target="1994" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="line"></div>
+                    <p class="numb-txt">대한민국 No.1 한국대표단</p>
+                    <div class="numb-tit" data-target="1994" >
                         <span class="outfit">1994</span>년~
                     </div>
-                    <p class="numb-txt" data-aos="fade-up" data-aos-duration="1400">대한민국 No.1 한국대표단</p>
                 </div>
                 <div class="numb">
-                    <p class="numb-tit" data-target="8000" data-aos="fade-up" data-aos-duration="1000">
-                        <span class="outfit">8,000</span>여 명+
+                    <div class="line"></div>
+                    <p class="numb-txt">실제 누적 참가자 수</p>
+                    <p class="numb-tit" data-target="8000" >
+                        8,000 명+
                     </p>
-                    <p class="numb-txt" data-aos="fade-up" data-aos-duration="1400">실제 누적 참가자 수</p>
+                    
                 </div>
                 <div class="numb">
-                    <p class="numb-tit outfit" data-target="53-47" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="line"></div>
+                    <p class="numb-txt">
+                        민간/공공 참가사 비율 <br>
+                    </p>
+                    <p class="numb-tit outfit" data-target="53-47">
                         53% vs 47%
                     </p>
-                    <p class="numb-txt" data-aos="fade-up" data-aos-duration="1400">
-                        민간/공공 참가사 비율 <br>
-                        <span>* 최근 3개년 추이</span>
-                    </p>
+                    <p class="numb-date">* 최근 3개년 추이</p>
                 </div>
                 <div class="numb">
-                    <p class="numb-tit outfit" data-target="97.1" data-aos="fade-up" data-aos-duration="1000">97.1%</p>
-                    <p class="numb-txt" data-aos="fade-up" data-aos-duration="1400">기참가사 재신청 비율<br>
-                        <span>* 최근 3개년 추이</span>
-                    </p>
+                    <div class="line"></div>
+                    <p class="numb-txt" >기참가사 재신청 비율</p>
+                    <p class="numb-tit outfit" data-target="97.1">97.1%</p>
+                    <p class="numb-date">* 최근 3개년 추이</p>
                 </div>
             </div>
             <p class="numb-info" data-aos="fade-up" data-aos-duration="700">
@@ -781,7 +787,7 @@
                             let firstCurrent = 0;
                             let secondCurrent = 0;
 
-                            const duration = 1000; // 애니메이션 지속 시간 (ms)
+                            const duration = 1500; // 애니메이션 지속 시간 (ms)
                             const stepTime = 10; // 업데이트 간격 (ms)
                             const steps = duration / stepTime;
                             const firstIncrement = firstTarget / steps;
@@ -808,7 +814,7 @@
                             const hasPeople = counter.textContent.includes('명'); // 명수 여부
                             let current = 0;
 
-                            const duration = 1000; // 애니메이션 지속 시간 (ms)
+                            const duration = 1500; // 애니메이션 지속 시간 (ms)
                             const stepTime = 20; // 업데이트 간격 (ms)
                             const steps = duration / stepTime;
                             const increment = numericTarget / steps;

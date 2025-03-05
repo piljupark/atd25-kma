@@ -34,16 +34,38 @@
 /* //무한 루프 */
 
 /* numb-wrap */
-.numb-wrap {position: relative; width: 100%; height: 250px; margin: 80px auto 500px; padding: 0 3vw; box-sizing: border-box; background: #f0edfc;}
+.numb-wrap {position: relative; width: 100%; height: 250px; margin:142px auto 500px; padding: 0 3vw; box-sizing: border-box; }
 .numb-wrap .numb-box {position: relative; width: 100%; max-width: 1840px; margin: 0 auto; display: flex; gap: 30px; box-sizing: border-box; }
-.numb-wrap .numb-box .numb {position: relative; width: 25%; min-height: 240px; padding: 72px 42px; box-sizing: border-box; border-radius: 30px; display: grid; align-content: space-between; gap: 23px; justify-items: center;}
-.numb-wrap .numb-box .numb .numb-tit {font-size: 35px; font-weight: 600; letter-spacing: -0.64px; color: #000; }
+.numb-wrap .numb-box .numb {position: relative; width: 25%; min-height: 240px; padding: 0px 42px 72px; box-sizing: border-box; border-radius: 30px; display: grid; align-content: flex-start; gap: 0px; }
+.numb-wrap .numb-box .numb .line {position: relative; width: 0; height: 4px; background: #5d4ffa; transition: all .4s ease-in-out; animation-name: wide; animation-delay: .1s; animation-fill-mode: forwards; animation-duration: 1s;  animation-direction: normal}
+.numb-wrap .numb-box .numb:nth-child(2) .line { animation-delay: .25s; }
+.numb-wrap .numb-box .numb:nth-child(3) .line { animation-delay: .4s; }
+.numb-wrap .numb-box .numb:nth-child(4) .line { animation-delay: .55s; }
 
-
-.numb-wrap .numb-box .numb .numb-txt {font-size: 24px; font-weight: 400; letter-spacing: -0.48px; line-height: 30px; color: #525252; min-height: 65px; text-align: center;}
-.numb-wrap .numb-box .numb .numb-txt span {font-size: 18px;}
+.numb-wrap .numb-box .numb .numb-txt {font-size: 24px; font-weight: 400; letter-spacing: -0.48px; line-height: 30px; color: #525252; text-align: left;
+animation-name: opaCity; animation-duration: .3s; opacity: 0; animation-delay: 1.15s; animation-fill-mode: forwards; margin-top: 25px;}
+.numb-wrap .numb-box .numb .numb-tit {font-size: 35px; font-weight: 600; letter-spacing: -0.64px; color: #000; animation-name: opaCity; animation-duration: .3s; opacity: 0; animation-delay: 1.3s; animation-fill-mode: forwards; margin-top: 25px; }
+.numb-wrap .numb-box .numb .numb-date { font-size: 18px; color: #949494; font-weight: 400; line-height: 30px; letter-spacing: -0.36px; animation-name: opaCity; animation-duration: .3s; opacity: 0; animation-delay: 1.8s; animation-fill-mode: forwards; margin-top: 10px;}
 
 .numb-wrap .numb-info {position: relative; width: 100%; font-size: 50px; text-align: center; line-height: 80px; margin-top: 64px; }
+
+@keyframes wide {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes opaCity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 /* //numb-wrap */
 
