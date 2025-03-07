@@ -406,6 +406,10 @@
 .prg-wrap .team-a-date .date > div > ul li.idx { background: #fff; } 
 
 
+/* 3-Program */
+.prg-wrap .tit-wrap-120.tit-c {padding:0; margin-top: 80px; border-top: 0;}
+
+
 /* 4-KTD */
 .prg-wrap .ktd-fa { position: relative; width: 100%; height: auto; margin-top: 40px; } 
 .prg-wrap .ktd-fa .banner { position: relative; width: 100%; height: 360px; display: flex; align-items: center; justify-content: center; border-radius: 30px; background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('../assets/imgs/img_prg4_1.webp'); overflow: hidden; } 
