@@ -353,7 +353,7 @@
 .prg-wrap .tit-wrap .tit-txt .tit { font-size: 56px; font-weight: 500; color: #282828; letter-spacing: 1px; } 
 .prg-wrap .tit-wrap .tit-txt .sub { font-size: 26px; font-weight: 500; color: #a3a3a3; letter-spacing: -1px; margin-top: 10px; } 
 .prg-wrap .prg-int-wrap { position: relative; width: 100%; margin-top: 60px; display: flex; gap: 40px; } 
-.prg-wrap .prg-int-wrap .int-bg { position: relative; width: 40%; height: 665px; border-radius: 30px; background-image: url('../assets/imgs/image_google.webp'); background-position: center; background-repeat: no-repeat; background-size: cover; } 
+.prg-wrap .prg-int-wrap .int-bg { position: relative; width: 40%; height: auto; min-height: 665px; border-radius: 30px; background-position: center; background-repeat: no-repeat; background-size: cover; } 
 .prg-wrap .prg-int-wrap img { position: absolute; width: 150px; bottom: 20px; left: 40px; } 
 .prg-wrap .prg-int-wrap .int-info-wrap { position: relative; width: 60%; padding: 100px 65px 60px; box-sizing: border-box; background: rgba(93, 79, 250, 0.03); border-radius: 30px; display: grid; align-content: flex-start; } 
 .prg-wrap .prg-int-wrap .int-info-wrap .info-tit-wrap { position: relative; width: 100%; display: flex; justify-content: space-between; align-items: center; } 
