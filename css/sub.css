@@ -477,6 +477,22 @@
 .prg-wrap .sub-wrap .sub .sub-txt { font-size: 23px; font-weight: 600; color: #fff; text-align: center; line-height: 1.5; } 
 
 
+/* special gift */
+.gift-wrap .tit-wrap .tit-txt { width: 100%; background: #EFEEFF; padding: 60px 40px; border-radius: 20px;}
+.gift-wrap .tit-wrap .tit-txt .tit {text-align: center; color: #5d4ffa;}
+.gift-wrap .tit-wrap .tit-txt .txt {font-size: 24px; font-weight: 600; line-height: 1.5; margin-top: 40px; text-align: center; letter-spacing: -0.68px;}
+.gift-wrap .tit-wrap .tit-txt .txt span.lg {color: #5d4ffa;}
+.gift-wrap .tit-wrap .tit-txt .txt span.sm {font-size: 20px; opacity: .5;}
+.gift-wrap .gift-int-wrap .int-bg {width: 60%; min-height: 350px; }
+.gift-wrap .gift-int-wrap .int-info-wrap {width: 40%; padding: 60px 40px; align-content: space-between;}
+
+.gift-wrap .gift-int-wrap .int-info-wrap .info-tit-wrap .info-tit { width: 100%; line-height: 1.5; text-align: center;}
+.gift-wrap .gift-int-wrap .int-info-wrap .info-txt-wrap .info-txt-tit {text-align: center;}
+.gift-wrap .gift-int-wrap .int-info-wrap .info-txt-wrap .info-txt {text-align: center;}
+/* //special gift */
+
+
+
 /* pre-prg */
 .pre-prg { position: relative; width: 100%; text-align: center; margin-top: 60px; padding-bottom: 400px; } 
 .pre-prg p:nth-child(1) { font-size: 24px; color: #282828; font-weight: 500; line-height: 38px; letter-spacing: 0.48px; } 
