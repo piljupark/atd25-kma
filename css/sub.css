@@ -491,7 +491,7 @@
 
 
 /* special gift */
-.gift-wrap .tit-wrap .tit-txt { width: 100%; background: #EFEEFF; padding: 60px 40px; border-radius: 20px;}
+.gift-wrap .tit-wrap .tit-txt { width: 100%; background: #EFEEFF; padding: 60px 40px; border-radius: 20px; box-sizing: border-box;}
 .gift-wrap .tit-wrap .tit-txt .tit {text-align: center; color: #5d4ffa;}
 .gift-wrap .tit-wrap .tit-txt .txt {font-size: 24px; font-weight: 600; line-height: 1.5; margin-top: 40px; text-align: center; letter-spacing: -0.68px;}
 .gift-wrap .tit-wrap .tit-txt .txt span.lg {color: #5d4ffa;}
