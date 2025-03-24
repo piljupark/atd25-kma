@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/favicon/apple-icon-180x180.png">
-    <title>참가 비용 | 한국능률협회 |  KMA 글로벌</title>
+    <title>참가 비용 | 한국능률협회 | KMA 글로벌</title>
 
     <meta name="description"
         content="글로벌 1위 KMA-ATD 한국대표단. World Best ATD 2025 한국대표단 KMA입니다. HRDer라면 놓칠 수 없는 새로운 경험을 ATD 25 워싱턴에서 만날 수 있습니다. ">
@@ -31,15 +31,15 @@
     <!-- Google Tag Manager -->
     <script>
         (function (w, d, s, l, i) {
-                w[l] = w[l] || []; w[l].push({
-                    'gtm.start':
-                        new Date().getTime(), event: 'gtm.js'
-                }); var f = d.getElementsByTagName(s)[0],
-                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', 'GTM-WSGCT5B8');
-        </script>
-        <!-- End Google Tag Manager -->
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WSGCT5B8');
+    </script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
@@ -48,7 +48,8 @@
         <!-- header -->
         <div id="header">
             <div class="header-inner">
-                <a href="../index.html"><img src="../assets/imgs/logo_kma_atd.webp" alt="ATD2025 logo" class="header-logo"></a>
+                <a href="../index.html"><img src="../assets/imgs/logo_kma_atd.webp" alt="ATD2025 logo"
+                        class="header-logo"></a>
 
                 <div class="pc-cate">
                     <ul class="main-cate">
@@ -413,32 +414,54 @@
 
     <!-- 얼리버드 타이머 -->
     <script>
-        function updateCountdown() {
-            const targetDate = new Date("2025-03-21T17:00:00").getTime();
-            const now = new Date().getTime();
-            const timeLeft = targetDate - now;
+        document.addEventListener("DOMContentLoaded", function () {
+            const links = document.querySelectorAll(".side-cate-wrap .cate");
+            const sections = Array.from(links).map(link => {
+                const targetId = link.getAttribute("href").substring(1);
+                return document.getElementById(targetId);
+            });
 
-            if (timeLeft > 0) {
-                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24)).toString().padStart(2, '0');
-                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0');
-                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
-                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000).toString().padStart(2, '0');
+            function setActiveLink() {
+                let scrollPosition = window.scrollY + 210; // top에서 200px 간격 고려
+                let activeIndex = 0; // 기본적으로 첫 번째 항목 활성화
 
-                document.getElementById("days-1").textContent = days[0];
-                document.getElementById("days-2").textContent = days[1];
-                document.getElementById("hours-1").textContent = hours[0];
-                document.getElementById("hours-2").textContent = hours[1];
-                document.getElementById("minutes-1").textContent = minutes[0];
-                document.getElementById("minutes-2").textContent = minutes[1];
-                document.getElementById("seconds-1").textContent = seconds[0];
-                document.getElementById("seconds-2").textContent = seconds[1];
-            } else {
-                document.querySelector(".countdown").innerHTML = "<h2>타이머 종료</h2>";
+                sections.forEach((section, index) => {
+                    if (section) {
+                        const sectionTop = section.offsetTop;
+                        const sectionBottom = sectionTop + section.offsetHeight;
+
+                        if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                            activeIndex = index;
+                        }
+                    }
+                });
+
+                // 모든 링크에서 active 클래스 제거 후, 해당 링크에 active 추가
+                links.forEach(item => item.classList.remove("active"));
+                links[activeIndex].classList.add("active");
             }
-        }
 
-        updateCountdown(); // 초기화
-        setInterval(updateCountdown, 1000);
+            links.forEach(link => {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        const offsetTop = targetElement.getBoundingClientRect().top + window.scrollY - 200;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: "smooth"
+                        });
+                    }
+                });
+            });
+
+            window.addEventListener("scroll", setActiveLink);
+
+            // 페이지 로딩 시 첫 번째 a 태그에 active 추가
+            links[0].classList.add("active");
+        });
     </script>
 
     <!-- Google Tag Manager (noscript) -->
