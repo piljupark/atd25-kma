@@ -249,7 +249,7 @@
                 </div>
             </div>
 
-            <div class="swiper">
+            <div class="swiper e-swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" style="background-image: url('../assets/imgs/img_expo_sl1.webp');"></div>
                     <div class="swiper-slide" style="background-image: url('../assets/imgs/img_expo_sl2.webp');"></div>
@@ -519,12 +519,18 @@
                 <div class="tit-team tit-team-200">C TEAM</div>
                 <div class="tit-txt">
                     <p class="tit outfit">Bench-Marking</p>
-                    <p class="sub">일시 : 2025.05.15(목) 14:00-16:00</p>
+                    <p class="sub">일시 : 2025.05.23(금) 10:00-12:00</p>
                 </div>
             </div>
             <div class="prg-int-wrap">
-                <div class="int-bg" style="background-image: url('/assets/imgs/img_vector_institute.webp');">
-                    <img src="../assets/imgs/logo_vector_institute_w.webp" alt="vector institute" style="bottom: 35px;">
+                <div class="int-bg">
+                    <div class="swiper c-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background-image: url('../assets/imgs/img_vector_institute1.webp');"></div>
+                            <div class="swiper-slide" style="background-image: url('../assets/imgs/img_vector_institute2.webp');"></div>
+                        </div>
+                    </div>
+                    <img src="../assets/imgs/logo_vector_institute_w.webp" alt="vector institute" style="bottom: 35px; z-index: 2;">
                 </div>
                 <div class="int-info-wrap">
                     <div class="info-tit-wrap">
@@ -532,7 +538,10 @@
                     </div>
                     <div class="info-txt-wrap">
                         <p class="info-txt-tit">
-                            세계 최고 인공지능(AI) 연구기관의 <span>AI 기반 HR 혁신사례!</span>
+                            구글, 엔비디아 등 유수 기업들과 협력하고 국내 기업과도 AI 파트너십 체결! <br>
+                            딥러닝 창시자이자 AI 최고 권위자인 제프리 힌튼 교수가 공동 설립한<br>
+
+                            <span>세계 최고 인공지능(AI) 연구기관의 AI 기반 HR 혁신사례!</span>
                         </p>
                         <p class="info-txt">
                             생성형 AI 및 신기술의 급격한 발전은 HR 담당자의 역할을 변화시키고 있으며, 학습 환경을 더욱 개인화하고 효과적인 직원 경험을 창출하는 방향으로 재정의하고
@@ -545,6 +554,28 @@
                             이번 Vector Institute 방문을 통해 빠르게 변화하는 HR 환경 속에서 AI 및 혁신 기술이 직원 경험(EX)에 미치는 영향을 심층적으로 탐구해 보시기
                             바랍니다.
                         </p>
+                    </div>
+                </div>
+            </div>
+            <div class="prg-insight-wrap" data-aos="fade-up" data-aos-duration="700">
+                <p class="insight-tit">
+                    이런 인사이트를 얻을 수 있어요!
+                </p>
+                <div class="kind-wrap">
+                    <div class="kind">
+                        세계적인 AI 연구기관의 <br>
+                        AI 기술이 인재 개발(HRD)에 <br>
+                        미치는 영향
+                    </div>
+                    <div class="kind">
+                        AI 기반 학습 환경, <br>
+                        개인 맞춤형 교육, <br>
+                        스킬 최적화에 대한 우수 사례
+                    </div>
+                    <div class="kind">
+                        AI 기반 직원 경험 혁신이 <br>
+                        인재 몰입 및 기업 성장에 <br>
+                        기여하는 방식
                     </div>
                 </div>
             </div>
@@ -816,7 +847,7 @@
     </script>
 
     <script>
-        const swiperSlides = document.querySelectorAll('.swiper');
+        const swiperSlides = document.querySelectorAll('.e-swiper');
 
         swiperSlides.forEach(function (element, index) {
             element.classList.add("swiper-" + index);
@@ -830,6 +861,16 @@
                 slidesPerView: "auto",
                 freemode: true,
             });
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".c-swiper", {
+            spaceBetween: 30,
+            effect: "fade",
+            autoplay: {
+                delay: 3000,
+            },
         });
     </script>
 </body>

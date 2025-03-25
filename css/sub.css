@@ -466,8 +466,10 @@
 .prg-wrap .tit-wrap .tit-txt .tit .kor {font-family: 'Pretendard Variable'; font-weight: 600;}
 
 
-/* 3-Program */
+/* C Team */
 .prg-wrap .tit-wrap-120.tit-c {padding:0; margin-top: 80px; border-top: 0;}
+#teamC.prg-wrap .prg-int-wrap .int-bg .c-swiper {position: relative; width: 100%; height: 100%; border-radius: 30px;}
+#teamC.prg-wrap .prg-int-wrap .int-bg .c-swiper .swiper-slide {background-position: center; background-repeat: no-repeat; background-size: cover;}
 
 
 /* 4-KTD */
