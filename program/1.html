@@ -526,11 +526,14 @@
                 <div class="int-bg">
                     <div class="swiper c-swiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide" style="background-image: url('../assets/imgs/img_vector_institute1.webp');"></div>
-                            <div class="swiper-slide" style="background-image: url('../assets/imgs/img_vector_institute2.webp');"></div>
+                            <div class="swiper-slide"
+                                style="background-image: url('../assets/imgs/img_vector_institute1.webp');"></div>
+                            <div class="swiper-slide"
+                                style="background-image: url('../assets/imgs/img_vector_institute2.webp');"></div>
                         </div>
                     </div>
-                    <img src="../assets/imgs/logo_vector_institute_w.webp" alt="vector institute" style="bottom: 35px; z-index: 2;">
+                    <img src="../assets/imgs/logo_vector_institute_w.webp" alt="vector institute"
+                        style="bottom: 35px; z-index: 2;">
                 </div>
                 <div class="int-info-wrap">
                     <div class="info-tit-wrap">
@@ -847,19 +850,28 @@
     </script>
 
     <script>
-        const swiperSlides = document.querySelectorAll('.e-swiper');
+        document.addEventListener("DOMContentLoaded", function () {
+            const swiperSlides = document.querySelectorAll('.e-swiper');
 
-        swiperSlides.forEach(function (element, index) {
-            element.classList.add("swiper-" + index);
-            let swiper = new Swiper(".swiper-" + index, {
-                autoplay: {
-                    delay: 1,
-                    desableOnInteraction: false,
-                },
-                speed: 8e3,
-                loop: true,
-                slidesPerView: "auto",
-                freemode: true,
+            swiperSlides.forEach(function (element, index) {
+                let className = "swiper-" + index;
+                element.classList.add(className);
+
+                setTimeout(() => {
+                    new Swiper("." + className, {
+                        autoplay: {
+                            delay: 1,
+                            disableOnInteraction: false, // 오타 수정
+                        },
+                        speed: 8000, // 8e3 = 8000
+                        loop: true,
+                        slidesPerView: "auto",
+                        freeMode: true,
+                        allowTouchMove: false, // 터치 스와이프 방지
+                        simulateTouch: false, // 마우스 드래그 방지
+                        grabCursor: false, // 커서 변경 방지
+                    });
+                }, 0); // setTimeout을 사용하여 클래스 추가 후 Swiper 적용
             });
         });
     </script>
