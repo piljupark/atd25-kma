@@ -17,7 +17,7 @@
 
 .popup .btn-wrap {display: flex; justify-content: space-between; align-items: center; border-radius: 20px; z-index: 3;}
 
-.popup .btn-wrap button {width: 100%; height: 40px; background: #f4f4f4; border: none; cursor: pointer;  font-family: 'Pretendard Variable'; font-size: 14px; color: #282828;}
+.popup .btn-wrap button {width: 100%; height: 40px; background: #f4f4f4; border: none; cursor: pointer;  font-family: 'Pretendard Variable'; font-size: 14px; color: #282828; }
 .popup .btn-wrap button.today {border-right: 1px solid #ccc;}
 
 
