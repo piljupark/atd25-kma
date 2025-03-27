@@ -126,6 +126,15 @@
         </div>
         <!-- header -->
 
+        <div class="popup">
+            <img src="/assets/imgs/img_popup.webp" alt="참가자 특전">
+            <a href="/kmaAtd25/gift.html"></a>
+            <div class="btn-wrap">
+                <button class="today">오늘 그만보기</button>
+                <button class="close">닫기</button>
+            </div>
+        </div>
+
         <div class="main">
             <div class="tit-wrap">
                 <p class="tit" data-aos="fade-up" data-aos-duration="700">
@@ -211,11 +220,12 @@
                         <div class="cont-bg"></div>
                         <div class="txt-wrap">
                             <p class="tit">코디네이터 교수진 디브리핑</p>
-                            <p class="txt">탄탄한 내공과 날카로운 통찰력의 콜라보! 
+                            <p class="txt">탄탄한 내공과 날카로운 통찰력의 콜라보!
                                 <br>지금까지 보지 못한 KMA만의
                                 <br>강력하고 차별화된 디브리핑
                             </p>
                         </div>
+                        <a href="/kmaAtd25/cdnGrp.html"></a>
                     </div>
                     <div class="cont" style="background-image: url('/assets/imgs/img_m_katd2.webp');">
                         <div class="cont-bg"></div>
@@ -227,6 +237,7 @@
                                 <br>나만의 성장 로드맵
                             </p>
                         </div>
+                        <a href="/program/1.html"></a>
                     </div>
                 </div>
                 <div class="cont-grid">
@@ -235,22 +246,24 @@
                         <div class="txt-wrap">
                             <p class="tit">K-TD Meet Up</p>
                             <p class="txt">
-                                네트워크도 곧 자산이다! 
+                                네트워크도 곧 자산이다!
                                 <br>평생 함께할
                                 <br>HR 동료를 만날 수 있는 기회
                             </p>
                         </div>
+                        <a href="/program/1.html"></a>
                     </div>
                     <div class="cont" style="background-image: url('/assets/imgs/img_m_katd5.webp');">
                         <div class="cont-bg"></div>
                         <div class="txt-wrap">
                             <p class="tit">K-TD Frontier Awards</p>
                             <p class="txt">
-                                최대 규모 연수단이기에 가능하다! 
+                                최대 규모 연수단이기에 가능하다!
                                 <br>국내 대표 기업/기관의
                                 <br>최신 HRD 사례를 공유하는 K-TD
                             </p>
                         </div>
+                        <a href="/program/1.html"></a>
                     </div>
                 </div>
                 <div class="cont-grid">
@@ -258,11 +271,13 @@
                         <div class="cont-bg"></div>
                         <div class="txt-wrap">
                             <p class="tit">KMA-ATD 한국대표단</p>
-                            <p class="txt">선택은 자유, 경험은 특별하게! 
-                                <br>다양한 컨셉, 다양한 일정, 
+                            <p class="txt">선택은 자유, 경험은 특별하게!
+                                <br>다양한 컨셉, 다양한 일정,
                                 <br>다양한 도시로 만나요.
                             </p>
                         </div>
+
+                        <a href="/kmaAtd25/team.html"></a>
                     </div>
                     <div class="cont" style="background-image: url('/assets/imgs/img_m_katd6.webp');">
                         <div class="cont-bg"></div>
@@ -270,11 +285,12 @@
                             <img src="/assets/imgs/img_m_katd_logo.svg" alt="ATD" class="katd-logo">
                             <p class="tit">ATD 키노트 VIP 지정좌석</p>
                             <p class="txt">
-                                전세계 유일, 
+                                전세계 유일,
                                 <br>오직 KMA에게만 제공되는
                                 <br>키노트 1열 직관의 기회!
                             </p>
                         </div>
+                        <a href="/history/2024.html"></a>
                     </div>
                 </div>
                 <div class="cont-grid">
@@ -289,6 +305,7 @@
                                 <br>대회장 내 전용 공간!
                             </p>
                         </div>
+                        <a href="/history/2024.html"></a>
                     </div>
                 </div>
             </div>
@@ -647,6 +664,47 @@
 
     <script>
         AOS.init();
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const popup = document.querySelector(".popup");
+            const todayBtn = document.querySelector(".today");
+            const closeBtn = document.querySelector(".close");
+
+            // 쿠키 가져오기
+            function getCookie(name) {
+                const cookies = document.cookie.split("; ");
+                for (let i = 0; i < cookies.length; i++) {
+                    const [cookieName, cookieValue] = cookies[i].split("=");
+                    if (cookieName === name) return cookieValue;
+                }
+                return null;
+            }
+
+            // 쿠키 설정하기 (1일 유지)
+            function setCookie(name, value, days) {
+                const date = new Date();
+                date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+                document.cookie = `${name}=${value}; path=/; expires=${date.toUTCString()}`;
+            }
+
+            // 페이지 로드 시 쿠키 확인 후 팝업 숨김
+            if (getCookie("hidePopup") === "true") {
+                popup.style.display = "none";
+            }
+
+            // "오늘 그만보기" 버튼 클릭 시 쿠키 설정 후 팝업 숨김
+            todayBtn.addEventListener("click", function () {
+                setCookie("hidePopup", "true", 1); // 1일 동안 유지
+                popup.style.display = "none";
+            });
+
+            // "닫기" 버튼 클릭 시 팝업만 숨김
+            closeBtn.addEventListener("click", function () {
+                popup.style.display = "none";
+            });
+        });
     </script>
 
     <!-- 로고 무한루프 -->

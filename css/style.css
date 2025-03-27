@@ -10,6 +10,17 @@
 
 #container { position: relative; width: 100%; height: auto; } 
 
+.popup {position: fixed; width: 340px; height: auto; top: 50%; left: 50%; transform: translate(-50%, -50%); display: grid; z-index: 9; border-radius: 20px; overflow: hidden;}
+
+.popup img {width: 340px;}
+.popup a {position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2;}
+
+.popup .btn-wrap {display: flex; justify-content: space-between; align-items: center; border-radius: 20px; z-index: 3;}
+
+.popup .btn-wrap button {width: 100%; height: 40px; background: #f4f4f4; border: none; cursor: pointer;  font-family: 'Pretendard Variable'; font-size: 14px;}
+.popup .btn-wrap button.today {border-right: 1px solid #ccc;}
+
+
 .main { position: relative; width: 100%; height: 100vh; overflow: hidden; } 
 .main .tit-wrap { position: relative; width: 100%; height: 100%; display: grid; align-content: center; justify-items: center; gap: 4vw; } 
 .main .tit-wrap .tit { 
@@ -79,7 +90,7 @@ animation-name: opaCity; animation-duration: .3s; opacity: 0; animation-delay: 1
 
 .katd-wrap .cont-wrap {position: relative; width: auto; height: auto; display: flex; gap: 30px; }
 .katd-wrap .cont-wrap .cont-grid {position: relative; display: grid; gap: 30px; align-content: flex-start;}
-.katd-wrap .cont-wrap .cont-grid .cont { position: relative; width: 250px; height: 370px; background: #eee; border-radius: 30px; background-position: center; background-repeat: no-repeat; background-size: cover;}
+.katd-wrap .cont-wrap .cont-grid .cont { position: relative; width: 250px; height: 370px; background: #eee; border-radius: 30px; background-position: center; background-repeat: no-repeat; background-size: cover; transition: all .3s;}
 
 .katd-wrap .cont-wrap .cont-grid:nth-child(2) {margin-top: -220px;}
 .katd-wrap .cont-wrap .cont-grid:nth-child(3) {margin-top: -124px;}
@@ -88,6 +99,9 @@ animation-name: opaCity; animation-duration: .3s; opacity: 0; animation-delay: 1
 .katd-wrap .cont-wrap .cont-grid .cont .txt-wrap .katd-logo {width: 180px;}
 .katd-wrap .cont-wrap .cont-grid .cont .txt-wrap .tit {font-size: 18px; color: #fff; font-weight: 600; line-height: 40px; letter-spacing: -0.36px; text-align: center;}
 .katd-wrap .cont-wrap .cont-grid .cont .txt-wrap .txt {font-size: 12px; color: #fff; text-align: center; font-weight: 400; line-height: 18px; letter-spacing: -0.24px;}
+.katd-wrap .cont-wrap .cont-grid .cont a {position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2;}
+
+.katd-wrap .cont-wrap .cont-grid .cont:hover {transform: scale(1.05);}
 
 /* rc-wrap */
 .rc-wrap { position: relative; width: 100%; height: auto; margin-top: 300px;} 
